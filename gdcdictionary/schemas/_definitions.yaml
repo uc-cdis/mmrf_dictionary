@@ -1,3 +1,29 @@
+## Gen3
+UUID:
+    term:
+        $ref: "_terms.yaml#/UUID"
+    type: string
+    pattern: "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+
+to_one_project:
+  anyOf:
+    - type: array
+      items:
+        $ref: "#/foreign_key_project"
+        minItems: 1
+        maxItems: 1
+    - $ref: "#/foreign_key_project"
+
+to_many_project:
+  anyOf:
+    - type: array
+      items:
+        $ref: "#/foreign_key_project"
+        minItems: 1
+    - $ref: "#/foreign_key_project"
+
+## GDC
+
 id: _definitions
 
 uuid:
