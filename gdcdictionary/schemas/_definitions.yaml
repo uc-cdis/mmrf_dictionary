@@ -1,3 +1,5 @@
+id: _definitions
+
 ## Gen3
 UUID:
     term:
@@ -5,27 +7,11 @@ UUID:
     type: string
     pattern: "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
 
-to_one_project:
-  anyOf:
-    - type: array
-      items:
-        $ref: "#/foreign_key_project"
-        minItems: 1
-        maxItems: 1
-    - $ref: "#/foreign_key_project"
-
-to_many_project:
-  anyOf:
-    - type: array
-      items:
-        $ref: "#/foreign_key_project"
-        minItems: 1
-    - $ref: "#/foreign_key_project"
+object_id:
+    type: string
+    description: "The GUID of the object in the index service."
 
 ## GDC
-
-id: _definitions
-
 uuid:
   $ref: "_terms.yaml#/uuid"
   type: string
@@ -235,48 +221,37 @@ data_file_properties:
 
 workflow_properties:
   $ref: "#/ubiquitous_properties"
-
   workflow_link:
     $ref: "_terms.yaml#/workflow_link/common"
     type: string
-
   workflow_version:
     $ref: "_terms.yaml#/workflow_version/common"
     type: string
-
   workflow_start_datetime:
     $ref: "#/datetime"
-
   workflow_end_datetime:
     $ref: "#/datetime"
 
 ubiquitous_properties:
   type:
     type: string
-
   id:
-    $ref: "#/uuid"
-
+    $ref: "#/UUID"
   submitter_id:
     description: >-
       A project-specific identifier for a node. This property is the calling card/nickname/alias
       for a unit of submission. It can be used in place of the uuid for identifying
       or recalling a node.
     type: string
-
   batch_id:
     description: >-
       GDC submission batch indicator. It is unique within the context of a project.
     type: integer
-
   state:
     $ref: "#/state"
-
   project_id:
     $ref: "#/project_id"
-
   created_datetime:
     $ref: "#/datetime"
-
   updated_datetime:
     $ref: "#/datetime"
