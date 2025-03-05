@@ -54,8 +54,7 @@ deprecated:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/ubiquitous_properties"
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   aids_risk_factors:
     $ref: "_terms.yaml#/aids_risk_factors/common"

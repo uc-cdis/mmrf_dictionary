@@ -55,8 +55,7 @@ uniqueKeys:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/workflow_properties"
+  $ref: "_definitions.yaml#/workflow_properties"
 
   adapter_content:
     $ref: "_definitions.yaml#/qc_metrics_state"

@@ -138,8 +138,7 @@ uniqueKeys:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/data_file_properties"
+  $ref: "_definitions.yaml#/data_file_properties"
 
   aliquots:
     $ref: "_definitions.yaml#/to_many"

@@ -51,8 +51,7 @@ uniqueKeys:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/data_file_properties"
+  $ref: "_definitions.yaml#/data_file_properties"
 
   channel:
     $ref: "_terms.yaml#/channel/common"

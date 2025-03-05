@@ -53,8 +53,7 @@ deprecated:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/ubiquitous_properties"
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   a260_a280_ratio:
     $ref: "_terms.yaml#/a260_a280_ratio/common"

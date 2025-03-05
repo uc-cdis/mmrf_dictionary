@@ -46,8 +46,7 @@ deprecated:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/ubiquitous_properties"
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   chemo_concurrent_to_radiation:
     $ref: "_terms.yaml#/chemo_concurrent_to_radiation/common"

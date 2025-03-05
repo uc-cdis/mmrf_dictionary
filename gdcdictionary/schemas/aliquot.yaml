@@ -58,8 +58,7 @@ deprecated:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/ubiquitous_properties"
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   aliquot_quantity:
     $ref: "_terms.yaml#/aliquot_quantity/common"

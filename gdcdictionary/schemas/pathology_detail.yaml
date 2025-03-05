@@ -46,8 +46,7 @@ deprecated:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/ubiquitous_properties"
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   additional_pathology_findings:
     $ref: "_terms.yaml#/additional_pathology_findings/common"

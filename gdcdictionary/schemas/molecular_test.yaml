@@ -58,8 +58,7 @@ uniqueKeys:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/ubiquitous_properties"
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   aa_change:
     $ref: "_terms.yaml#/aa_change/common"

@@ -65,8 +65,7 @@ uniqueKeys:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/data_file_properties"
+  $ref: "_definitions.yaml#/data_file_properties"
 
   cancer_dna_fraction:
     $ref: "_terms.yaml#/cancer_dna_fraction/common"

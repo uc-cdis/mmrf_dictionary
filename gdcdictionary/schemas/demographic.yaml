@@ -48,8 +48,7 @@ deprecated:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/ubiquitous_properties"
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   age_at_index:
     $ref: "_terms.yaml#/age_at_index/common"

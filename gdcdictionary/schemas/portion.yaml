@@ -45,8 +45,7 @@ uniqueKeys:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/ubiquitous_properties"
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   creation_datetime:
     $ref: "_terms.yaml#/creation_datetime/common"

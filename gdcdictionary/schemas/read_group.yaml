@@ -58,8 +58,7 @@ deprecated:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/ubiquitous_properties"
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   adapter_name:
     $ref: "_terms.yaml#/adapter_name/common"

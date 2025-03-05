@@ -101,8 +101,7 @@ deprecated:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/ubiquitous_properties"
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   adverse_event:
     $ref: "_terms.yaml#/adverse_event/common"

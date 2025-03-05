@@ -55,8 +55,7 @@ deprecated:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/ubiquitous_properties"
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   adrenal_hormone:
     $ref: "_terms.yaml#/adrenal_hormone/common"

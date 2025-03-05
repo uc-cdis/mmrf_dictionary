@@ -48,8 +48,7 @@ uniqueKeys:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/ubiquitous_properties"
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   consent_type:
     $ref: "_terms.yaml#/consent_type/common"

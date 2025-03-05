@@ -73,8 +73,7 @@ uniqueKeys:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/data_file_properties"
+  $ref: "_definitions.yaml#/data_file_properties"
 
   average_base_quality:
     $ref: "_terms.yaml#/average_base_quality/common"

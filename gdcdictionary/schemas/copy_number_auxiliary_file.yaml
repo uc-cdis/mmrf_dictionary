@@ -52,8 +52,7 @@ deprecated:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/data_file_properties"
+  $ref: "_definitions.yaml#/data_file_properties"
 
   curated_model_index:
     $ref: "_terms.yaml#/curated_model_index/common"

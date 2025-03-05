@@ -47,8 +47,7 @@ deprecated:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/ubiquitous_properties"
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   age_at_last_exposure:
     $ref: "_terms.yaml#/age_at_last_exposure/common"
