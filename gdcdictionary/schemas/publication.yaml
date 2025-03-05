@@ -45,8 +45,7 @@ properties:
     type: string
 
   id:
-    $ref:
-      - "_definitions.yaml#/uuid"
+    $ref: "_definitions.yaml#/UUID"
 
   pmid:
     type: string
@@ -55,17 +54,14 @@ properties:
     type: string
 
   project_id:
-    $ref:
-      - "_terms.yaml#/project_id/common"
+    $ref: "_terms.yaml#/project_id/common"
     type: string
 
   created_datetime:
-    $ref:
-      - "_definitions.yaml#/datetime"
+    $ref: "_definitions.yaml#/datetime"
 
   updated_datetime:
-    $ref:
-      - "_definitions.yaml#/datetime"
+    $ref: "_definitions.yaml#/datetime"
 
   files:
     $ref: "_definitions.yaml#/to_many"

@@ -58,91 +58,75 @@ deprecated:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/ubiquitous_properties"
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   aliquot_quantity:
-    $ref:
-      - "_terms.yaml#/aliquot_quantity/common"
+    $ref: "_terms.yaml#/aliquot_quantity/common"
     type: number
     minimum: 0
 
   aliquot_volume:
-    $ref:
-      - "_terms.yaml#/aliquot_volume/common"
+    $ref: "_terms.yaml#/aliquot_volume/common"
     type: number
     minimum: 0
 
   amount:
-    $ref:
-      - "_terms.yaml#/amount/common"
+    $ref: "_terms.yaml#/amount/common"
     type: number
     minimum: 0
 
   analyte_type:
-    $ref:
-      - "analyte.yaml#/properties/analyte_type"
+    $ref: "analyte.yaml#/properties/analyte_type"
 
   analyte_type_id:
-    $ref:
-      - "analyte.yaml#/properties/analyte_type_id"
+    $ref: "analyte.yaml#/properties/analyte_type_id"
 
   concentration:
-    $ref:
-      - "_terms.yaml#/concentration/common"
+    $ref: "_terms.yaml#/concentration/common"
     type: number
     minimum: 0
 
   no_matched_normal_low_pass_wgs:
-    $ref:
-      - "_terms.yaml#/no_matched_normal_low_pass_wgs/common"
+    $ref: "_terms.yaml#/no_matched_normal_low_pass_wgs/common"
     type: boolean
     default: false
 
   no_matched_normal_targeted_sequencing:
-    $ref:
-      - "_terms.yaml#/no_matched_normal_targeted_sequencing/common"
+    $ref: "_terms.yaml#/no_matched_normal_targeted_sequencing/common"
     type: boolean
     default: false
 
   no_matched_normal_wgs:
-    $ref:
-      - "_terms.yaml#/no_matched_normal_wgs/common"
+    $ref: "_terms.yaml#/no_matched_normal_wgs/common"
     type: boolean
     default: false
 
   no_matched_normal_wxs:
-    $ref:
-      - "_terms.yaml#/no_matched_normal_wxs/common"
+    $ref: "_terms.yaml#/no_matched_normal_wxs/common"
     type: boolean
     default: false
 
   source_center:
-    $ref:
-      - "_terms.yaml#/source_center/common"
+    $ref: "_terms.yaml#/source_center/common"
     type: string
 
   selected_normal_wxs:
-    $ref:
-      - "_terms.yaml#/selected_normal_wxs/common"
+    $ref: "_terms.yaml#/selected_normal_wxs/common"
     type: boolean
     default: false
 
   selected_normal_wgs:
-    $ref:
-      - "_terms.yaml#/selected_normal_wgs/common"
+    $ref: "_terms.yaml#/selected_normal_wgs/common"
     type: boolean
     default: false
 
   selected_normal_targeted_sequencing:
-    $ref:
-      - "_terms.yaml#/selected_normal_targeted_sequencing/common"
+    $ref: "_terms.yaml#/selected_normal_targeted_sequencing/common"
     type: boolean
     default: false
 
   selected_normal_low_pass_wgs:
-    $ref:
-      - "_terms.yaml#/selected_normal_low_pass_wgs/common"
+    $ref: "_terms.yaml#/selected_normal_low_pass_wgs/common"
     type: boolean
     default: false
 

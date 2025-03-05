@@ -56,31 +56,26 @@ uniqueKeys:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/data_file_properties"
+  $ref: "_definitions.yaml#/data_file_properties"
 
   data_category:
-    $ref:
-      - "_terms.yaml#/data_category/common"
+    $ref: "_terms.yaml#/data_category/common"
     enum:
       - Simple Nucleotide Variation
 
   data_format:
-    $ref:
-      - "_terms.yaml#/data_format/common"
+    $ref: "_terms.yaml#/data_format/common"
     enum:
       - MAF
       - TSV
 
   data_type:
-    $ref:
-      - "_terms.yaml#/data_type/common"
+    $ref: "_terms.yaml#/data_type/common"
     enum:
       - Aggregated Somatic Mutation
 
   experimental_strategy:
-    $ref:
-      - "_terms.yaml#/experimental_strategy/common"
+    $ref: "_terms.yaml#/experimental_strategy/common"
     enum:
       - ATAC-Seq
       - Bisulfite-Seq
@@ -92,8 +87,7 @@ properties:
       - WXS
 
   platform:
-    $ref:
-      - "read_group.yaml#/properties/platform"
+    $ref: "read_group.yaml#/properties/platform"
 
   projects:
     $ref: "_definitions.yaml#/to_one_project"

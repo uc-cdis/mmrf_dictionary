@@ -48,12 +48,10 @@ uniqueKeys:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/ubiquitous_properties"
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   consent_type:
-    $ref:
-      - "_terms.yaml#/consent_type/common"
+    $ref: "_terms.yaml#/consent_type/common"
     enum:
       - Consent by Death
       - Consent Exemption
@@ -61,22 +59,19 @@ properties:
       - Informed Consent
 
   days_to_consent:
-    $ref:
-      - "_terms.yaml#/days_to_consent/common"
+    $ref: "_terms.yaml#/days_to_consent/common"
     type: integer
     maximum: 32872
     minimum: -32872
 
   days_to_lost_to_followup:
-    $ref:
-      - "_terms.yaml#/days_to_lost_to_followup/common"
+    $ref: "_terms.yaml#/days_to_lost_to_followup/common"
     type: integer
     maximum: 32872
     minimum: -32872
 
   disease_type:
-    $ref:
-      - "_terms.yaml#/disease_type/common"
+    $ref: "_terms.yaml#/disease_type/common"
     enum:
       - Acinar Cell Neoplasms
       - Adenomas and Adenocarcinomas
@@ -139,18 +134,14 @@ properties:
       - Not Applicable
     # enumDef:
     #   Unknown:
-    #     $ref:
-    #       - "_terms_enum.yaml#/unknown/common"
+    #     $ref: "_terms_enum.yaml#/unknown/common"
     #   Not Reported:
-    #     $ref:
-    #       - "_terms_enum.yaml#/not_reported/common"
+    #     $ref: "_terms_enum.yaml#/not_reported/common"
     #   Not Applicable:
-    #     $ref:
-    #       - "_terms_enum.yaml#/not_applicable/common"
+    #     $ref: "_terms_enum.yaml#/not_applicable/common"
 
   index_date:
-    $ref:
-      - "_terms.yaml#/index_date/common"
+    $ref: "_terms.yaml#/index_date/common"
     enum:
       - Diagnosis
       - First Patient Visit
@@ -161,26 +152,21 @@ properties:
       - Study Enrollment
 
   lost_to_followup:
-    $ref:
-      - "_terms.yaml#/lost_to_followup/common"
+    $ref: "_terms.yaml#/lost_to_followup/common"
     enum:
       - "Yes"
       - "No"
       - Unknown
     # enumDef:
     #   "Yes":
-    #     $ref:
-    #       - "_terms_enum.yaml#/yes/common"
+    #     $ref: "_terms_enum.yaml#/yes/common"
     #   "No":
-    #     $ref:
-    #       - "_terms_enum.yaml#/no/common"
+    #     $ref: "_terms_enum.yaml#/no/common"
     #   Unknown:
-    #     $ref:
-    #       - "_terms_enum.yaml#/unknown/common"
+    #     $ref: "_terms_enum.yaml#/unknown/common"
 
   primary_site:
-    $ref:
-      - "_terms.yaml#/primary_site/common"
+    $ref: "_terms.yaml#/primary_site/common"
     enum:
       - Accessory sinuses
       - Adrenal gland
@@ -256,14 +242,11 @@ properties:
       - Not Applicable
     # enumDef:
     #   Unknown:
-    #     $ref:
-    #       - "_terms_enum.yaml#/unknown/common"
+    #     $ref: "_terms_enum.yaml#/unknown/common"
     #   Not Reported:
-    #     $ref:
-    #       - "_terms_enum.yaml#/not_reported/common"
+    #     $ref: "_terms_enum.yaml#/not_reported/common"
     #   Not Applicable:
-    #     $ref:
-    #       - "_terms_enum.yaml#/not_applicable/common"
+    #     $ref: "_terms_enum.yaml#/not_applicable/common"
 
   projects:
     $ref: "_definitions.yaml#/to_one_project"

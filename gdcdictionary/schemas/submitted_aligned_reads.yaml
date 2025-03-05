@@ -51,30 +51,25 @@ deprecated:
 
 properties:
 
-  $ref:
-    - "_definitions.yaml#/data_file_properties"
+  $ref: "_definitions.yaml#/data_file_properties"
 
   data_category:
-    $ref:
-      - "_terms.yaml#/data_category/common"
+    $ref: "_terms.yaml#/data_category/common"
     enum:
       - Sequencing Reads
 
   data_type:
-    $ref:
-      - "_terms.yaml#/data_type/common"
+    $ref: "_terms.yaml#/data_type/common"
     enum:
       - Aligned Reads
 
   data_format:
-    $ref:
-      - "_terms.yaml#/data_format/common"
+    $ref: "_terms.yaml#/data_format/common"
     enum:
       - BAM
 
   experimental_strategy:
-    $ref:
-      - "_terms.yaml#/experimental_strategy/common"
+    $ref: "_terms.yaml#/experimental_strategy/common"
     enum:
       - ATAC-Seq
       - Bisulfite-Seq
@@ -92,18 +87,14 @@ properties:
       - scRNA-Seq
     enumDef:
       Targeted Sequencing:
-        $ref:
-          - "_terms_enum.yaml#/targeted_sequencing/common"
+        $ref: "_terms_enum.yaml#/targeted_sequencing/common"
       WGS:
-        $ref:
-          - "_terms_enum.yaml#/wgs/common"
+        $ref: "_terms_enum.yaml#/wgs/common"
       WXS:
-        $ref:
-          - "_terms_enum.yaml#/wxs/common"
+        $ref: "_terms_enum.yaml#/wxs/common"
 
   proc_internal:
-    $ref:
-      - "_terms.yaml#/proc_internal/common"
+    $ref: "_terms.yaml#/proc_internal/common"
     enum:
       - dna-seq skip
 
