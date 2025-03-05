@@ -62,13 +62,11 @@ properties:
     - "_definitions.yaml#/ubiquitous_properties"
 
   aa_change:
-    $ref:
-      - "_terms.yaml#/aa_change/common"
+    $ref: "_terms.yaml#/aa_change/common"
     type: string
 
   aneuploidy:
-    $ref:
-      - "_terms.yaml#/aneuploidy/common"
+    $ref: "_terms.yaml#/aneuploidy/common"
     enum:
       - Monosomy
       - Trisomy
@@ -76,8 +74,7 @@ properties:
       - Not Reported
 
   antigen:
-    $ref:
-      - "_terms.yaml#/antigen/common"
+    $ref: "_terms.yaml#/antigen/common"
     enum:
       - BCL6
       - CA19-9
@@ -217,8 +214,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   biospecimen_type:
-    $ref:
-      - "_terms.yaml#/biospecimen_type/common"
+    $ref: "_terms.yaml#/biospecimen_type/common"
     enum:
       - Blood
       - Bone Marrow
@@ -311,30 +307,25 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   biospecimen_volume:
-    $ref:
-      - "_terms.yaml#/biospecimen_volume/common"
+    $ref: "_terms.yaml#/biospecimen_volume/common"
     type: number
     minimum: 0
 
   blood_test_normal_range_lower:
-    $ref:
-      - "_terms.yaml#/blood_test_normal_range_lower/common"
+    $ref: "_terms.yaml#/blood_test_normal_range_lower/common"
     type: number
 
   blood_test_normal_range_upper:
-    $ref:
-      - "_terms.yaml#/blood_test_normal_range_upper/common"
+    $ref: "_terms.yaml#/blood_test_normal_range_upper/common"
     type: number
 
   cell_count:
-    $ref:
-      - "_terms.yaml#/cell_count/common"
+    $ref: "_terms.yaml#/cell_count/common"
     type: integer
     minimum: 0
 
   chromosomal_translocation:
-    $ref:
-      - "_terms.yaml#/chromosomal_translocation/common"
+    $ref: "_terms.yaml#/chromosomal_translocation/common"
     enum:
       - t(3;5)(q25;q34)
       - t(4;11)
@@ -351,8 +342,7 @@ properties:
       - Not Reported
 
   chromosome:
-    $ref:
-      - "_terms.yaml#/chromosome/common"
+    $ref: "_terms.yaml#/chromosome/common"
     enum:
       - chr1
       - chr2
@@ -469,8 +459,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   chromosome_arm:
-    $ref:
-      - "_terms.yaml#/chromosome_arm/common"
+    $ref: "_terms.yaml#/chromosome_arm/common"
     enum:
       - p
       - q
@@ -478,8 +467,7 @@ properties:
       - Not Reported
 
   clonality:
-    $ref:
-      - "_terms.yaml#/clonality/common"
+    $ref: "_terms.yaml#/clonality/common"
     enum:
       - Clonal
       - Non-clonal
@@ -494,32 +482,27 @@ properties:
           - "_terms_enum.yaml#/nonclonal/common"
 
   copy_number:
-    $ref:
-      - "_terms.yaml#/copy_number/common"
+    $ref: "_terms.yaml#/copy_number/common"
     type: number
     minimum: 0
 
   cytoband:
-    $ref:
-      - "_terms.yaml#/cytoband/common"
+    $ref: "_terms.yaml#/cytoband/common"
     type: string
 
   days_to_test:
-    $ref:
-      - "_terms.yaml#/days_to_test/common"
+    $ref: "_terms.yaml#/days_to_test/common"
     type: integer
     maximum: 32872
     minimum: -32872
 
   exon:
-    $ref:
-      - "_terms.yaml#/exon/common"
+    $ref: "_terms.yaml#/exon/common"
     type: string
     pattern: "^(0|[1-9][0-9]{0,3})[a-z]?$"
 
   gene_symbol:
-    $ref:
-      - "_terms.yaml#/gene_symbol/common"
+    $ref: "_terms.yaml#/gene_symbol/common"
     enum:
       - A1CF
       - ABI1
@@ -3465,8 +3448,7 @@ properties:
           - "_terms_enum.yaml#/not_applicable/common"
 
   histone_family:
-    $ref:
-      - "_terms.yaml#/histone_family/common"
+    $ref: "_terms.yaml#/histone_family/common"
     enum:
       - H1
       - H2A
@@ -3499,8 +3481,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   histone_variant:
-    $ref:
-      - "_terms.yaml#/histone_variant/common"
+    $ref: "_terms.yaml#/histone_variant/common"
     enum:
       - CENP-A
       - H2A-Bbd
@@ -3581,8 +3562,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   hpv_strain:
-    $ref:
-      - "_terms.yaml#/hpv_strain/common"
+    $ref: "_terms.yaml#/hpv_strain/common"
     enum:
       - HPV16
       - HPV18
@@ -3605,14 +3585,12 @@ properties:
       - Not Reported
 
   intron:
-    $ref:
-      - "_terms.yaml#/intron/common"
+    $ref: "_terms.yaml#/intron/common"
     type: string
     pattern: "^(0|[1-9][0-9]{0,3})[a-z]?$"
 
   laboratory_test:
-    $ref:
-      - "_terms.yaml#/laboratory_test/common"
+    $ref: "_terms.yaml#/laboratory_test/common"
     enum:
       - 5-Hydroxyindoleacetic Acid
       - Abnormal Cells
@@ -3837,27 +3815,23 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   loci_abnormal_count:
-    $ref:
-      - "_terms.yaml#/loci_abnormal_count/common"
+    $ref: "_terms.yaml#/loci_abnormal_count/common"
     type: integer
     minimum: 0
 
   loci_count:
-    $ref:
-      - "_terms.yaml#/loci_count/common"
+    $ref: "_terms.yaml#/loci_count/common"
     type: integer
     minimum: 0
 
   locus:
-    $ref:
-      - "_terms.yaml#/locus/common"
+    $ref: "_terms.yaml#/locus/common"
     type: string
     pattern: "^(AC_|NC_|NG_|NT_|NW_|NZ_b|NM_|NR_|XM_c|XR_c|AP_|NP_|YP_c|XP_c|WP_)[0-9]+(\\\
       .(0|[1-9][0-9]{0,3}))?$"
 
   mismatch_repair_mutation:
-    $ref:
-      - "_terms.yaml#/mismatch_repair_mutation/common"
+    $ref: "_terms.yaml#/mismatch_repair_mutation/common"
     enum:
       - "Yes"
       - "No"
@@ -3878,20 +3852,17 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   mitotic_count:
-    $ref:
-      - "_terms.yaml#/mitotic_count/common"
+    $ref: "_terms.yaml#/mitotic_count/common"
     type: number
     minimum: 0
 
   mitotic_total_area:
-    $ref:
-      - "_terms.yaml#/mitotic_total_area/common"
+    $ref: "_terms.yaml#/mitotic_total_area/common"
     type: number
     minimum: 0
 
   molecular_analysis_method:
-    $ref:
-      - "_terms.yaml#/molecular_analysis_method/common"
+    $ref: "_terms.yaml#/molecular_analysis_method/common"
     enum:
       - Comparative Genomic Hybridization
       - Cytogenetics, NOS
@@ -3989,8 +3960,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   molecular_consequence:
-    $ref:
-      - "_terms.yaml#/molecular_consequence/common"
+    $ref: "_terms.yaml#/molecular_consequence/common"
     enum:
       - 3 Prime UTR Variant
       - 5 Prime UTR Variant
@@ -4139,8 +4109,7 @@ properties:
           - "_terms_enum.yaml#/upstream_gene_variant/common"
 
   mutation_codon:
-    $ref:
-      - "_terms.yaml#/mutation_codon/common"
+    $ref: "_terms.yaml#/mutation_codon/common"
     enum:
       - "12"
       - "13"
@@ -4149,8 +4118,7 @@ properties:
       - Not Reported
 
   pathogenicity:
-    $ref:
-      - "_terms.yaml#/pathogenicity/common"
+    $ref: "_terms.yaml#/pathogenicity/common"
     enum:
       - Benign
       - Likely Benign
@@ -4177,8 +4145,7 @@ properties:
           - "_terms_enum.yaml#/uncertain_significance/common"
 
   ploidy:
-    $ref:
-      - "_terms.yaml#/ploidy/common"
+    $ref: "_terms.yaml#/ploidy/common"
     enum:
       - Aneuploid
       - Diploid
@@ -4215,14 +4182,12 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   second_exon:
-    $ref:
-      - "_terms.yaml#/second_exon/common"
+    $ref: "_terms.yaml#/second_exon/common"
     type: string
     pattern: "^(0|[1-9][0-9]{0,3})[a-z]?$"
 
   second_gene_symbol:
-    $ref:
-      - "_terms.yaml#/second_gene_symbol/common"
+    $ref: "_terms.yaml#/second_gene_symbol/common"
     enum:
       - A1CF
       - ABI1
@@ -7141,13 +7106,11 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   specialized_molecular_test:
-    $ref:
-      - "_terms.yaml#/specialized_molecular_test/common"
+    $ref: "_terms.yaml#/specialized_molecular_test/common"
     type: string
 
   staining_intensity_scale:
-    $ref:
-      - "_terms.yaml#/staining_intensity_scale/common"
+    $ref: "_terms.yaml#/staining_intensity_scale/common"
     enum:
       - 3 Point Scale
       - 4 Point Scale
@@ -7155,8 +7118,7 @@ properties:
       - Not Reported
 
   staining_intensity_value:
-    $ref:
-      - "_terms.yaml#/staining_intensity_value/common"
+    $ref: "_terms.yaml#/staining_intensity_value/common"
     enum:
       - "0"
       - 1+
@@ -7183,8 +7145,7 @@ properties:
           - "_terms_enum.yaml#/staining_intensity_4/common"
 
   test_analyte_type:
-    $ref:
-      - "_terms.yaml#/test_analyte_type/common"
+    $ref: "_terms.yaml#/test_analyte_type/common"
     enum:
       - DNA
       - miRNA
@@ -7217,8 +7178,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   test_result:
-    $ref:
-      - "_terms.yaml#/test_result/common"
+    $ref: "_terms.yaml#/test_result/common"
     enum:
       - Abnormal, NOS
       - Amplified
@@ -7273,8 +7233,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   test_units:
-    $ref:
-      - "_terms.yaml#/test_units/common"
+    $ref: "_terms.yaml#/test_units/common"
     enum:
       - cells/mL
       - g/dL
@@ -7304,13 +7263,11 @@ properties:
       - Not Reported
 
   test_value:
-    $ref:
-      - "_terms.yaml#/test_value/common"
+    $ref: "_terms.yaml#/test_value/common"
     type: number
 
   test_value_range:
-    $ref:
-      - "_terms.yaml#/test_value_range/common"
+    $ref: "_terms.yaml#/test_value_range/common"
     enum:
       - 0-25
       - 26-50
@@ -7344,8 +7301,7 @@ properties:
       - 76-100
 
   timepoint_category:
-    $ref:
-      - "_terms.yaml#/timepoint_category/common"
+    $ref: "_terms.yaml#/timepoint_category/common"
     enum:
       - Adjuvant Therapy
       - Adolescence
@@ -7390,14 +7346,12 @@ properties:
           - "_terms_enum.yaml#/preoperative/common"
 
   transcript:
-    $ref:
-      - "_terms.yaml#/transcript/common"
+    $ref: "_terms.yaml#/transcript/common"
     type: string
     pattern: "^ENST[0-9]{11}(\\.(0|[1-9][0-9]*))?$"
 
   variant_origin:
-    $ref:
-      - "_terms.yaml#/variant_origin/common"
+    $ref: "_terms.yaml#/variant_origin/common"
     enum:
       - Germline
       - Somatic
@@ -7415,8 +7369,7 @@ properties:
           - "_terms_enum.yaml#/unknown/common"
 
   variant_type:
-    $ref:
-      - "_terms.yaml#/variant_type/common"
+    $ref: "_terms.yaml#/variant_type/common"
     enum:
       - Alleles
       - Amplification
@@ -7521,8 +7474,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   zygosity:
-    $ref:
-      - "_terms.yaml#/zygosity/common"
+    $ref: "_terms.yaml#/zygosity/common"
     enum:
       - Hemizygous
       - Heterozygous

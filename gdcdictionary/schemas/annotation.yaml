@@ -455,12 +455,10 @@ properties:
       - Rescinded
 
   legacy_created_datetime:
-    $ref:
-      - "_definitions.yaml#/datetime"
+    $ref: "_definitions.yaml#/datetime"
 
   legacy_updated_datetime:
-    $ref:
-      - "_definitions.yaml#/datetime"
+    $ref: "_definitions.yaml#/datetime"
 
   aggregated_somatic_mutations:
     $ref: "_definitions.yaml#/to_many"

@@ -51,35 +51,30 @@ properties:
     - "_definitions.yaml#/ubiquitous_properties"
 
   age_at_last_exposure:
-    $ref:
-      - "_terms.yaml#/age_at_last_exposure/common"
+    $ref: "_terms.yaml#/age_at_last_exposure/common"
     type: integer
     maximum: 89
     minimum: 0
 
   age_at_onset:
-    $ref:
-      - "_terms.yaml#/age_at_onset/common"
+    $ref: "_terms.yaml#/age_at_onset/common"
     type: integer
     maximum: 89
     minimum: 0
 
   alcohol_days_per_week:
-    $ref:
-      - "_terms.yaml#/alcohol_days_per_week/common"
+    $ref: "_terms.yaml#/alcohol_days_per_week/common"
     type: number
     maximum: 7
     minimum: 0
 
   alcohol_drinks_per_day:
-    $ref:
-      - "_terms.yaml#/alcohol_drinks_per_day/common"
+    $ref: "_terms.yaml#/alcohol_drinks_per_day/common"
     type: number
     minimum: 0
 
   alcohol_frequency:
-    $ref:
-      - "_terms.yaml#/alcohol_frequency/common"
+    $ref: "_terms.yaml#/alcohol_frequency/common"
     enum:
       - Daily Drinker
       - Weekly Drinker
@@ -87,8 +82,7 @@ properties:
       - Unknown
 
   alcohol_history:
-    $ref:
-      - "_terms.yaml#/alcohol_history/common"
+    $ref: "_terms.yaml#/alcohol_history/common"
     enum:
       - "Yes"
       - "No"
@@ -120,8 +114,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   alcohol_intensity:
-    $ref:
-      - "_terms.yaml#/alcohol_intensity/common"
+    $ref: "_terms.yaml#/alcohol_intensity/common"
     enum:
       - Drinker
       - Heavy Drinker
@@ -155,8 +148,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   alcohol_type:
-    $ref:
-      - "_terms.yaml#/alcohol_type/common"
+    $ref: "_terms.yaml#/alcohol_type/common"
     enum:
       - Beer
       - Liquor
@@ -176,8 +168,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   asbestos_exposure:
-    $ref:
-      - "_terms.yaml#/asbestos_exposure/common"
+    $ref: "_terms.yaml#/asbestos_exposure/common"
     enum:
       - "Yes"
       - "No"
@@ -198,8 +189,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   asbestos_exposure_type:
-    $ref:
-      - "_terms.yaml#/asbestos_exposure_type/common"
+    $ref: "_terms.yaml#/asbestos_exposure_type/common"
     enum:
       - Amosite
       - Crocidolite
@@ -207,8 +197,7 @@ properties:
       - Not Reported
 
   chemical_exposure_type:
-    $ref:
-      - "_terms.yaml#/chemical_exposure_type/common"
+    $ref: "_terms.yaml#/chemical_exposure_type/common"
     type: array
     items:
       enum:
@@ -240,14 +229,12 @@ properties:
         - Not Reported
 
   cigarettes_per_day:
-    $ref:
-      - "_terms.yaml#/cigarettes_per_day/common"
+    $ref: "_terms.yaml#/cigarettes_per_day/common"
     type: number
     minimum: 0
 
   coal_dust_exposure:
-    $ref:
-      - "_terms.yaml#/coal_dust_exposure/common"
+    $ref: "_terms.yaml#/coal_dust_exposure/common"
     enum:
       - "Yes"
       - "No"
@@ -264,8 +251,7 @@ properties:
           - "_terms_enum.yaml#/unknown/common"
 
   environmental_tobacco_smoke_exposure:
-    $ref:
-      - "_terms.yaml#/environmental_tobacco_smoke_exposure/common"
+    $ref: "_terms.yaml#/environmental_tobacco_smoke_exposure/common"
     enum:
       - "Yes"
       - "No"
@@ -283,8 +269,7 @@ properties:
           - "_terms_enum.yaml#/unknown/common"
 
   exposure_duration:
-    $ref:
-      - "_terms.yaml#/exposure_duration/common"
+    $ref: "_terms.yaml#/exposure_duration/common"
     enum:
       - Six Weeks or More
       - Unknown
@@ -301,22 +286,19 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   exposure_duration_hrs_per_day:
-    $ref:
-      - "_terms.yaml#/exposure_duration_hrs_per_day/common"
+    $ref: "_terms.yaml#/exposure_duration_hrs_per_day/common"
     type: number
     maximum: 24
     minimum: 0
 
   exposure_duration_years:
-    $ref:
-      - "_terms.yaml#/exposure_duration_years/common"
+    $ref: "_terms.yaml#/exposure_duration_years/common"
     type: integer
     maximum: 89
     minimum: 0
 
   exposure_source:
-    $ref:
-      - "_terms.yaml#/exposure_source/common"
+    $ref: "_terms.yaml#/exposure_source/common"
     enum:
       - Home
       - Occupational
@@ -337,8 +319,7 @@ properties:
           - "_terms_enum.yaml#/work/common"
 
   exposure_type:
-    $ref:
-      - "_terms.yaml#/exposure_type/common"
+    $ref: "_terms.yaml#/exposure_type/common"
     enum:
       - Asbestos
       - Chemical
@@ -366,15 +347,13 @@ properties:
           - "_terms_enum.yaml#/tobacco/common"
 
   occupation_duration_years:
-    $ref:
-      - "_terms.yaml#/occupation_duration_years/common"
+    $ref: "_terms.yaml#/occupation_duration_years/common"
     type: integer
     maximum: 89
     minimum: 0
 
   occupation_type:
-    $ref:
-      - "_terms.yaml#/occupation_type/common"
+    $ref: "_terms.yaml#/occupation_type/common"
     type: array
     items:
       enum:
@@ -513,14 +492,12 @@ properties:
         - Not Reported
 
   pack_years_smoked:
-    $ref:
-      - "_terms.yaml#/pack_years_smoked/common"
+    $ref: "_terms.yaml#/pack_years_smoked/common"
     type: number
     minimum: 0
 
   parent_with_radiation_exposure:
-    $ref:
-      - "_terms.yaml#/parent_with_radiation_exposure/common"
+    $ref: "_terms.yaml#/parent_with_radiation_exposure/common"
     enum:
       - "Yes"
       - "No"
@@ -538,8 +515,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   radon_exposure:
-    $ref:
-      - "_terms.yaml#/radon_exposure/common"
+    $ref: "_terms.yaml#/radon_exposure/common"
     enum:
       - "Yes"
       - "No"
@@ -560,8 +536,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   respirable_crystalline_silica_exposure:
-    $ref:
-      - "_terms.yaml#/respirable_crystalline_silica_exposure/common"
+    $ref: "_terms.yaml#/respirable_crystalline_silica_exposure/common"
     enum:
       - "Yes"
       - "No"
@@ -578,8 +553,7 @@ properties:
           - "_terms_enum.yaml#/unknown/common"
 
   secondhand_smoke_as_child:
-    $ref:
-      - "_terms.yaml#/secondhand_smoke_as_child/common"
+    $ref: "_terms.yaml#/secondhand_smoke_as_child/common"
     enum:
       - "Yes"
       - "No"
@@ -600,8 +574,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   smoking_frequency:
-    $ref:
-      - "_terms.yaml#/smoking_frequency/common"
+    $ref: "_terms.yaml#/smoking_frequency/common"
     enum:
       - Every day
       - Some days
@@ -619,8 +592,7 @@ properties:
           - "_terms_enum.yaml#/unknown/common"
 
   time_between_waking_and_first_smoke:
-    $ref:
-      - "_terms.yaml#/time_between_waking_and_first_smoke/common"
+    $ref: "_terms.yaml#/time_between_waking_and_first_smoke/common"
     enum:
       - Within 5 Minutes
       - 6-30 Minutes
@@ -646,22 +618,19 @@ properties:
           - "_terms_enum.yaml#/unknown/common"
 
   tobacco_smoking_onset_year:
-    $ref:
-      - "_terms.yaml#/tobacco_smoking_onset_year/common"
+    $ref: "_terms.yaml#/tobacco_smoking_onset_year/common"
     type: integer
     maximum: 2050
     minimum: 1900
 
   tobacco_smoking_quit_year:
-    $ref:
-      - "_terms.yaml#/tobacco_smoking_quit_year/common"
+    $ref: "_terms.yaml#/tobacco_smoking_quit_year/common"
     type: integer
     maximum: 2050
     minimum: 1900
 
   tobacco_smoking_status:
-    $ref:
-      - "_terms.yaml#/tobacco_smoking_status/common"
+    $ref: "_terms.yaml#/tobacco_smoking_status/common"
     enum:
       - "1"
       - "2"
@@ -722,8 +691,7 @@ properties:
           - "_terms_enum.yaml#/7/exposure/tobacco_smoking_status"
 
   type_of_smoke_exposure:
-    $ref:
-      - "_terms.yaml#/type_of_smoke_exposure/common"
+    $ref: "_terms.yaml#/type_of_smoke_exposure/common"
     enum:
       - Accidental building fire smoke
       - Accidental fire smoke, grass
@@ -926,8 +894,7 @@ properties:
           - "_terms_enum.yaml#/unknown/common"
 
   type_of_tobacco_used:
-    $ref:
-      - "_terms.yaml#/type_of_tobacco_used/common"
+    $ref: "_terms.yaml#/type_of_tobacco_used/common"
     enum:
       - Cigar
       - Cigarette
@@ -956,14 +923,12 @@ properties:
           - "_terms_enum.yaml#/smokeless_tobacco/common"
 
   use_per_day:
-    $ref:
-      - "_terms.yaml#/use_per_day/common"
+    $ref: "_terms.yaml#/use_per_day/common"
     type: number
     minimum: 0
 
   years_smoked:
-    $ref:
-      - "_terms.yaml#/years_smoked/common"
+    $ref: "_terms.yaml#/years_smoked/common"
     type: number
     maximum: 89
     minimum: 0

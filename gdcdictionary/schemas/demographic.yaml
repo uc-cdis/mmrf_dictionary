@@ -52,8 +52,7 @@ properties:
     - "_definitions.yaml#/ubiquitous_properties"
 
   age_at_index:
-    $ref:
-      - "_terms.yaml#/age_at_index/common"
+    $ref: "_terms.yaml#/age_at_index/common"
     oneOf:
       - type: integer
         maximum: 89
@@ -61,13 +60,11 @@ properties:
       - type: "null"
 
   age_is_obfuscated:
-    $ref:
-      - "_terms.yaml#/age_is_obfuscated/common"
+    $ref: "_terms.yaml#/age_is_obfuscated/common"
     type: boolean
 
   cause_of_death:
-    $ref:
-      - "_terms.yaml#/cause_of_death/common"
+    $ref: "_terms.yaml#/cause_of_death/common"
     enum:
       - Cancer Related
       - Cardiovascular Disorder, NOS
@@ -116,8 +113,7 @@ properties:
     #       - "_terms_enum.yaml#/not_reported/common"
 
   cause_of_death_source:
-    $ref:
-      - "_terms.yaml#/cause_of_death_source/common"
+    $ref: "_terms.yaml#/cause_of_death_source/common"
     enum:
       - Autopsy
       - Death Certificate
@@ -146,8 +142,7 @@ properties:
     #       - "_terms_enum.yaml#/not_reported/common"
 
   country_of_birth:
-    $ref:
-      - "_terms.yaml#/country_of_birth/common"
+    $ref: "_terms.yaml#/country_of_birth/common"
     enum:
       - Afghanistan
       - Albania
@@ -1082,8 +1077,7 @@ properties:
     #       - "_terms_enum.yaml#/zimbabwe/common"
 
   country_of_residence_at_enrollment:
-    $ref:
-      - "_terms.yaml#/country_of_residence_at_enrollment/common"
+    $ref: "_terms.yaml#/country_of_residence_at_enrollment/common"
     enum:
       - Afghanistan
       - Albania
@@ -2018,22 +2012,19 @@ properties:
     #       - "_terms_enum.yaml#/zimbabwe/common"
 
   days_to_birth:
-    $ref:
-      - "_terms.yaml#/days_to_birth/common"
+    $ref: "_terms.yaml#/days_to_birth/common"
     type: integer
     maximum: 0
     minimum: -32872
 
   days_to_death:
-    $ref:
-      - "_terms.yaml#/days_to_death/common"
+    $ref: "_terms.yaml#/days_to_death/common"
     type: integer
     maximum: 32872
     minimum: -32872
 
   education_level:
-    $ref:
-      - "_terms.yaml#/education_level/common"
+    $ref: "_terms.yaml#/education_level/common"
     enum:
       - College Degree
       - High School Graduate or GED
@@ -2057,8 +2048,7 @@ properties:
     #       - "_terms_enum.yaml#/not_reported/common"
 
   ethnicity:
-    $ref:
-      - "_terms.yaml#/ethnicity/common"
+    $ref: "_terms.yaml#/ethnicity/common"
     enum:
       - hispanic or latino
       - not hispanic or latino
@@ -2089,8 +2079,7 @@ properties:
     #       - "_terms_enum.yaml#/not_allowed_to_collect/common"
 
   gender:
-    $ref:
-      - "_terms.yaml#/gender/common"
+    $ref: "_terms.yaml#/gender/common"
     enum:
       - female
       - male
@@ -2115,8 +2104,7 @@ properties:
     #       - "_terms_enum.yaml#/not_reported/common"
 
   marital_status:
-    $ref:
-      - "_terms.yaml#/marital_status/common"
+    $ref: "_terms.yaml#/marital_status/common"
     enum:
       - Divorced
       - Domestic Partnership
@@ -2147,21 +2135,18 @@ properties:
     #       - "_terms_enum.yaml#/widowed/common"
 
   occupation_duration_years:
-    $ref:
-      - "_terms.yaml#/occupation_duration_years/common"
+    $ref: "_terms.yaml#/occupation_duration_years/common"
     type: integer
     maximum: 89
     minimum: 0
 
   population_group:
-    $ref:
-      - "_terms.yaml#/population_group/common"
+    $ref: "_terms.yaml#/population_group/common"
     enum:
       - Ashkenazi Jew
 
   premature_at_birth:
-    $ref:
-      - "_terms.yaml#/premature_at_birth/common"
+    $ref: "_terms.yaml#/premature_at_birth/common"
     enum:
       - "Yes"
       - "No"
@@ -2182,8 +2167,7 @@ properties:
     #       - "_terms_enum.yaml#/not_reported/common"
 
   race:
-    $ref:
-      - "_terms.yaml#/race/common"
+    $ref: "_terms.yaml#/race/common"
     enum:
       - american indian or alaska native
       - asian
@@ -2230,8 +2214,7 @@ properties:
     #       - "_terms_enum.yaml#/not_allowed_to_collect/common"
 
   vital_status:
-    $ref:
-      - "_terms.yaml#/vital_status/common"
+    $ref: "_terms.yaml#/vital_status/common"
     enum:
       - Alive
       - Dead
@@ -2252,22 +2235,19 @@ properties:
     #       - "_terms_enum.yaml#/not_reported/common"
 
   weeks_gestation_at_birth:
-    $ref:
-      - "_terms.yaml#/weeks_gestation_at_birth/common"
+    $ref: "_terms.yaml#/weeks_gestation_at_birth/common"
     type: number
     minimum: 0
 
   year_of_birth:
-    $ref:
-      - "_terms.yaml#/year_of_birth/common"
+    $ref: "_terms.yaml#/year_of_birth/common"
     oneOf:
       - type: integer
         minimum: 1900
       - type: "null"
 
   year_of_death:
-    $ref:
-      - "_terms.yaml#/year_of_death/common"
+    $ref: "_terms.yaml#/year_of_death/common"
     type: integer
     minimum: 1900
 

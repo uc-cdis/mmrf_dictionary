@@ -52,22 +52,19 @@ properties:
     - "_definitions.yaml#/data_file_properties"
 
   data_category:
-    $ref:
-      - "_terms.yaml#/data_category/common"
+    $ref: "_terms.yaml#/data_category/common"
     enum:
       - Biospecimen
 
   data_type:
-    $ref:
-      - "_terms.yaml#/data_type/common"
+    $ref: "_terms.yaml#/data_type/common"
     enum:
       - Cell Culture Image
       - Slide Image
       - Tissue Microarray Image
 
   data_format:
-    $ref:
-      - "_terms.yaml#/data_format/common"
+    $ref: "_terms.yaml#/data_format/common"
     enum:
       - JPEG
       - JPEG 2000
@@ -83,8 +80,7 @@ properties:
       - Tissue Slide
 
   imaging_date:
-    $ref:
-      - "_definitions.yaml#/datetime"
+    $ref: "_definitions.yaml#/datetime"
 
   magnification:
     description: >-
@@ -92,8 +88,7 @@ properties:
     type: number
 
   stain_type:
-    $ref:
-      - "_terms.yaml#/stain_type/common"
+    $ref: "_terms.yaml#/stain_type/common"
     enum:
       - Haemotoxylin and Eosin (H&E)
       - Immunohistochemistry (IHC)

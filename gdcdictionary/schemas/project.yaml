@@ -48,8 +48,7 @@ properties:
     type: string
 
   id:
-    $ref:
-      - "_definitions.yaml#/uuid"
+    $ref: "_definitions.yaml#/uuid"
     description: >-
       UUID for the project
 
@@ -75,8 +74,7 @@ properties:
     type: string
 
   intended_release_date:
-    $ref:
-      - "_definitions.yaml#/datetime"
+    $ref: "_definitions.yaml#/datetime"
     description: >-
       Tracks a Project's intended release date.
 

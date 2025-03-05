@@ -77,8 +77,7 @@ properties:
     - "_definitions.yaml#/ubiquitous_properties"
 
   biospecimen_anatomic_site:
-    $ref:
-      - "_terms.yaml#/biospecimen_anatomic_site/common"
+    $ref: "_terms.yaml#/biospecimen_anatomic_site/common"
     enum:
       - Abdomen
       - Abdominal Wall
@@ -414,8 +413,7 @@ properties:
           - "_terms_enum.yaml#/not_allowed_to_collect/common"
 
   biospecimen_laterality:
-    $ref:
-      - "_terms.yaml#/biospecimen_laterality/common"
+    $ref: "_terms.yaml#/biospecimen_laterality/common"
     enum:
       - Bilateral
       - Left
@@ -431,13 +429,11 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   catalog_reference:
-    $ref:
-      - "_terms.yaml#/catalog_reference/common"
+    $ref: "_terms.yaml#/catalog_reference/common"
     type: string
 
   composition:
-    $ref:
-      - "_terms.yaml#/composition/common"
+    $ref: "_terms.yaml#/composition/common"
     enum:
       - 2D Classical Conditionally Reprogrammed Cells
       - 2D Modified Conditionally Reprogrammed Cells
@@ -502,28 +498,24 @@ properties:
           - "_terms_enum.yaml#/not_allowed_to_collect/common"
 
   current_weight:
-    $ref:
-      - "_terms.yaml#/current_weight/common"
+    $ref: "_terms.yaml#/current_weight/common"
     type: number
     minimum: 0
 
   days_to_collection:
-    $ref:
-      - "_terms.yaml#/days_to_collection/common"
+    $ref: "_terms.yaml#/days_to_collection/common"
     type: integer
     maximum: 32872
     minimum: -32872
 
   days_to_sample_procurement:
-    $ref:
-      - "_terms.yaml#/days_to_sample_procurement/common"
+    $ref: "_terms.yaml#/days_to_sample_procurement/common"
     type: integer
     maximum: 32872
     minimum: -32872
 
   diagnosis_pathologically_confirmed:
-    $ref:
-      - "_terms.yaml#/diagnosis_pathologically_confirmed/common"
+    $ref: "_terms.yaml#/diagnosis_pathologically_confirmed/common"
     enum:
       - "Yes"
       - "No"
@@ -550,8 +542,7 @@ properties:
           - "_terms_enum.yaml#/not_allowed_to_collect/common"
 
   distance_normal_to_tumor:
-    $ref:
-      - "_terms.yaml#/distance_normal_to_tumor/common"
+    $ref: "_terms.yaml#/distance_normal_to_tumor/common"
     enum:
       - Adjacent (< or = 2cm)
       - Distal (>2cm)
@@ -566,47 +557,39 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   distributor_reference:
-    $ref:
-      - "_terms.yaml#/distributor_reference/common"
+    $ref: "_terms.yaml#/distributor_reference/common"
     type: string
 
   freezing_method:
-    $ref:
-      - "_terms.yaml#/freezing_method/common"
+    $ref: "_terms.yaml#/freezing_method/common"
     type: string
 
   growth_rate:
-    $ref:
-      - "_terms.yaml#/growth_rate/common"
+    $ref: "_terms.yaml#/growth_rate/common"
     type: integer
     minimum: 0
 
   initial_weight:
-    $ref:
-      - "_terms.yaml#/initial_weight/common"
+    $ref: "_terms.yaml#/initial_weight/common"
     type: number
     minimum: 0
 
   intermediate_dimension:
-    $ref:
-      - "_terms.yaml#/intermediate_dimension/common"
+    $ref: "_terms.yaml#/intermediate_dimension/common"
     type: number
     minimum: 0
 
   is_ffpe:
-    $ref:
-      - "_terms.yaml#/is_ffpe/common"
+    $ref: "_terms.yaml#/is_ffpe/common"
     type: boolean
 
   longest_dimension:
-    $ref:
-      - "_terms.yaml#/longest_dimension/common"
+    $ref: "_terms.yaml#/longest_dimension/common"
     type: number
     minimum: 0
 
   method_of_sample_procurement:
-    $ref:
-      - "_terms.yaml#/method_of_sample_procurement/common"
+    $ref: "_terms.yaml#/method_of_sample_procurement/common"
     enum:
       - Abdomino-perineal Resection of Rectum
       - Anterior Resection of Rectum
@@ -735,13 +718,11 @@ properties:
           - "_terms_enum.yaml#/not_allowed_to_collect/common"
 
   oct_embedded:
-    $ref:
-      - "_terms.yaml#/oct_embedded/common"
+    $ref: "_terms.yaml#/oct_embedded/common"
     type: string
 
   passage_count:
-    $ref:
-      - "_terms.yaml#/passage_count/common"
+    $ref: "_terms.yaml#/passage_count/common"
     type: integer
     minimum: 0
 
@@ -751,8 +732,7 @@ properties:
     type: string
 
   preservation_method:
-    $ref:
-      - "_terms.yaml#/preservation_method/common"
+    $ref: "_terms.yaml#/preservation_method/common"
     enum:
       - Cryopreserved
       - EDTA
@@ -778,14 +758,12 @@ properties:
           - "_terms_enum.yaml#/not_allowed_to_collect/common"
 
   sample_ordinal:
-    $ref:
-      - "_terms.yaml#/sample_ordinal/common"
+    $ref: "_terms.yaml#/sample_ordinal/common"
     type: integer
     minimum: 1
 
   sample_type:
-    $ref:
-      - "_terms.yaml#/sample_type/common"
+    $ref: "_terms.yaml#/sample_type/common"
     enum:
       - Additional - New Primary
       - Additional Metastatic
@@ -861,8 +839,7 @@ properties:
           - "_terms_enum.yaml#/not_allowed_to_collect/common"
 
   sample_type_id:
-    $ref:
-      - "_terms.yaml#/sample_type_id/common"
+    $ref: "_terms.yaml#/sample_type_id/common"
     enum:
       - "01"
       - "02"
@@ -898,14 +875,12 @@ properties:
       - "99"
 
   shortest_dimension:
-    $ref:
-      - "_terms.yaml#/shortest_dimension/common"
+    $ref: "_terms.yaml#/shortest_dimension/common"
     type: number
     minimum: 0
 
   specimen_type:
-    $ref:
-      - "_terms.yaml#/specimen_type/common"
+    $ref: "_terms.yaml#/specimen_type/common"
     enum:
       - 2D Classical Conditionally Reprogrammed Cells
       - 2D Modified Conditionally Reprogrammed Cells
@@ -945,27 +920,23 @@ properties:
       - Not Reported
 
   time_between_clamping_and_freezing:
-    $ref:
-      - "_terms.yaml#/time_between_clamping_and_freezing/common"
+    $ref: "_terms.yaml#/time_between_clamping_and_freezing/common"
     type: number
     minimum: 0
 
   time_between_excision_and_freezing:
-    $ref:
-      - "_terms.yaml#/time_between_excision_and_freezing/common"
+    $ref: "_terms.yaml#/time_between_excision_and_freezing/common"
     type: number
     minimum: 0
 
   tissue_collection_type:
-    $ref:
-      - "_terms.yaml#/tissue_collection_type/common"
+    $ref: "_terms.yaml#/tissue_collection_type/common"
     enum:
       - Prospective
       - Retrospective
 
   tissue_type:
-    $ref:
-      - "_terms.yaml#/tissue_type/common"
+    $ref: "_terms.yaml#/tissue_type/common"
     enum:
       - Abnormal
       - Normal
@@ -991,8 +962,7 @@ properties:
           - "_terms_enum.yaml#/not_allowed_to_collect/common"
 
   tumor_code:
-    $ref:
-      - "_terms.yaml#/tumor_code/common"
+    $ref: "_terms.yaml#/tumor_code/common"
     enum:
       - Acute Leukemia of Ambiguous Lineage (ALAL)
       - Acute lymphoblastic leukemia (ALL)
@@ -1028,8 +998,7 @@ properties:
           - "_terms_enum.yaml#/rhabdomyosarcoma/common"
 
   tumor_code_id:
-    $ref:
-      - "_terms.yaml#/tumor_code_id/common"
+    $ref: "_terms.yaml#/tumor_code_id/common"
     enum:
       - "00"
       - "01"
@@ -1058,8 +1027,7 @@ properties:
       - "81"
 
   tumor_descriptor:
-    $ref:
-      - "_terms.yaml#/tumor_descriptor/common"
+    $ref: "_terms.yaml#/tumor_descriptor/common"
     enum:
       - Metastatic
       - New Primary

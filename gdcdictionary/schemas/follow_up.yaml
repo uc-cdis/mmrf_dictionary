@@ -105,8 +105,7 @@ properties:
     - "_definitions.yaml#/ubiquitous_properties"
 
   adverse_event:
-    $ref:
-      - "_terms.yaml#/adverse_event/common"
+    $ref: "_terms.yaml#/adverse_event/common"
     enum:
       - Abdominal Distension
       - Abdominal Infection
@@ -908,8 +907,7 @@ properties:
       - Not Reported
 
   adverse_event_grade:
-    $ref:
-      - "_terms.yaml#/adverse_event_grade/common"
+    $ref: "_terms.yaml#/adverse_event_grade/common"
     enum:
       - Grade 1
       - Grade 2
@@ -920,8 +918,7 @@ properties:
       - Not Reported
 
   aids_risk_factors:
-    $ref:
-      - "_terms.yaml#/aids_risk_factors/common"
+    $ref: "_terms.yaml#/aids_risk_factors/common"
     enum:
       - Candidiasis
       - Coccidioidomycosis
@@ -944,8 +941,7 @@ properties:
       - Wasting Syndrome
 
   barretts_esophagus_goblet_cells_present:
-    $ref:
-      - "_terms.yaml#/barretts_esophagus_goblet_cells_present/common"
+    $ref: "_terms.yaml#/barretts_esophagus_goblet_cells_present/common"
     enum:
       - "Yes"
       - "No"
@@ -966,31 +962,26 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   bmi:
-    $ref:
-      - "_terms.yaml#/bmi/common"
+    $ref: "_terms.yaml#/bmi/common"
     type: number
     minimum: 0
 
   body_surface_area:
-    $ref:
-      - "_terms.yaml#/body_surface_area/common"
+    $ref: "_terms.yaml#/body_surface_area/common"
     type: number
     minimum: 0
 
   cause_of_response:
-    $ref:
-      - "_terms.yaml#/cause_of_response/common"
+    $ref: "_terms.yaml#/cause_of_response/common"
     type: string
 
   cd4_count:
-    $ref:
-      - "_terms.yaml#/cd4_count/common"
+    $ref: "_terms.yaml#/cd4_count/common"
     type: number
     minimum: 0
 
   cdc_hiv_risk_factors:
-    $ref:
-      - "_terms.yaml#/cdc_hiv_risk_factors/common"
+    $ref: "_terms.yaml#/cdc_hiv_risk_factors/common"
     enum:
       - Hemophiliac
       - Heterosexual Contact
@@ -1012,8 +1003,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   comorbidities:
-    $ref:
-      - "_terms.yaml#/comorbidities/common"
+    $ref: "_terms.yaml#/comorbidities/common"
     type: array
     items:
       enum:
@@ -1204,8 +1194,7 @@ properties:
           - "_terms_enum.yaml#/pneumonia_nos/common"
 
   comorbidity:
-    $ref:
-      - "_terms.yaml#/comorbidity/common"
+    $ref: "_terms.yaml#/comorbidity/common"
     enum:
       - Abnormal Glucose Level
       - Acute Renal Failure
@@ -1405,8 +1394,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   comorbidity_method_of_diagnosis:
-    $ref:
-      - "_terms.yaml#/comorbidity_method_of_diagnosis/common"
+    $ref: "_terms.yaml#/comorbidity_method_of_diagnosis/common"
     enum:
       - Histology
       - Pathology
@@ -1422,29 +1410,25 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   days_to_adverse_event:
-    $ref:
-      - "_terms.yaml#/days_to_adverse_event/common"
+    $ref: "_terms.yaml#/days_to_adverse_event/common"
     type: integer
     maximum: 32872
     minimum: -32872
 
   days_to_comorbidity:
-    $ref:
-      - "_terms.yaml#days_to_comorbidity"
+    $ref: "_terms.yaml#days_to_comorbidity"
     type: integer
     maximum: 32872
     minimum: -32872
 
   days_to_first_event:
-    $ref:
-      - "_terms.yaml#days_to_first_event/common"
+    $ref: "_terms.yaml#days_to_first_event/common"
     type: integer
     maximum: 32872
     minimum: -32872
 
   days_to_follow_up:
-    $ref:
-      - "_terms.yaml#/days_to_follow_up/common"
+    $ref: "_terms.yaml#/days_to_follow_up/common"
     oneOf:
       - type: integer
         maximum: 32872
@@ -1452,43 +1436,37 @@ properties:
       - type: "null"
 
   days_to_imaging:
-    $ref:
-      - "_terms.yaml#/days_to_imaging/common"
+    $ref: "_terms.yaml#/days_to_imaging/common"
     type: integer
     maximum: 32872
     minimum: -32872
 
   days_to_progression:
-    $ref:
-      - "_terms.yaml#/days_to_progression/common"
+    $ref: "_terms.yaml#/days_to_progression/common"
     type: integer
     maximum: 32872
     minimum: -32872
 
   days_to_progression_free:
-    $ref:
-      - "_terms.yaml#/days_to_progression_free/common"
+    $ref: "_terms.yaml#/days_to_progression_free/common"
     type: integer
     maximum: 32872
     minimum: -32872
 
   days_to_recurrence:
-    $ref:
-      - "_terms.yaml#/days_to_recurrence/common"
+    $ref: "_terms.yaml#/days_to_recurrence/common"
     type: integer
     maximum: 32872
     minimum: -32872
 
   days_to_risk_factor:
-    $ref:
-      - "_terms.yaml#/days_to_risk_factor/common"
+    $ref: "_terms.yaml#/days_to_risk_factor/common"
     type: integer
     maximum: 32872
     minimum: -32872
 
   diabetes_treatment_type:
-    $ref:
-      - "_terms.yaml#/diabetes_treatment_type/common"
+    $ref: "_terms.yaml#/diabetes_treatment_type/common"
     enum:
       - Alpha-Glucosidase Inhibitor
       - Biguanide
@@ -1514,14 +1492,12 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   discontiguous_lesion_count:
-    $ref:
-      - "_terms.yaml#/discontiguous_lesion_count/common"
+    $ref: "_terms.yaml#/discontiguous_lesion_count/common"
     type: integer
     minimum: 0
 
   disease_response:
-    $ref:
-      - "_terms.yaml#/disease_response/common"
+    $ref: "_terms.yaml#/disease_response/common"
     enum:
       - AJ-Adjuvant Therapy
       - BED-Biochemical Evidence of Disease
@@ -1565,15 +1541,13 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   dlco_ref_predictive_percent:
-    $ref:
-      - "_terms.yaml#/dlco_ref_predictive_percent/common"
+    $ref: "_terms.yaml#/dlco_ref_predictive_percent/common"
     type: number
     maximum: 100
     minimum: 0
 
   ecog_performance_status:
-    $ref:
-      - "_terms.yaml#/ecog_performance_status/common"
+    $ref: "_terms.yaml#/ecog_performance_status/common"
     enum:
       - "0"
       - "1"
@@ -1592,8 +1566,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   evidence_of_progression_type:
-    $ref:
-      - "_terms.yaml#/evidence_of_progression_type/common"
+    $ref: "_terms.yaml#/evidence_of_progression_type/common"
     enum:
       - Biopsy with Histologic Confirmation
       - Convincing Image Source
@@ -1604,8 +1577,7 @@ properties:
       - Not Reported
 
   evidence_of_recurrence_type:
-    $ref:
-      - "_terms.yaml#/evidence_of_recurrence_type/common"
+    $ref: "_terms.yaml#/evidence_of_recurrence_type/common"
     enum:
       - Biopsy with Histologic Confirmation
       - Convincing Image Source
@@ -1616,8 +1588,7 @@ properties:
       - Not Reported
 
   eye_color:
-    $ref:
-      - "_terms.yaml#/eye_color/common"
+    $ref: "_terms.yaml#/eye_color/common"
     enum:
       - Amber
       - Blue
@@ -1630,36 +1601,31 @@ properties:
       - Not Reported
 
   fev1_fvc_post_bronch_percent:
-    $ref:
-      - "_terms.yaml#/fev1_fvc_post_bronch_percent/common"
+    $ref: "_terms.yaml#/fev1_fvc_post_bronch_percent/common"
     type: number
     maximum: 100
     minimum: 0
 
   fev1_fvc_pre_bronch_percent:
-    $ref:
-      - "_terms.yaml#/fev1_fvc_pre_bronch_percent/common"
+    $ref: "_terms.yaml#/fev1_fvc_pre_bronch_percent/common"
     type: number
     maximum: 100
     minimum: 0
 
   fev1_ref_post_bronch_percent:
-    $ref:
-      - "_terms.yaml#/fev1_ref_post_bronch_percent/common"
+    $ref: "_terms.yaml#/fev1_ref_post_bronch_percent/common"
     type: number
     maximum: 100
     minimum: 0
 
   fev1_ref_pre_bronch_percent:
-    $ref:
-      - "_terms.yaml#/fev1_ref_pre_bronch_percent/common"
+    $ref: "_terms.yaml#/fev1_ref_pre_bronch_percent/common"
     type: number
     maximum: 100
     minimum: 0
 
   first_event:
-    $ref:
-      - "_terms.yaml#/first_event/common"
+    $ref: "_terms.yaml#/first_event/common"
     enum:
       - Censored
       - Death
@@ -1678,8 +1644,7 @@ properties:
       - Not Reported
 
   haart_treatment_indicator:
-    $ref:
-      - "_terms.yaml#/haart_treatment_indicator/common"
+    $ref: "_terms.yaml#/haart_treatment_indicator/common"
     enum:
       - "Yes"
       - "No"
@@ -1700,14 +1665,12 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   height:
-    $ref:
-      - "_terms.yaml#/height/common"
+    $ref: "_terms.yaml#/height/common"
     type: number
     minimum: 0
 
   hepatitis_sustained_virological_response:
-    $ref:
-      - "_terms.yaml#/hepatitis_sustained_virological_response/common"
+    $ref: "_terms.yaml#/hepatitis_sustained_virological_response/common"
     enum:
       - "Yes"
       - "No"
@@ -1728,8 +1691,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   histologic_progression:
-    $ref:
-      - "_terms.yaml#/histologic_progression/common"
+    $ref: "_terms.yaml#/histologic_progression/common"
     enum:
       - "Yes"
       - "No"
@@ -1737,8 +1699,7 @@ properties:
       - Not Reported
 
   history_of_tumor:
-    $ref:
-      - "_terms.yaml#/history_of_tumor/common"
+    $ref: "_terms.yaml#/history_of_tumor/common"
     enum:
       - "Yes"
       - "No"
@@ -1756,8 +1717,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   history_of_tumor_type:
-    $ref:
-      - "_terms.yaml#/history_of_tumor_type/common"
+    $ref: "_terms.yaml#/history_of_tumor_type/common"
     enum:
       - Colorectal Cancer
       - Lower Grade Glioma
@@ -1766,14 +1726,12 @@ properties:
       - Not Reported
 
   hiv_viral_load:
-    $ref:
-      - "_terms.yaml#/hiv_viral_load/common"
+    $ref: "_terms.yaml#/hiv_viral_load/common"
     type: number
     minimum: 0
 
   hormonal_contraceptive_type:
-    $ref:
-      - "_terms.yaml#/hormonal_contraceptive_type/common"
+    $ref: "_terms.yaml#/hormonal_contraceptive_type/common"
     enum:
       - Progestin
       - Progestin and Estrogen
@@ -1788,8 +1746,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   hormonal_contraceptive_use:
-    $ref:
-      - "_terms.yaml#/hormonal_contraceptive_use/common"
+    $ref: "_terms.yaml#/hormonal_contraceptive_use/common"
     enum:
       - Current User
       - Former User
@@ -1805,8 +1762,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   hormone_replacement_therapy_type:
-    $ref:
-      - "_terms.yaml#/hormone_replacement_therapy_type/common"
+    $ref: "_terms.yaml#/hormone_replacement_therapy_type/common"
     enum:
       - Estrogen only
       - Progesterone and Estrogen
@@ -1822,8 +1778,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   hpv_positive_type:
-    $ref:
-      - "_terms.yaml#/hpv_positive_type/common"
+    $ref: "_terms.yaml#/hpv_positive_type/common"
     enum:
       - "16"
       - "18"
@@ -1860,8 +1815,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   hysterectomy_margins_involved:
-    $ref:
-      - "_terms.yaml#/hysterectomy_margins_involved/common"
+    $ref: "_terms.yaml#/hysterectomy_margins_involved/common"
     enum:
       - Bladder
       - Macroscopic Parametrium
@@ -1882,8 +1836,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   hysterectomy_type:
-    $ref:
-      - "_terms.yaml#/hysterectomy_type/common"
+    $ref: "_terms.yaml#/hysterectomy_type/common"
     enum:
       - Hysterectomy, NOS
       - Not performed
@@ -1900,8 +1853,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   imaging_anatomic_site:
-    $ref:
-      - "_terms.yaml#/imaging_anatomic_site/common"
+    $ref: "_terms.yaml#/imaging_anatomic_site/common"
     type: array
     items:
       enum:
@@ -1918,8 +1870,7 @@ properties:
           - "_terms_enum.yaml#/lymph_node_nos/common"
 
   imaging_findings:
-    $ref:
-      - "_terms.yaml#/imaging_findings/common"
+    $ref: "_terms.yaml#/imaging_findings/common"
     enum:
       - Bladder Involvement
       - Carcinomatosis
@@ -1943,8 +1894,7 @@ properties:
       - Not Reported
 
   imaging_result:
-    $ref:
-      - "_terms.yaml#/imaging_result/common"
+    $ref: "_terms.yaml#/imaging_result/common"
     enum:
       - Indeterminate
       - Negative
@@ -1967,18 +1917,15 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   imaging_suv:
-    $ref:
-      - "_terms.yaml#/imaging_suv/common"
+    $ref: "_terms.yaml#/imaging_suv/common"
     type: number
 
   imaging_suv_max:
-    $ref:
-      - "_terms.yaml#/imaging_suv_max/common"
+    $ref: "_terms.yaml#/imaging_suv_max/common"
     type: number
 
   imaging_type:
-    $ref:
-      - "_terms.yaml#/imaging_type/common"
+    $ref: "_terms.yaml#/imaging_type/common"
     enum:
       - 99mTc Bone Scintigraphy
       - Bone Scan, NOS
@@ -1994,8 +1941,7 @@ properties:
           - "_terms_enum.yaml#/ultrasound/common"
 
   immunosuppressive_treatment_type:
-    $ref:
-      - "_terms.yaml#/immunosuppressive_treatment_type/common"
+    $ref: "_terms.yaml#/immunosuppressive_treatment_type/common"
     enum:
       - Anti-TNF Therapy
       - Azathioprine
@@ -2020,8 +1966,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   karnofsky_performance_status:
-    $ref:
-      - "_terms.yaml#/karnofsky_performance_status/common"
+    $ref: "_terms.yaml#/karnofsky_performance_status/common"
     enum:
       - "0"
       - "10"
@@ -2045,8 +1990,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   menopause_status:
-    $ref:
-      - "_terms.yaml#/menopause_status/common"
+    $ref: "_terms.yaml#/menopause_status/common"
     enum:
       - Perimenopausal
       - Postmenopausal
@@ -2062,20 +2006,17 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   nadir_cd4_count:
-    $ref:
-      - "_terms.yaml#/nadir_cd4_count/common"
+    $ref: "_terms.yaml#/nadir_cd4_count/common"
     type: number
     minimum: 0
 
   pancreatitis_onset_year:
-    $ref:
-      - "_terms.yaml#/pancreatitis_onset_year/common"
+    $ref: "_terms.yaml#/pancreatitis_onset_year/common"
     type: integer
     minimum: 1900
 
   peritoneal_washing_results:
-    $ref:
-      - "_terms.yaml#/peritoneal_washing_results/common"
+    $ref: "_terms.yaml#/peritoneal_washing_results/common"
     enum:
       - Negative
       - Positive
@@ -2083,14 +2024,12 @@ properties:
       - Not Reported
 
   pregnancy_count:
-    $ref:
-      - "_terms.yaml#/pregnancy_count/common"
+    $ref: "_terms.yaml#/pregnancy_count/common"
     type: integer
     minimum: 0
 
   pregnancy_outcome:
-    $ref:
-      - "_terms.yaml#/pregnancy_outcome/common"
+    $ref: "_terms.yaml#/pregnancy_outcome/common"
     enum:
       - Ectopic Pregnancy
       - Induced Abortion
@@ -2109,8 +2048,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   procedures_performed:
-    $ref:
-      - "_terms.yaml#/procedures_performed/common"
+    $ref: "_terms.yaml#/procedures_performed/common"
     enum:
       - Colonoscopy
       - Endoscopy
@@ -2125,8 +2063,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   progression_or_recurrence:
-    $ref:
-      - "_terms.yaml#/progression_or_recurrence/common"
+    $ref: "_terms.yaml#/progression_or_recurrence/common"
     enum:
       - "Yes"
       - "No"
@@ -2147,8 +2084,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   progression_or_recurrence_anatomic_site:
-    $ref:
-      - "_terms.yaml#/progression_or_recurrence_anatomic_site/common"
+    $ref: "_terms.yaml#/progression_or_recurrence_anatomic_site/common"
     enum:
       - Abdomen, NOS
       - Abdominal esophagus
@@ -2512,8 +2448,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   progression_or_recurrence_type:
-    $ref:
-      - "_terms.yaml#/progression_or_recurrence_type/common"
+    $ref: "_terms.yaml#/progression_or_recurrence_type/common"
     enum:
       - Biochemical
       - Distant
@@ -2531,20 +2466,17 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   recist_targeted_regions_number:
-    $ref:
-      - "_terms.yaml#/recist_targeted_regions_number/common"
+    $ref: "_terms.yaml#/recist_targeted_regions_number/common"
     type: integer
     minimum: 0
 
   recist_targeted_regions_sum:
-    $ref:
-      - "_terms.yaml#/recist_targeted_regions_sum/common"
+    $ref: "_terms.yaml#/recist_targeted_regions_sum/common"
     type: number
     minimum: 0
 
   reflux_treatment_type:
-    $ref:
-      - "_terms.yaml#/reflux_treatment_type/common"
+    $ref: "_terms.yaml#/reflux_treatment_type/common"
     enum:
       - Antacids
       - H2 Blockers
@@ -2567,8 +2499,7 @@ properties:
           - "_terms_enum.yaml#/not_applicable/common"
 
   risk_factor:
-    $ref:
-      - "_terms.yaml#/risk_factor/common"
+    $ref: "_terms.yaml#/risk_factor/common"
     enum:
       - Abnormal Glucose Level
       - Adenomyosis
@@ -2761,8 +2692,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   risk_factor_method_of_diagnosis:
-    $ref:
-      - "_terms.yaml#/risk_factor_method_of_diagnosis/common"
+    $ref: "_terms.yaml#/risk_factor_method_of_diagnosis/common"
     enum:
       - Biochemical Assessment
       - Both Clinical and Biochemical Assessments
@@ -2770,8 +2700,7 @@ properties:
       - Not Reported
 
   risk_factor_treatment:
-    $ref:
-      - "_terms.yaml#/risk_factor_treatment/common"
+    $ref: "_terms.yaml#/risk_factor_treatment/common"
     enum:
       - "Yes"
       - "No"
@@ -2792,8 +2721,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   risk_factors:
-    $ref:
-      - "_terms.yaml#/risk_factors/common"
+    $ref: "_terms.yaml#/risk_factors/common"
     type: array
     items:
       enum:
@@ -2980,8 +2908,7 @@ properties:
           - "_terms_enum.yaml#/pneumonia_nos/common"
 
   scan_tracer_used:
-    $ref:
-      - "_terms.yaml#/scan_tracer_used/common"
+    $ref: "_terms.yaml#/scan_tracer_used/common"
     enum:
       - Acetate
       - Axumin
@@ -2992,8 +2919,7 @@ properties:
       - Not Reported
 
   timepoint_category:
-    $ref:
-      - "_terms.yaml#/timepoint_category/common"
+    $ref: "_terms.yaml#/timepoint_category/common"
     enum:
       - Adjuvant Therapy
       - Adolescence
@@ -3034,8 +2960,7 @@ properties:
       - Not Reported
 
   treatment_emergent_adverse_event:
-    $ref:
-      - "_terms.yaml#/treatment_emergent_adverse_event/common"
+    $ref: "_terms.yaml#/treatment_emergent_adverse_event/common"
     enum:
       - Definitely
       - Possibly
@@ -3046,8 +2971,7 @@ properties:
       - Not Reported
 
   undescended_testis_corrected:
-    $ref:
-      - "_terms.yaml#/undescended_testis_corrected/common"
+    $ref: "_terms.yaml#/undescended_testis_corrected/common"
     enum:
       - "Yes"
       - "No"
@@ -3064,15 +2988,13 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   undescended_testis_corrected_age:
-    $ref:
-      - "_terms.yaml#/undescended_testis_corrected_age/common"
+    $ref: "_terms.yaml#/undescended_testis_corrected_age/common"
     type: integer
     maximum: 89
     minimum: 0
 
   undescended_testis_corrected_laterality:
-    $ref:
-      - "_terms.yaml#/undescended_testis_corrected_laterality/common"
+    $ref: "_terms.yaml#/undescended_testis_corrected_laterality/common"
     enum:
       - Bilateral
       - Left
@@ -3084,8 +3006,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   undescended_testis_corrected_method:
-    $ref:
-      - "_terms.yaml#/undescended_testis_corrected_method/common"
+    $ref: "_terms.yaml#/undescended_testis_corrected_method/common"
     enum:
       - Hormones
       - Orchiopexy
@@ -3098,8 +3019,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   undescended_testis_history:
-    $ref:
-      - "_terms.yaml#/undescended_testis_history/common"
+    $ref: "_terms.yaml#/undescended_testis_history/common"
     enum:
       - "Yes"
       - "No"
@@ -3116,8 +3036,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   undescended_testis_history_laterality:
-    $ref:
-      - "_terms.yaml#/undescended_testis_history_laterality/common"
+    $ref: "_terms.yaml#/undescended_testis_history_laterality/common"
     enum:
       - Bilateral
       - Left
@@ -3129,8 +3048,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   viral_hepatitis_serologies:
-    $ref:
-      - "_terms.yaml#/viral_hepatitis_serologies/common"
+    $ref: "_terms.yaml#/viral_hepatitis_serologies/common"
     enum:
       - HBV Core Antibody
       - HBV DNA
@@ -3151,14 +3069,12 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   weight:
-    $ref:
-      - "_terms.yaml#/weight/common"
+    $ref: "_terms.yaml#/weight/common"
     type: number
     minimum: 0
 
   year_of_follow_up:
-    $ref:
-      - "_terms.yaml#/year_of_follow_up/common"
+    $ref: "_terms.yaml#/year_of_follow_up/common"
     type: integer
     maximum: 2050
     minimum: 1900

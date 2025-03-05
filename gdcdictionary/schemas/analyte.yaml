@@ -57,26 +57,22 @@ properties:
     - "_definitions.yaml#/ubiquitous_properties"
 
   a260_a280_ratio:
-    $ref:
-      - "_terms.yaml#/a260_a280_ratio/common"
+    $ref: "_terms.yaml#/a260_a280_ratio/common"
     type: number
     minimum: 0
 
   amount:
-    $ref:
-      - "_terms.yaml#/amount/common"
+    $ref: "_terms.yaml#/amount/common"
     type: number
     minimum: 0
 
   analyte_quantity:
-    $ref:
-      - "_terms.yaml#/analyte_quantity/common"
+    $ref: "_terms.yaml#/analyte_quantity/common"
     type: number
     minimum: 0
 
   analyte_type:
-    $ref:
-      - "_terms.yaml#/analyte_type/common"
+    $ref: "_terms.yaml#/analyte_type/common"
     enum:
       - cfDNA
       - DNA
@@ -100,8 +96,7 @@ properties:
     #       - "_terms_enum.yaml#/total_rna/common"
 
   analyte_type_id:
-    $ref:
-      - "_terms.yaml#/analyte_type_id/common"
+    $ref: "_terms.yaml#/analyte_type_id/common"
     enum:
       - D
       - E
@@ -115,20 +110,17 @@ properties:
       - Y
 
   analyte_volume:
-    $ref:
-      - "_terms.yaml#/analyte_volume/common"
+    $ref: "_terms.yaml#/analyte_volume/common"
     type: number
     minimum: 0
 
   concentration:
-    $ref:
-      - "_terms.yaml#/concentration/common"
+    $ref: "_terms.yaml#/concentration/common"
     type: number
     minimum: 0
 
   experimental_protocol_type:
-    $ref:
-      - "_terms.yaml#/experimental_protocol_type/common"
+    $ref: "_terms.yaml#/experimental_protocol_type/common"
     enum:
       - aDNA Preparation Type
       - Allprep FFPE DNA
@@ -148,8 +140,7 @@ properties:
     #       - "_terms_enum.yaml#/total_rna/common"
 
   normal_tumor_genotype_snp_match:
-    $ref:
-      - "_terms.yaml#/normal_tumor_genotype_snp_match/common"
+    $ref: "_terms.yaml#/normal_tumor_genotype_snp_match/common"
     enum:
       - "Yes"
       - "No"
@@ -174,25 +165,21 @@ properties:
     #       - "_terms_enum.yaml#/not_allowed_to_collect/common"
 
   ribosomal_rna_28s_16s_ratio:
-    $ref:
-      - "_terms.yaml#/ribosomal_rna_28s_16s_ratio/common"
+    $ref: "_terms.yaml#/ribosomal_rna_28s_16s_ratio/common"
     type: number
     minimum: 0
 
   rna_integrity_number:
-    $ref:
-      - "_terms.yaml#/rna_integrity_number/common"
+    $ref: "_terms.yaml#/rna_integrity_number/common"
     type: number
     maximum: 10
 
   spectrophotometer_method:
-    $ref:
-      - "_terms.yaml#/spectrophotometer_method/common"
+    $ref: "_terms.yaml#/spectrophotometer_method/common"
     type: string
 
   well_number:
-    $ref:
-      - "_terms.yaml#/well_number/common"
+    $ref: "_terms.yaml#/well_number/common"
     type: string
 
   portions:

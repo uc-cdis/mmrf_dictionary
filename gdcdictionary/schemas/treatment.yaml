@@ -50,8 +50,7 @@ properties:
     - "_definitions.yaml#/ubiquitous_properties"
 
   chemo_concurrent_to_radiation:
-    $ref:
-      - "_terms.yaml#/chemo_concurrent_to_radiation/common"
+    $ref: "_terms.yaml#/chemo_concurrent_to_radiation/common"
     enum:
       - "Yes"
       - "No"
@@ -72,8 +71,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   clinical_trial_indicator:
-    $ref:
-      - "_terms.yaml#/clinical_trial_indicator/common"
+    $ref: "_terms.yaml#/clinical_trial_indicator/common"
     enum:
       - "Yes"
       - "No"
@@ -90,27 +88,23 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   course_number:
-    $ref:
-      - "_terms.yaml#/course_number/common"
+    $ref: "_terms.yaml#/course_number/common"
     type: number
 
   days_to_treatment_end:
-    $ref:
-      - "_terms.yaml#/days_to_treatment_end/common"
+    $ref: "_terms.yaml#/days_to_treatment_end/common"
     type: integer
     maximum: 32872
     minimum: -32872
 
   days_to_treatment_start:
-    $ref:
-      - "_terms.yaml#/days_to_treatment_start/common"
+    $ref: "_terms.yaml#/days_to_treatment_start/common"
     type: integer
     maximum: 32872
     minimum: -32872
 
   drug_category:
-    $ref:
-      - "_terms.yaml#/drug_category/common"
+    $ref: "_terms.yaml#/drug_category/common"
     enum:
       - Glucocorticoid
       - Growth factor
@@ -120,8 +114,7 @@ properties:
       - Not Reported
 
   embolic_agent:
-    $ref:
-      - "_terms.yaml#/embolic_agent/common"
+    $ref: "_terms.yaml#/embolic_agent/common"
     enum:
       - Gelfoam
       - Lipiodol
@@ -135,8 +128,7 @@ properties:
       - Not Reported
 
   initial_disease_status:
-    $ref:
-      - "_terms.yaml#/initial_disease_status/common"
+    $ref: "_terms.yaml#/initial_disease_status/common"
     enum:
       - Initial Diagnosis
       - Persistent Disease
@@ -155,20 +147,17 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   lesions_treated_number:
-    $ref:
-      - "_terms.yaml#/lesions_treated_number/common"
+    $ref: "_terms.yaml#/lesions_treated_number/common"
     type: number
     minimum: 0
 
   margin_distance:
-    $ref:
-      - "_terms.yaml#/margin_distance/common"
+    $ref: "_terms.yaml#/margin_distance/common"
     type: number
     minimum: 0
 
   margin_status:
-    $ref:
-      - "_terms.yaml#/margin_status/common"
+    $ref: "_terms.yaml#/margin_status/common"
     enum:
       - Indeterminate
       - Involved
@@ -177,8 +166,7 @@ properties:
       - Not Reported
 
   margins_involved_site:
-    $ref:
-      - "_terms.yaml#/margins_involved_site/common"
+    $ref: "_terms.yaml#/margins_involved_site/common"
     enum:
       - Cervix Uteri
       - Gerota Fascia
@@ -194,26 +182,22 @@ properties:
       - Not Reported
 
   number_of_cycles:
-    $ref:
-      - "_terms.yaml#/number_of_cycles/common"
+    $ref: "_terms.yaml#/number_of_cycles/common"
     type: integer
     minimum: 0
 
   number_of_fractions:
-    $ref:
-      - "_terms.yaml#/number_of_fractions/common"
+    $ref: "_terms.yaml#/number_of_fractions/common"
     type: number
     minimum: 0
 
   prescribed_dose:
-    $ref:
-      - "_terms.yaml#/prescribed_dose/common"
+    $ref: "_terms.yaml#/prescribed_dose/common"
     type: number
     minimum: 0
 
   prescribed_dose_units:
-    $ref:
-      - "_terms.yaml#/prescribed_dose_units/common"
+    $ref: "_terms.yaml#/prescribed_dose_units/common"
     enum:
       - AUC
       - cGy
@@ -243,8 +227,7 @@ properties:
       - Not Reported
 
   pretreatment:
-    $ref:
-      - "_terms.yaml#/pretreatment/common"
+    $ref: "_terms.yaml#/pretreatment/common"
     enum:
       - rhTSH
       - Thyroxine Withdrawal
@@ -252,8 +235,7 @@ properties:
       - Not Reported
 
   protocol_identifier:
-    $ref:
-      - "_terms.yaml#/protocol_identifier/common"
+    $ref: "_terms.yaml#/protocol_identifier/common"
     enum:
       - 321P2
       - 321P3
@@ -383,8 +365,7 @@ properties:
       - Not Reported
 
   radiosensitizing_agent:
-    $ref:
-      - "_terms.yaml#/radiosensitizing_agent/common"
+    $ref: "_terms.yaml#/radiosensitizing_agent/common"
     enum:
       - "Yes"
       - "No"
@@ -405,8 +386,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   reason_treatment_ended:
-    $ref:
-      - "_terms.yaml#/reason_treatment_ended/common"
+    $ref: "_terms.yaml#/reason_treatment_ended/common"
     enum:
       - Adverse Event
       - Course of Therapy Completed
@@ -422,8 +402,7 @@ properties:
           - "_terms_enum.yaml#/other/common"
 
   reason_treatment_not_given:
-    $ref:
-      - "_terms.yaml#/reason_treatment_not_given/common"
+    $ref: "_terms.yaml#/reason_treatment_not_given/common"
     enum:
       - Adverse Event/Complications
       - Not Done per Treating Physician's Discretion
@@ -441,13 +420,11 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   regimen_or_line_of_therapy:
-    $ref:
-      - "_terms.yaml#/regimen_or_line_of_therapy/common"
+    $ref: "_terms.yaml#/regimen_or_line_of_therapy/common"
     type: string
 
   residual_disease:
-    $ref:
-      - "_terms.yaml#/residual_disease/common"
+    $ref: "_terms.yaml#/residual_disease/common"
     enum:
       - R0
       - R1
@@ -457,8 +434,7 @@ properties:
       - Not Reported
 
   route_of_administration:
-    $ref:
-      - "_terms.yaml#/route_of_administration/common"
+    $ref: "_terms.yaml#/route_of_administration/common"
     type: array
     items:
       enum:
@@ -474,8 +450,7 @@ properties:
         - Not Reported
 
   therapeutic_agents:
-    $ref:
-      - "_terms.yaml#/therapeutic_agents/common"
+    $ref: "_terms.yaml#/therapeutic_agents/common"
     enum:
       - 2'-F-ara-deoxyuridine
       - 2,6-Diaminopurine
@@ -6864,13 +6839,11 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   therapeutic_level_achieved:
-    $ref:
-      - "_terms.yaml#/therapeutic_level_achieved/common"
+    $ref: "_terms.yaml#/therapeutic_level_achieved/common"
     type: boolean
 
   therapeutic_levels_achieved:
-    $ref:
-      - "_terms.yaml#/therapeutic_levels_achieved/common"
+    $ref: "_terms.yaml#/therapeutic_levels_achieved/common"
     enum:
       - "Yes"
       - "No"
@@ -6891,16 +6864,14 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   therapeutic_target_level:
-    $ref:
-      - "_terms.yaml#/therapeutic_target_level/common"
+    $ref: "_terms.yaml#/therapeutic_target_level/common"
     enum:
       - '>14 mg/L'
       - Unknown
       - Not Reported
 
   timepoint_category:
-    $ref:
-      - "_terms.yaml#/timepoint_category/common"
+    $ref: "_terms.yaml#/timepoint_category/common"
     enum:
       - Adjuvant Therapy
       - Adolescence
@@ -6941,8 +6912,7 @@ properties:
       - Not Reported
 
   treatment_anatomic_site:
-    $ref:
-      - "_terms.yaml#/treatment_anatomic_site/common"
+    $ref: "_terms.yaml#/treatment_anatomic_site/common"
     enum:
       - Abdomen, total
       - Abdominal Wall
@@ -7285,8 +7255,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   treatment_anatomic_sites:
-    $ref:
-      - "_terms.yaml#/treatment_anatomic_site/common"
+    $ref: "_terms.yaml#/treatment_anatomic_site/common"
     type: array
     items:
       enum:
@@ -7639,8 +7608,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   treatment_arm:
-    $ref:
-      - "_terms.yaml#/treatment_arm/common"
+    $ref: "_terms.yaml#/treatment_arm/common"
     enum:
       - A081105
       - A081801
@@ -7648,20 +7616,17 @@ properties:
       - EA5142
 
   treatment_dose:
-    $ref:
-      - "_terms.yaml#/treatment_dose/common"
+    $ref: "_terms.yaml#/treatment_dose/common"
     type: integer
     minimum: 0
 
   treatment_dose_max:
-    $ref:
-      - "_terms.yaml#/treatment_dose_max/common"
+    $ref: "_terms.yaml#/treatment_dose_max/common"
     type: number
     minimum: 0
 
   treatment_dose_units:
-    $ref:
-      - "_terms.yaml#/treatment_dose_units/common"
+    $ref: "_terms.yaml#/treatment_dose_units/common"
     enum:
       - AUC
       - cGy
@@ -7695,15 +7660,13 @@ properties:
           - "_terms_enum.yaml#/mg/common"
 
   treatment_duration:
-    $ref:
-      - "_terms.yaml#/treatment_duration/common"
+    $ref: "_terms.yaml#/treatment_duration/common"
     type: integer
     maximum: 32872
     minimum: -32872
 
   treatment_effect:
-    $ref:
-      - "_terms.yaml#/treatment_effect/common"
+    $ref: "_terms.yaml#/treatment_effect/common"
     enum:
       - Complete Necrosis (No Viable Tumor)
       - Incomplete Necrosis (Viable Tumor Present)
@@ -7720,8 +7683,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   treatment_effect_indicator:
-    $ref:
-      - "_terms.yaml#/treatment_effect_indicator/common"
+    $ref: "_terms.yaml#/treatment_effect_indicator/common"
     enum:
       - "Yes"
       - "No"
@@ -7742,8 +7704,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   treatment_frequency:
-    $ref:
-      - "_terms.yaml#/treatment_frequency/common"
+    $ref: "_terms.yaml#/treatment_frequency/common"
     enum:
       - Every Hour
       - Five Times Daily
@@ -7765,8 +7726,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   treatment_intent_type:
-    $ref:
-      - "_terms.yaml#/treatment_intent_type/common"
+    $ref: "_terms.yaml#/treatment_intent_type/common"
     enum:
       - Adjuvant
       - Androgen Deprivation Therapy (ADT)
@@ -7796,8 +7756,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   treatment_or_therapy:
-    $ref:
-      - "_terms.yaml#/treatment_or_therapy/common"
+    $ref: "_terms.yaml#/treatment_or_therapy/common"
     enum:
       - "yes"
       - "no"
@@ -7818,8 +7777,7 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   treatment_outcome:
-    $ref:
-      - "_terms.yaml#/treatment_outcome/common"
+    $ref: "_terms.yaml#/treatment_outcome/common"
     enum:
       - Complete Response
       - Mixed Response
@@ -7844,15 +7802,13 @@ properties:
           - "_terms_enum.yaml#/not_reported/common"
 
   treatment_outcome_duration:
-    $ref:
-      - "_terms.yaml#/treatment_outcome_duration/common"
+    $ref: "_terms.yaml#/treatment_outcome_duration/common"
     type: integer
     maximum: 32872
     minimum: -32872
 
   treatment_type:
-    $ref:
-      - "_terms.yaml#/treatment_type/common"
+    $ref: "_terms.yaml#/treatment_type/common"
     enum:
       - Ablation or Embolization, NOS
       - Ablation, Cryo
