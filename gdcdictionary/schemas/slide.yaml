@@ -59,15 +59,15 @@ properties:
       - "No"
       - Unknown
       - Not Reported
-    enumDef:
-      "Yes":
-        $ref: "_terms_enum.yaml#/yes/common"
-      "No":
-        $ref: "_terms_enum.yaml#/no/common"
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      "Yes":
+##        $ref: "_terms_enum.yaml#/yes/common"
+##      "No":
+##        $ref: "_terms_enum.yaml#/no/common"
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   number_proliferating_cells:
     $ref: "_terms.yaml#/number_proliferating_cells/common"

@@ -93,8 +93,8 @@ properties:
       - Unknown
       - Not Reported
       - Not Allowed To Collect
-    deprecated_enum:
-      - Not Allowed To Collect
+##    deprecated_enum:
+##      - Not Allowed To Collect
     # enumDef:
     #   cM0 (i+):
     #     $ref: "_terms_enum.yaml#/cm0_i/common"
@@ -246,11 +246,11 @@ properties:
       - Unknown
       - Not Reported
       - Not Allowed To Collect
-    deprecated_enum:
-      - Not Allowed To Collect
-      - Stage IB Cervix
-      - Stage II Cervix
-      - Stage IIA Cervix
+##    deprecated_enum:
+##      - Not Allowed To Collect
+##      - Stage IB Cervix
+##      - Stage II Cervix
+##      - Stage IIA Cervix
     # enumDef:
     #   Stage 0:
     #     $ref: "_terms_enum.yaml#/stage_0/diagnosis/ajcc_clinical_stage"
@@ -365,8 +365,8 @@ properties:
       - Unknown
       - Not Reported
       - Not Allowed To Collect
-    deprecated_enum:
-      - Not Allowed To Collect
+##    deprecated_enum:
+##      - Not Allowed To Collect
     # enumDef:
     #   T0:
     #     $ref: "_terms_enum.yaml#/t0/common"
