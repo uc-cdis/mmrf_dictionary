@@ -41,27 +41,13 @@ uniqueKeys:
 
 properties:
 
-  type:
-    type: string
-
-  id:
-    $ref: "_definitions.yaml#/UUID"
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   pmid:
     type: string
 
   doi:
     type: string
-
-  project_id:
-    $ref: "_terms.yaml#/project_id/common"
-    type: string
-
-  created_datetime:
-    $ref: "_definitions.yaml#/datetime"
-
-  updated_datetime:
-    $ref: "_definitions.yaml#/datetime"
 
   files:
     $ref: "_definitions.yaml#/to_many"
