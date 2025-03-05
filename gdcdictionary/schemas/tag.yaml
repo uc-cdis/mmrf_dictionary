@@ -115,6 +115,6 @@ properties:
       - Unpaired_LogR
       - v1
       - v2
-    enumDef:
-      exon:
-        $ref: "_terms_enum.yaml#/exon/tag/name"
+##    enumDef:
+##      exon:
+##        $ref: "_terms_enum.yaml#/exon/tag/name"

@@ -1570,8 +1570,8 @@ properties:
       - unknown
       - not reported
       - not allowed to collect
-    deprecated_enum:
-      - unknown
+##    deprecated_enum:
+##      - unknown
     # enumDef:
     #   hispanic or latino:
     #     $ref: "_terms_enum.yaml#/hispanic_or_latino/common"

@@ -946,15 +946,15 @@ properties:
       - "No"
       - Unknown
       - Not Reported
-    enumDef:
-      "Yes":
-        $ref: "_terms_enum.yaml#/yes/common"
-      "No":
-        $ref: "_terms_enum.yaml#/no/common"
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      "Yes":
+##        $ref: "_terms_enum.yaml#/yes/common"
+##      "No":
+##        $ref: "_terms_enum.yaml#/no/common"
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   bmi:
     $ref: "_terms.yaml#/bmi/common"
@@ -986,13 +986,13 @@ properties:
       - Transfusion Recipient
       - Unknown
       - Not Reported
-    enumDef:
-      None:
-        $ref: "_terms_enum.yaml#/none/common"
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      None:
+##        $ref: "_terms_enum.yaml#/none/common"
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   comorbidities:
     $ref: "_terms.yaml#/comorbidities/common"
@@ -1180,9 +1180,9 @@ properties:
         - Other
         - Unknown
         - Not Reported
-    enumDef:
-      Pneumonia, NOS:
-        $ref: "_terms_enum.yaml#/pneumonia_nos/common"
+##    enumDef:
+##      Pneumonia, NOS:
+##        $ref: "_terms_enum.yaml#/pneumonia_nos/common"
 
   comorbidity:
     $ref: "_terms.yaml#/comorbidity/common"
@@ -1367,17 +1367,17 @@ properties:
       - Other
       - Unknown
       - Not Reported
-    enumDef:
-      Cancer:
-        $ref: "_terms_enum.yaml#/cancer/common"
-      Epstein-Barr Virus:
-        $ref: "_terms_enum.yaml#/epsteinbarr_virus/common"
-      Other:
-        $ref: "_terms_enum.yaml#/other/common"
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Cancer:
+##        $ref: "_terms_enum.yaml#/cancer/common"
+##      Epstein-Barr Virus:
+##        $ref: "_terms_enum.yaml#/epsteinbarr_virus/common"
+##      Other:
+##        $ref: "_terms_enum.yaml#/other/common"
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   comorbidity_method_of_diagnosis:
     $ref: "_terms.yaml#/comorbidity_method_of_diagnosis/common"
@@ -1387,11 +1387,11 @@ properties:
       - Radiology
       - Unknown
       - Not Reported
-    enumDef:
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   days_to_adverse_event:
     $ref: "_terms.yaml#/days_to_adverse_event/common"
@@ -1464,13 +1464,13 @@ properties:
       - Other
       - Unknown
       - Not Reported
-    enumDef:
-      Other:
-        $ref: "_terms_enum.yaml#/other/common"
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Other:
+##        $ref: "_terms_enum.yaml#/other/common"
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   discontiguous_lesion_count:
     $ref: "_terms.yaml#/discontiguous_lesion_count/common"
@@ -1513,11 +1513,11 @@ properties:
       - WT-With Tumor
       - Unknown
       - Not Reported
-    enumDef:
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   dlco_ref_predictive_percent:
     $ref: "_terms.yaml#/dlco_ref_predictive_percent/common"
@@ -1536,11 +1536,11 @@ properties:
       - "5"
       - Unknown
       - Not Reported
-    enumDef:
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   evidence_of_progression_type:
     $ref: "_terms.yaml#/evidence_of_progression_type/common"
@@ -1627,15 +1627,15 @@ properties:
       - "No"
       - Unknown
       - Not Reported
-    enumDef:
-      "Yes":
-        $ref: "_terms_enum.yaml#/yes/common"
-      "No":
-        $ref: "_terms_enum.yaml#/no/common"
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      "Yes":
+##        $ref: "_terms_enum.yaml#/yes/common"
+##      "No":
+##        $ref: "_terms_enum.yaml#/no/common"
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   height:
     $ref: "_terms.yaml#/height/common"
@@ -1649,15 +1649,15 @@ properties:
       - "No"
       - Unknown
       - Not Reported
-    enumDef:
-      "Yes":
-        $ref: "_terms_enum.yaml#/yes/common"
-      "No":
-        $ref: "_terms_enum.yaml#/no/common"
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      "Yes":
+##        $ref: "_terms_enum.yaml#/yes/common"
+##      "No":
+##        $ref: "_terms_enum.yaml#/no/common"
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   histologic_progression:
     $ref: "_terms.yaml#/histologic_progression/common"
@@ -1674,13 +1674,13 @@ properties:
       - "No"
       - Unknown
       - Not Reported
-    enumDef:
-      "Yes":
-        $ref: "_terms_enum.yaml#/yes/common"
-      "No":
-        $ref: "_terms_enum.yaml#/no/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      "Yes":
+##        $ref: "_terms_enum.yaml#/yes/common"
+##      "No":
+##        $ref: "_terms_enum.yaml#/no/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   history_of_tumor_type:
     $ref: "_terms.yaml#/history_of_tumor_type/common"
@@ -1703,11 +1703,11 @@ properties:
       - Progestin and Estrogen
       - Unknown
       - Not Reported
-    enumDef:
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   hormonal_contraceptive_use:
     $ref: "_terms.yaml#/hormonal_contraceptive_use/common"
@@ -1717,11 +1717,11 @@ properties:
       - Never Used
       - Unknown
       - Not Reported
-    enumDef:
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   hormone_replacement_therapy_type:
     $ref: "_terms.yaml#/hormone_replacement_therapy_type/common"
@@ -1731,11 +1731,11 @@ properties:
       - Progesterone only
       - Unknown
       - Not Reported
-    enumDef:
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   hpv_positive_type:
     $ref: "_terms.yaml#/hpv_positive_type/common"
@@ -1763,13 +1763,13 @@ properties:
       - Other
       - Unknown
       - Not Reported
-    enumDef:
-      Other:
-        $ref: "_terms_enum.yaml#/other/common"
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Other:
+##        $ref: "_terms_enum.yaml#/other/common"
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   hysterectomy_margins_involved:
     $ref: "_terms.yaml#/hysterectomy_margins_involved/common"
@@ -1781,13 +1781,13 @@ properties:
       - Vagina
       - Unknown
       - Not Reported
-    enumDef:
-      None:
-        $ref: "_terms_enum.yaml#/none/common"
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      None:
+##        $ref: "_terms_enum.yaml#/none/common"
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   hysterectomy_type:
     $ref: "_terms.yaml#/hysterectomy_type/common"
@@ -1798,11 +1798,11 @@ properties:
       - Simple Hysterectomy
       - Unknown
       - Not Reported
-    enumDef:
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   imaging_anatomic_site:
     $ref: "_terms.yaml#/imaging_anatomic_site/common"
@@ -1816,9 +1816,9 @@ properties:
         - Pleura
         - Unknown
         - Not Reported
-    enumDef:
-      Lymph Node:
-        $ref: "_terms_enum.yaml#/lymph_node_nos/common"
+##    enumDef:
+##      Lymph Node:
+##        $ref: "_terms_enum.yaml#/lymph_node_nos/common"
 
   imaging_findings:
     $ref: "_terms.yaml#/imaging_findings/common"
@@ -1853,15 +1853,15 @@ properties:
       - Positive
       - Unknown
       - Not Reported
-    enumDef:
-      Negative:
-        $ref: "_terms_enum.yaml#/negative/common"
-      Positive:
-        $ref: "_terms_enum.yaml#/positive/common"
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Negative:
+##        $ref: "_terms_enum.yaml#/negative/common"
+##      Positive:
+##        $ref: "_terms_enum.yaml#/positive/common"
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   imaging_suv:
     $ref: "_terms.yaml#/imaging_suv/common"
@@ -1882,9 +1882,9 @@ properties:
       - Ultrasound
       - Unknown
       - Not Reported
-    enumDef:
-      Ultrasound:
-        $ref: "_terms_enum.yaml#/ultrasound/common"
+##    enumDef:
+##      Ultrasound:
+##        $ref: "_terms_enum.yaml#/ultrasound/common"
 
   immunosuppressive_treatment_type:
     $ref: "_terms.yaml#/immunosuppressive_treatment_type/common"
@@ -1897,15 +1897,15 @@ properties:
       - Other
       - Unknown
       - Not Reported
-    enumDef:
-      None:
-        $ref: "_terms_enum.yaml#/none/common"
-      Other:
-        $ref: "_terms_enum.yaml#/other/common"
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      None:
+##        $ref: "_terms_enum.yaml#/none/common"
+##      Other:
+##        $ref: "_terms_enum.yaml#/other/common"
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   karnofsky_performance_status:
     $ref: "_terms.yaml#/karnofsky_performance_status/common"
@@ -1923,11 +1923,11 @@ properties:
       - "100"
       - Unknown
       - Not Reported
-    enumDef:
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   menopause_status:
     $ref: "_terms.yaml#/menopause_status/common"
@@ -1937,11 +1937,11 @@ properties:
       - Premenopausal
       - Unknown
       - Not Reported
-    enumDef:
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   nadir_cd4_count:
     $ref: "_terms.yaml#/nadir_cd4_count/common"
@@ -1977,11 +1977,11 @@ properties:
       - Stillbirth
       - Unknown
       - Not Reported
-    enumDef:
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   procedures_performed:
     $ref: "_terms.yaml#/procedures_performed/common"
@@ -1990,11 +1990,11 @@ properties:
       - Endoscopy
       - Unknown
       - Not Reported
-    enumDef:
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   progression_or_recurrence:
     $ref: "_terms.yaml#/progression_or_recurrence/common"
@@ -2003,15 +2003,15 @@ properties:
       - "No"
       - Unknown
       - Not Reported
-    enumDef:
-      "Yes":
-        $ref: "_terms_enum.yaml#/yes/common"
-      "No":
-        $ref: "_terms_enum.yaml#/no/common"
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      "Yes":
+##        $ref: "_terms_enum.yaml#/yes/common"
+##      "No":
+##        $ref: "_terms_enum.yaml#/no/common"
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   progression_or_recurrence_anatomic_site:
     $ref: "_terms.yaml#/progression_or_recurrence_anatomic_site/common"
@@ -2348,25 +2348,25 @@ properties:
       - Waldeyer ring
       - Unknown
       - Not Reported
-    enumDef:
-      Bone marrow:
-        $ref: "_terms_enum.yaml#/bone_marrow/common"
-      Frontal lobe:
-        $ref: "_terms_enum.yaml#/frontal_lobe/common"
-      Occipital lobe:
-        $ref: "_terms_enum.yaml#/occipital_lobe/common"
-      Parietal lobe:
-        $ref: "_terms_enum.yaml#/parietal_lobe/common"
-      Temporal lobe:
-        $ref: "_terms_enum.yaml#/temporal_lobe/common"
-      Uterine adnexa:
-        $ref: "_terms_enum.yaml#/uterine_adnexa/common"
-      Vulva, NOS:
-        $ref: "_terms_enum.yaml#/vulva_nos/common"
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Bone marrow:
+##        $ref: "_terms_enum.yaml#/bone_marrow/common"
+##      Frontal lobe:
+##        $ref: "_terms_enum.yaml#/frontal_lobe/common"
+##      Occipital lobe:
+##        $ref: "_terms_enum.yaml#/occipital_lobe/common"
+##      Parietal lobe:
+##        $ref: "_terms_enum.yaml#/parietal_lobe/common"
+##      Temporal lobe:
+##        $ref: "_terms_enum.yaml#/temporal_lobe/common"
+##      Uterine adnexa:
+##        $ref: "_terms_enum.yaml#/uterine_adnexa/common"
+##      Vulva, NOS:
+##        $ref: "_terms_enum.yaml#/vulva_nos/common"
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   progression_or_recurrence_type:
     $ref: "_terms.yaml#/progression_or_recurrence_type/common"
@@ -2378,11 +2378,11 @@ properties:
       - Regional
       - Unknown
       - Not Reported
-    enumDef:
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   recist_targeted_regions_number:
     $ref: "_terms.yaml#/recist_targeted_regions_number/common"
@@ -2406,13 +2406,13 @@ properties:
       - Unknown
       - Not Reported
       - Not Applicable
-    enumDef:
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
-      Not Applicable:
-        $ref: "_terms_enum.yaml#/not_applicable/common"
+##    enumDef:
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
+##      Not Applicable:
+##        $ref: "_terms_enum.yaml#/not_applicable/common"
 
   risk_factor:
     $ref: "_terms.yaml#/risk_factor/common"
@@ -2593,15 +2593,15 @@ properties:
       - Wagr Syndrome
       - Unknown
       - Not Reported
-    enumDef:
-      Cancer:
-        $ref: "_terms_enum.yaml#/cancer/common"
-      Epstein-Barr Virus:
-        $ref: "_terms_enum.yaml#/epsteinbarr_virus/common"
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Cancer:
+##        $ref: "_terms_enum.yaml#/cancer/common"
+##      Epstein-Barr Virus:
+##        $ref: "_terms_enum.yaml#/epsteinbarr_virus/common"
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   risk_factor_method_of_diagnosis:
     $ref: "_terms.yaml#/risk_factor_method_of_diagnosis/common"
@@ -2618,15 +2618,15 @@ properties:
       - "No"
       - Unknown
       - Not Reported
-    enumDef:
-      "Yes":
-        $ref: "_terms_enum.yaml#/yes/common"
-      "No":
-        $ref: "_terms_enum.yaml#/no/common"
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      "Yes":
+##        $ref: "_terms_enum.yaml#/yes/common"
+##      "No":
+##        $ref: "_terms_enum.yaml#/no/common"
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   risk_factors:
     $ref: "_terms.yaml#/risk_factors/common"
@@ -2810,9 +2810,9 @@ properties:
         - Wagr Syndrome
         - Unknown
         - Not Reported
-    enumDef:
-      Pneumonia, NOS:
-        $ref: "_terms_enum.yaml#/pneumonia_nos/common"
+##    enumDef:
+##      Pneumonia, NOS:
+##        $ref: "_terms_enum.yaml#/pneumonia_nos/common"
 
   scan_tracer_used:
     $ref: "_terms.yaml#/scan_tracer_used/common"
@@ -2883,13 +2883,13 @@ properties:
       - "Yes"
       - "No"
       - Not Reported
-    enumDef:
-      "Yes":
-        $ref: "_terms_enum.yaml#/yes/common"
-      "No":
-        $ref: "_terms_enum.yaml#/no/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      "Yes":
+##        $ref: "_terms_enum.yaml#/yes/common"
+##      "No":
+##        $ref: "_terms_enum.yaml#/no/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   undescended_testis_corrected_age:
     $ref: "_terms.yaml#/undescended_testis_corrected_age/common"
@@ -2904,9 +2904,9 @@ properties:
       - Left
       - Right
       - Not Reported
-    enumDef:
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   undescended_testis_corrected_method:
     $ref: "_terms.yaml#/undescended_testis_corrected_method/common"
@@ -2916,9 +2916,9 @@ properties:
       - Spontaneous Descent
       - Testis Removed
       - Not Reported
-    enumDef:
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   undescended_testis_history:
     $ref: "_terms.yaml#/undescended_testis_history/common"
@@ -2926,13 +2926,13 @@ properties:
       - "Yes"
       - "No"
       - Not Reported
-    enumDef:
-      "Yes":
-        $ref: "_terms_enum.yaml#/yes/common"
-      "No":
-        $ref: "_terms_enum.yaml#/no/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      "Yes":
+##        $ref: "_terms_enum.yaml#/yes/common"
+##      "No":
+##        $ref: "_terms_enum.yaml#/no/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   undescended_testis_history_laterality:
     $ref: "_terms.yaml#/undescended_testis_history_laterality/common"
@@ -2941,9 +2941,9 @@ properties:
       - Left
       - Right
       - Not Reported
-    enumDef:
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   viral_hepatitis_serologies:
     $ref: "_terms.yaml#/viral_hepatitis_serologies/common"
@@ -2958,11 +2958,11 @@ properties:
       - Hepatitis C Virus RNA
       - Unknown
       - Not Reported
-    enumDef:
-      Unknown:
-        $ref: "_terms_enum.yaml#/unknown/common"
-      Not Reported:
-        $ref: "_terms_enum.yaml#/not_reported/common"
+##    enumDef:
+##      Unknown:
+##        $ref: "_terms_enum.yaml#/unknown/common"
+##      Not Reported:
+##        $ref: "_terms_enum.yaml#/not_reported/common"
 
   weight:
     $ref: "_terms.yaml#/weight/common"
