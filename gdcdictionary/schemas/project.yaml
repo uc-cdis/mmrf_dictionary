@@ -33,6 +33,7 @@ links:
 
 required:
   - code
+  - type
   - name
   - state
   - programs

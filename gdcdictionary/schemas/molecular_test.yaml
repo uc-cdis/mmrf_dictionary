@@ -48,6 +48,7 @@ links:
 
 required:
   - submitter_id
+  - type
   - gene_symbol
   - molecular_analysis_method
   - test_result

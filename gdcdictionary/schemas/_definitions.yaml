@@ -245,6 +245,8 @@ data_file_properties:
     description: >-
       Optional comment about why the file is in the current state, mainly for invalid state.
     type: string
+  object_id:
+    $ref: "#/object_id"
 
 workflow_properties:
   $ref: "#/ubiquitous_properties"

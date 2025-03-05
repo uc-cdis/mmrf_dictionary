@@ -34,6 +34,7 @@ links:
 
 required:
   - submitter_id
+  - type
   - age_at_diagnosis
   - morphology
   - primary_diagnosis
