@@ -25,6 +25,12 @@ systemProperties:
   - error_type
 
 links:
+  - name: core_metadata_collections
+    backref: files
+    label: data_from
+    target_type: core_metadata_collection
+    multiplicity: many_to_one
+    required: false
   - exclusive: false
     required: true
     subgroup:
@@ -200,4 +206,8 @@ properties:
   #   $ref: "_definitions.yaml#/to_one"
 
   described_cases:
+    $ref: "_definitions.yaml#/to_one"
+
+  core_metadata_collections:
+    description: The submitter_id or id of the core_metadata_collection to which the data_file belongs, i.e., a link to a record in the parent node.
     $ref: "_definitions.yaml#/to_one"

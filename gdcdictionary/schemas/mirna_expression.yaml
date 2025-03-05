@@ -31,6 +31,12 @@ links:
     target_type: mirna_expression_workflow
     multiplicity: many_to_one
     required: true
+  - name: core_metadata_collections
+    backref: mirna_expressions
+    label: data_from
+    target_type: core_metadata_collection
+    multiplicity: many_to_one
+    required: false
 
 required:
   - submitter_id
@@ -79,4 +85,8 @@ properties:
     $ref: "read_group.yaml#/properties/platform"
 
   mirna_expression_workflows:
+    $ref: "_definitions.yaml#/to_one"
+
+  core_metadata_collections:
+    description: The submitter_id or id of the core_metadata_collection to which the data_file belongs, i.e., a link to a record in the parent node.
     $ref: "_definitions.yaml#/to_one"
