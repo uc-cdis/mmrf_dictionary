@@ -33,6 +33,7 @@ links:
 
 required:
   - submitter_id
+  - type
   - workflow_link
   - workflow_type
 

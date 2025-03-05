@@ -39,6 +39,7 @@ links:
 
 required:
   - submitter_id
+  - type
   - disease_type
   - primary_site
 

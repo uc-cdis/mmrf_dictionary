@@ -33,6 +33,7 @@ links:
 
 required:
   - code
+  - type
   - name
   - state
   - programs
@@ -43,6 +44,12 @@ uniqueKeys:
   - [code]
 
 properties:
+
+  availability_type:
+    description: "Is the project open or restricted?"
+    enum:
+      - Open
+      - Restricted
 
   type:
     type: string

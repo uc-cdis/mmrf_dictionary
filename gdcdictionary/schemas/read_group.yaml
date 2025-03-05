@@ -32,6 +32,7 @@ links:
 
 required:
   - submitter_id
+  - type
   - aliquots
   - experiment_name
   - sequencing_center

@@ -47,6 +47,7 @@ links:
 
 required:
   - submitter_id
+  - type
   - workflow_link
 
 uniqueKeys:

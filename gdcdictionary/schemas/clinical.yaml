@@ -33,6 +33,7 @@ links:
 required:
   - id
   - submitter_id
+  - type
   - cases
 
 uniqueKeys:

@@ -367,6 +367,7 @@ links:
 
 required:
   - submitter_id
+  - type
   - category
 
 uniqueKeys:

@@ -1,14 +1,15 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "program"
-title: Program
+id: "tissue_source_site"
+title: Tissue Source Site
 type: object
 namespace: https://gdc.cancer.gov
 category: administrative
 project: '*'
 program: '*'
 description: >-
-  A broad framework of goals to be achieved. (NCIt C52647)
+  A clinical site that collects and provides patient samples and clinical metadata
+  for research use. (NCIt C103264)
 additionalProperties: false
 submittable: false
 downloadable: false
@@ -20,14 +21,9 @@ systemProperties:
 
 links: []
 
-required:
-  - name
-  - type
-  - dbgap_accession_number
-
 uniqueKeys:
   - [id]
-  - [name]
+  - [code]
 
 properties:
 
@@ -36,13 +32,25 @@ properties:
 
   id:
     $ref: "_definitions.yaml#/UUID"
+    description: >-
+      UUID for the Tissue Source Site
 
   name:
     description: >-
-      Full name/title of the program.
+      Name of the source site.
     type: string
 
-  dbgap_accession_number:
+  code:
     description: >-
-      The dbgap accession number provided for the program.
+      TCGA-provided TSS code.
+    type: string
+
+  project:
+    description: >-
+      Study name of the project.
+    type: string
+
+  bcr_id:
+    description: >-
+      TCGA-provided BCR id.
     type: string

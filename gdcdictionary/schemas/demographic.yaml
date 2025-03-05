@@ -33,6 +33,7 @@ links:
 
 required:
   - submitter_id
+  - type
   - ethnicity
   - gender
   - race
