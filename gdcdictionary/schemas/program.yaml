@@ -34,7 +34,7 @@ properties:
     type: string
 
   id:
-    $ref: "_definitions.yaml#/uuid"
+    $ref: "_definitions.yaml#/UUID"
 
   name:
     description: >-
