@@ -44,6 +44,12 @@ uniqueKeys:
 
 properties:
 
+  availability_type:
+    description: "Is the project open or restricted?"
+    enum:
+      - Open
+      - Restricted
+
   type:
     type: string
 
