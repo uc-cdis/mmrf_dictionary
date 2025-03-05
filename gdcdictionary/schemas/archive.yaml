@@ -55,6 +55,10 @@ required:
   - state
   - revision
   - projects
+  - data_category
+  - data_format
+  - data_type
+
 
 uniqueKeys:
   - [id]

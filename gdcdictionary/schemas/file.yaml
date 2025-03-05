@@ -23,6 +23,9 @@ systemProperties:
   - file_state
   - state
   - error_type
+  - data_category
+  - data_format
+  - data_type
 
 links:
   - name: core_metadata_collections
