@@ -90,12 +90,13 @@ links:
         target_type: archive
         multiplicity: many_to_one
         required: false
-      - name: described_cases
-        backref: describing_files
-        label: describes
-        target_type: case
-        multiplicity: many_to_one
-        required: false
+      # Gen3 does not support duplicate links
+      # - name: described_cases
+      #   backref: describing_files
+      #   label: describes
+      #   target_type: case
+      #   multiplicity: many_to_one
+      #   required: false
   # - name: tags
   #   backref: files
   #   label: memeber_of
@@ -210,8 +211,8 @@ properties:
   # platforms:
   #   $ref: "_definitions.yaml#/to_one"
 
-  described_cases:
-    $ref: "_definitions.yaml#/to_one"
+  # described_cases:
+  #   $ref: "_definitions.yaml#/to_one"
 
   core_metadata_collections:
     description: The submitter_id or id of the core_metadata_collection to which the data_file belongs, i.e., a link to a record in the parent node.
