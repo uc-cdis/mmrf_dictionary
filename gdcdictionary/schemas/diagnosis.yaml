@@ -1322,7 +1322,9 @@ properties:
 
   diagnosis_is_primary_disease:
     $ref: "_terms.yaml#/diagnosis_is_primary_disease/common"
-    type: boolean
+    oneOf:
+      - type: boolean
+      - type: "null"
 
   double_expressor_lymphoma:
     $ref: "_terms.yaml#/double_expressor_lymphoma/common"
