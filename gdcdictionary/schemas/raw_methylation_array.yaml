@@ -25,18 +25,21 @@ systemProperties:
   - error_type
 
 links:
-  - name: aliquots
-    backref: raw_methylation_arrays
-    label: data_from
-    target_type: aliquot
-    multiplicity: many_to_one
-    required: false
-  - name: core_metadata_collections
-    backref: raw_methylation_arrays
-    label: data_from
-    target_type: core_metadata_collection
-    multiplicity: many_to_one
-    required: false
+  - exclusive: false
+    required: true
+    subgroup:
+    - name: aliquots
+      backref: raw_methylation_arrays
+      label: data_from
+      target_type: aliquot
+      multiplicity: many_to_one
+      required: false
+    - name: core_metadata_collections
+      backref: raw_methylation_arrays
+      label: data_from
+      target_type: core_metadata_collection
+      multiplicity: many_to_one
+      required: false
 
 
 required:

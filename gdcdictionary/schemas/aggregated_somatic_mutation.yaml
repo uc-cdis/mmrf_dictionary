@@ -26,24 +26,27 @@ systemProperties:
   - error_type
 
 links:
-  - name: projects
-    backref: aggregated_somatic_mutations
-    label: derived_from
-    target_type: project
-    multiplicity: many_to_one
-    required: false
-  - name: somatic_aggregation_workflows
-    backref: aggregated_somatic_mutations
-    label: data_from
-    target_type: somatic_aggregation_workflow
-    multiplicity: one_to_one
-    required: false
-  - name: core_metadata_collections
-    backref: aggregated_somatic_mutations
-    label: data_from
-    target_type: core_metadata_collection
-    multiplicity: many_to_one
-    required: false
+  - exclusive: false
+    required: true
+    subgroup:
+    - name: projects
+      backref: aggregated_somatic_mutations
+      label: derived_from
+      target_type: project
+      multiplicity: many_to_one
+      required: false
+    - name: somatic_aggregation_workflows
+      backref: aggregated_somatic_mutations
+      label: data_from
+      target_type: somatic_aggregation_workflow
+      multiplicity: one_to_one
+      required: false
+    - name: core_metadata_collections
+      backref: aggregated_somatic_mutations
+      label: data_from
+      target_type: core_metadata_collection
+      multiplicity: many_to_one
+      required: false
 
 required:
   - submitter_id

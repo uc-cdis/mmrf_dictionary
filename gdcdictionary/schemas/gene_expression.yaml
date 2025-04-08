@@ -25,18 +25,21 @@ systemProperties:
   - error_type
 
 links:
-  - name: rna_expression_workflows
-    backref: gene_expressions
-    label: data_from
-    target_type: rna_expression_workflow
-    multiplicity: many_to_one
-    required: false
-  - name: core_metadata_collections
-    backref: gene_expressionsw
-    label: data_from
-    target_type: core_metadata_collection
-    multiplicity: many_to_one
-    required: false
+  - exclusive: false
+    required: true
+    subgroup:
+    - name: rna_expression_workflows
+      backref: gene_expressions
+      label: data_from
+      target_type: rna_expression_workflow
+      multiplicity: many_to_one
+      required: false
+    - name: core_metadata_collections
+      backref: gene_expressionsw
+      label: data_from
+      target_type: core_metadata_collection
+      multiplicity: many_to_one
+      required: false
 
 
 required:

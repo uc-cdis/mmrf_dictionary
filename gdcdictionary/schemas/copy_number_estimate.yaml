@@ -26,33 +26,36 @@ systemProperties:
   - error_type
 
 links:
-  - exclusive: true
-    required: false
+  - exclusive: false
+    required: true
     subgroup:
-      - name: copy_number_variation_workflows
-        backref: copy_number_estimates
-        label: derived_from
-        target_type: copy_number_variation_workflow
-        multiplicity: one_to_one
-        required: false
-      - name: genomic_profile_harmonization_workflows
-        backref: copy_number_estimates
-        label: derived_from
-        target_type: genomic_profile_harmonization_workflow
-        multiplicity: one_to_one
-        required: false
-      - name: somatic_copy_number_workflows
-        backref: copy_number_estimates
-        label: derived_from
-        target_type: somatic_copy_number_workflow
-        multiplicity: one_to_one
-        required: false
-  - name: core_metadata_collections
-    backref: copy_number_estimates
-    label: data_from
-    target_type: core_metadata_collection
-    multiplicity: many_to_one
-    required: false
+    - exclusive: true
+      required: false
+      subgroup:
+        - name: copy_number_variation_workflows
+          backref: copy_number_estimates
+          label: derived_from
+          target_type: copy_number_variation_workflow
+          multiplicity: one_to_one
+          required: false
+        - name: genomic_profile_harmonization_workflows
+          backref: copy_number_estimates
+          label: derived_from
+          target_type: genomic_profile_harmonization_workflow
+          multiplicity: one_to_one
+          required: false
+        - name: somatic_copy_number_workflows
+          backref: copy_number_estimates
+          label: derived_from
+          target_type: somatic_copy_number_workflow
+          multiplicity: one_to_one
+          required: false
+    - name: core_metadata_collections
+      backref: copy_number_estimates
+      label: data_from
+      target_type: core_metadata_collection
+      multiplicity: many_to_one
+      required: false
 
 
 required:
