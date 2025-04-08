@@ -32,18 +32,18 @@ links:
     - exclusive: true
       required: false
       subgroup:
-        - name: somatic_mutation_calling_workflows
-          backref: simple_somatic_mutations
-          label: data_from
-          target_type: somatic_mutation_calling_workflow
-          multiplicity: many_to_one
-          required: false
-        - name: genomic_profile_harmonization_workflows
-          backref: simple_somatic_mutations
-          label: data_from
-          target_type: genomic_profile_harmonization_workflow
-          multiplicity: one_to_one
-          required: false
+      - name: somatic_mutation_calling_workflows
+        backref: simple_somatic_mutations
+        label: data_from
+        target_type: somatic_mutation_calling_workflow
+        multiplicity: many_to_one
+        required: false
+      - name: genomic_profile_harmonization_workflows
+        backref: simple_somatic_mutations
+        label: data_from
+        target_type: genomic_profile_harmonization_workflow
+        multiplicity: one_to_one
+        required: false
     - name: core_metadata_collections
       backref: simple_somatic_mutations
       label: data_from
@@ -61,7 +61,6 @@ required:
   - data_category
   - data_format
   - data_type
-  - experimental_strategy
 
 uniqueKeys:
   - [id]

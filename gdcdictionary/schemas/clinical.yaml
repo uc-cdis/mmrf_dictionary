@@ -31,7 +31,6 @@ links:
     required: true
 
 required:
-  - id
   - submitter_id
   - type
   - cases

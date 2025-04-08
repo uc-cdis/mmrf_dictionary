@@ -51,8 +51,6 @@ required:
   - data_category
   - data_format
   - data_type
-  - experimental_strategy
-  - platform
 
 uniqueKeys:
   - [id]

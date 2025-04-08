@@ -34,16 +34,11 @@ links:
 required:
   - submitter_id
   - type
+  - diagnoses
 
 uniqueKeys:
   - [id]
   - [project_id, submitter_id]
-
-deprecated:
-  - epithelioid_cell_percent
-  - extrascleral_extension
-  - size_extraocular_nodule
-  - spindle_cell_percent
 
 properties:
 

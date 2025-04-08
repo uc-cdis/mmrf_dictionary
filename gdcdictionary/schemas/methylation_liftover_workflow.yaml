@@ -34,8 +34,7 @@ links:
 required:
   - submitter_id
   - type
-  - workflow_link
-  - workflow_type
+  - submitted_methylation_beta_values
 
 uniqueKeys:
   - [id]

@@ -35,22 +35,11 @@ links:
 required:
   - submitter_id
   - type
-  - morphology
-  - primary_diagnosis
-  - site_of_resection_or_biopsy
-  - tissue_or_organ_of_origin
+  - cases
 
 uniqueKeys:
   - [id]
   - [project_id, submitter_id]
-
-deprecated:
-  - metastasis_at_diagnosis_site
-  - micropapillary_features
-  - mitotic_count
-  - papillary_renal_cell_type
-  - pregnant_at_diagnosis
-  - primary_disease
 
 properties:
 

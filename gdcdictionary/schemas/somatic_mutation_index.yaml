@@ -31,24 +31,24 @@ links:
     - exclusive: true
       required: false
       subgroup:
-        - name: simple_somatic_mutations
-          backref: somatic_mutation_indexes
-          label: derived_from
-          target_type: simple_somatic_mutation
-          multiplicity: one_to_one
-          required: false
-        - name: annotated_somatic_mutations
-          backref: somatic_mutation_indexes
-          label: derived_from
-          target_type: annotated_somatic_mutation
-          multiplicity: one_to_one
-          required: false
-        - name: structural_variations
-          backref: somatic_mutation_indexes
-          label: derived_from
-          target_type: structural_variation
-          multiplicity: one_to_one
-          required: false
+      - name: simple_somatic_mutations
+        backref: somatic_mutation_indexes
+        label: derived_from
+        target_type: simple_somatic_mutation
+        multiplicity: one_to_one
+        required: false
+      - name: annotated_somatic_mutations
+        backref: somatic_mutation_indexes
+        label: derived_from
+        target_type: annotated_somatic_mutation
+        multiplicity: one_to_one
+        required: false
+      - name: structural_variations
+        backref: somatic_mutation_indexes
+        label: derived_from
+        target_type: structural_variation
+        multiplicity: one_to_one
+        required: false
     - name: core_metadata_collections
       backref: somatic_mutation_indexes
       label: data_from

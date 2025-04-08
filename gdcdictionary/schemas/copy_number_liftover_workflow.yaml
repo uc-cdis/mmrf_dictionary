@@ -34,8 +34,7 @@ links:
 required:
   - submitter_id
   - type
-  - workflow_link
-  - workflow_type
+  - submitted_tangent_copy_numbers
 
 uniqueKeys:
   - [id]

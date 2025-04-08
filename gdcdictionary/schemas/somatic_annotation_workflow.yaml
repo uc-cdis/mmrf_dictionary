@@ -34,8 +34,7 @@ links:
 required:
   - submitter_id
   - type
-  - workflow_link
-  - workflow_type
+  - simple_somatic_mutations
 
 uniqueKeys:
   - [id]

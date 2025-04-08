@@ -55,13 +55,9 @@ required:
   - file_name
   - file_size
   - md5sum
-  - state
-  - revision
-  - projects
   - data_category
   - data_format
   - data_type
-
 
 uniqueKeys:
   - [id]

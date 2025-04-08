@@ -31,18 +31,18 @@ links:
     - exclusive: true
       required: false
       subgroup:
-        - name: genomic_profile_harmonization_workflows
-          backref: structural_variations
-          label: data_from
-          target_type: genomic_profile_harmonization_workflow
-          multiplicity: one_to_one
-          required: false
-        - name: structural_variant_calling_workflows
-          backref: structural_variations
-          label: data_from
-          target_type: structural_variant_calling_workflow
-          multiplicity: many_to_one
-          required: false
+      - name: genomic_profile_harmonization_workflows
+        backref: structural_variations
+        label: data_from
+        target_type: genomic_profile_harmonization_workflow
+        multiplicity: one_to_one
+        required: false
+      - name: structural_variant_calling_workflows
+        backref: structural_variations
+        label: data_from
+        target_type: structural_variant_calling_workflow
+        multiplicity: many_to_one
+        required: false
     - name: core_metadata_collections
       backref: structural_variations
       label: data_from
