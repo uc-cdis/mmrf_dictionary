@@ -33,8 +33,7 @@ links:
 required:
   - submitter_id
   - type
-  - workflow_link
-  - workflow_type
+  - raw_methylation_arrays
 
 uniqueKeys:
   - [id]

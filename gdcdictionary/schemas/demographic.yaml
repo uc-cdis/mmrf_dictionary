@@ -34,18 +34,12 @@ links:
 required:
   - submitter_id
   - type
-  - ethnicity
-  - gender
-  - race
-  - vital_status
+  - cases
 
 uniqueKeys:
   - [id]
   - [project_id, submitter_id]
 
-deprecated:
-  - premature_at_birth
-  - weeks_gestation_at_birth
 
 properties:
 
@@ -53,11 +47,9 @@ properties:
 
   age_at_index:
     $ref: "_terms.yaml#/age_at_index/common"
-    oneOf:
-      - type: integer
-        maximum: 89
-        minimum: 0
-      - type: "null"
+    type: integer
+    maximum: 89
+    minimum: 0
 
   age_is_obfuscated:
     $ref: "_terms.yaml#/age_is_obfuscated/common"
@@ -1721,10 +1713,9 @@ properties:
 
   year_of_birth:
     $ref: "_terms.yaml#/year_of_birth/common"
-    oneOf:
-      - type: integer
-        minimum: 1900
-      - type: "null"
+    type: integer
+    minimum: 1900
+
 
   year_of_death:
     $ref: "_terms.yaml#/year_of_death/common"

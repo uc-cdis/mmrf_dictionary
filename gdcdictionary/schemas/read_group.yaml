@@ -34,28 +34,10 @@ required:
   - submitter_id
   - type
   - aliquots
-  - experiment_name
-  - sequencing_center
-  - platform
-  - library_selection
-  - library_strategy
-  - library_name
-  - is_paired_end
-  - read_length
-  - read_group_name
-  - target_capture_kit
 
 uniqueKeys:
   - [id]
   - [project_id, submitter_id]
-
-deprecated:
-  - RIN
-  - target_capture_kit_catalog_number
-  - target_capture_kit_name
-  - target_capture_kit_target_region
-  - target_capture_kit_vendor
-  - target_capture_kit_version
 
 properties:
 
@@ -182,9 +164,7 @@ properties:
 
   is_paired_end:
     $ref: "_terms.yaml#/is_paired_end/common"
-    oneOf:
-      - type: boolean
-      - type: "null"
+    type: boolean
 
   lane_number:
     $ref: "_terms.yaml#/lane_number/common"
@@ -293,10 +273,8 @@ properties:
 
   read_length:
     $ref: "_terms.yaml#/read_length/common"
-    oneOf:
-      - type: integer
-        minimum: 0
-      - type: "null"
+    type: integer
+    minimum: 0
 
   rin:
     $ref: "_terms.yaml#/rin/common"

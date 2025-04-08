@@ -32,23 +32,21 @@ links:
 required:
   - submitter_id
   - type
-  - pmid
-  - doi
   - files
 
 uniqueKeys:
   - [id]
-  - [pmid]
-  - [doi]
 
 properties:
 
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
   pmid:
+    description: "PubMed is an index of the biomedical literature. A PMID, also known as the PubMed reference number, is a number assigned by the NIH National Library of Medicine to papers indexed in PubMed."
     type: string
 
   doi:
+    description: "A DOI, or Digital Object Identifier, is a unique alphanumeric string assigned to a document that provides a permanent link to its location on the internet."
     type: string
 
   files:

@@ -27,24 +27,27 @@ systemProperties:
   - error_type
 
 links:
-  - name: projects
-    backref: archives
-    label: member_of
-    target_type: project
-    multiplicity: many_to_one
+  - exclusive: false
     required: true
-  - name: related_to_files
-    backref: related_archives
-    label: related_to
-    target_type: file
-    multiplicity: one_to_many
-    required: false
-  - name: core_metadata_collections
-    backref: archives
-    label: data_from
-    target_type: core_metadata_collection
-    multiplicity: many_to_one
-    required: false
+    subgroup:
+    - name: projects
+      backref: archives
+      label: member_of
+      target_type: project
+      multiplicity: many_to_one
+      required: false
+    - name: related_to_files
+      backref: related_archives
+      label: related_to
+      target_type: file
+      multiplicity: one_to_many
+      required: false
+    - name: core_metadata_collections
+      backref: archives
+      label: data_from
+      target_type: core_metadata_collection
+      multiplicity: many_to_one
+      required: false
 
 required:
   - submitter_id
@@ -52,13 +55,9 @@ required:
   - file_name
   - file_size
   - md5sum
-  - state
-  - revision
-  - projects
   - data_category
   - data_format
   - data_type
-
 
 uniqueKeys:
   - [id]

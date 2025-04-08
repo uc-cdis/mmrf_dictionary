@@ -43,7 +43,6 @@ links:
 required:
   - submitter_id
   - type
-  - section_location
 
 uniqueKeys:
   - [id]

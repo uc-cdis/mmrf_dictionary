@@ -25,9 +25,12 @@ systemProperties:
   - error_type
 
 links:
-  - exclusive: true
+  - exclusive: false
     required: true
     subgroup:
+    - exclusive: true
+      required: false
+      subgroup:
       - name: genomic_profile_harmonization_workflows
         backref: structural_variations
         label: data_from
@@ -40,12 +43,12 @@ links:
         target_type: structural_variant_calling_workflow
         multiplicity: many_to_one
         required: false
-  - name: core_metadata_collections
-    backref: structural_variations
-    label: data_from
-    target_type: core_metadata_collection
-    multiplicity: many_to_one
-    required: false
+    - name: core_metadata_collections
+      backref: structural_variations
+      label: data_from
+      target_type: core_metadata_collection
+      multiplicity: many_to_one
+      required: false
 
 
 required:

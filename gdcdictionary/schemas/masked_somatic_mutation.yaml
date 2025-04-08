@@ -26,33 +26,36 @@ systemProperties:
   - error_type
 
 links:
-  - name: core_metadata_collections
-    backref: masked_somatic_mutations
-    label: data_from
-    target_type: core_metadata_collection
-    multiplicity: many_to_one
-    required: false
-  - name: projects
-    backref: masked_somatic_mutations
-    label: derived_from
-    target_type: project
-    multiplicity: many_to_one
-    required: false
-  - exclusive: true
+  - exclusive: false
     required: true
     subgroup:
-      - name: genomic_profile_harmonization_workflows
-        backref: masked_somatic_mutations
-        label: data_from
-        target_type: genomic_profile_harmonization_workflow
-        multiplicity: many_to_many
-        required: false
-      - name: somatic_aggregation_workflows
-        backref: masked_somatic_mutations
-        label: data_from
-        target_type: somatic_aggregation_workflow
-        multiplicity: one_to_one
-        required: false
+    - name: core_metadata_collections
+      backref: masked_somatic_mutations
+      label: data_from
+      target_type: core_metadata_collection
+      multiplicity: many_to_one
+      required: false
+    - name: projects
+      backref: masked_somatic_mutations
+      label: derived_from
+      target_type: project
+      multiplicity: many_to_one
+      required: false
+    - exclusive: true
+      required: false
+      subgroup:
+        - name: genomic_profile_harmonization_workflows
+          backref: masked_somatic_mutations
+          label: data_from
+          target_type: genomic_profile_harmonization_workflow
+          multiplicity: many_to_many
+          required: false
+        - name: somatic_aggregation_workflows
+          backref: masked_somatic_mutations
+          label: data_from
+          target_type: somatic_aggregation_workflow
+          multiplicity: one_to_one
+          required: false
 
 required:
   - submitter_id
@@ -63,7 +66,6 @@ required:
   - data_category
   - data_format
   - data_type
-  - experimental_strategy
 
 uniqueKeys:
   - [id]

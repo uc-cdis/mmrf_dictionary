@@ -39,12 +39,6 @@ links:
         target_type: sample
         multiplicity: many_to_many
         required: false
-  # - name: centers
-  #   backref: aliquots
-  #   label: shipped_to
-  #   target_type: center
-  #   multiplicity: many_to_one
-  #   required: false
 
 required:
   - submitter_id

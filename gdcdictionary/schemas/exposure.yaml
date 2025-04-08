@@ -33,18 +33,11 @@ links:
 required:
   - submitter_id
   - type
+  - cases
 
 uniqueKeys:
   - [id]
   - [project_id, submitter_id]
-
-deprecated:
-  - smokeless_tobacco_quit_age
-  - asbestos_exposure
-  - radon_exposure
-  - respirable_crystalline_silica_exposure
-  - years_smoked
-  - coal_dust_exposure
 
 properties:
 

@@ -25,42 +25,45 @@ systemProperties:
   - error_type
 
 links:
-  - exclusive: true
-    required: true
-    subgroup:
-      - name: alignment_cocleaning_workflows
+    - exclusive: false
+      required: true
+      subgroup:
+      - name: core_metadata_collections
         backref: aligned_reads_files
         label: data_from
-        target_type: alignment_cocleaning_workflow
+        target_type: core_metadata_collection
         multiplicity: many_to_one
         required: false
-      - name: alignment_workflows
-        backref: aligned_reads_files
-        label: data_from
-        target_type: alignment_workflow
-        multiplicity: many_to_one
+      - exclusive: true
         required: false
-  - exclusive: true
-    required: false
-    subgroup:
-      - name: submitted_unaligned_reads_files
-        backref: aligned_reads_files
-        label: matched_to
-        target_type: submitted_unaligned_reads
-        multiplicity: one_to_many
+        subgroup:
+        - name: alignment_cocleaning_workflows
+          backref: aligned_reads_files
+          label: data_from
+          target_type: alignment_cocleaning_workflow
+          multiplicity: many_to_one
+          required: false
+        - name: alignment_workflows
+          backref: aligned_reads_files
+          label: data_from
+          target_type: alignment_workflow
+          multiplicity: many_to_one
+          required: false
+      - exclusive: true
         required: false
-      - name: submitted_aligned_reads_files
-        backref: aligned_reads_files
-        label: matched_to
-        target_type: submitted_aligned_reads
-        multiplicity: one_to_one
-        required: false
-  - name: core_metadata_collections
-    backref: aligned_reads_files
-    label: data_from
-    target_type: core_metadata_collection
-    multiplicity: many_to_one
-    required: false
+        subgroup:
+        - name: submitted_unaligned_reads_files
+          backref: aligned_reads_files
+          label: matched_to
+          target_type: submitted_unaligned_reads
+          multiplicity: one_to_many
+          required: false
+        - name: submitted_aligned_reads_files
+          backref: aligned_reads_files
+          label: matched_to
+          target_type: submitted_aligned_reads
+          multiplicity: one_to_one
+          required: false
 
 
 required:
@@ -72,8 +75,6 @@ required:
   - data_category
   - data_format
   - data_type
-  - experimental_strategy
-  - platform
 
 uniqueKeys:
   - [id]

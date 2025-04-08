@@ -25,19 +25,21 @@ systemProperties:
   - error_type
 
 links:
-  - name: copy_number_liftover_workflows
-    backref: filtered_copy_number_segments
-    label: data_from
-    target_type: copy_number_liftover_workflow
-    multiplicity: many_to_one
+  - exclusive: false
     required: true
-  - name: core_metadata_collections
-    backref: filtered_copy_number_segments
-    label: data_from
-    target_type: core_metadata_collection
-    multiplicity: many_to_one
-    required: false
-
+    subgroup:
+    - name: copy_number_liftover_workflows
+      backref: filtered_copy_number_segments
+      label: data_from
+      target_type: copy_number_liftover_workflow
+      multiplicity: many_to_one
+      required: false
+    - name: core_metadata_collections
+      backref: filtered_copy_number_segments
+      label: data_from
+      target_type: core_metadata_collection
+      multiplicity: many_to_one
+      required: false
 
 required:
   - submitter_id
@@ -48,7 +50,6 @@ required:
   - data_category
   - data_format
   - data_type
-  - experimental_strategy
 
 uniqueKeys:
   - [id]

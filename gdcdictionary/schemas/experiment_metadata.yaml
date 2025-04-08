@@ -25,27 +25,30 @@ systemProperties:
   - error_type
 
 links:
-  - exclusive: true
+  - exclusive: false
     required: true
     subgroup:
-      - name: read_groups
-        backref: experiment_metadata_files
-        label: derived_from
-        target_type: read_group
-        multiplicity: many_to_one
-        required: false
-      - name: files
-        backref: experiment_metadata_files
-        label: derived_from
-        target_type: file
-        multiplicity: one_to_many
-        required: false
-  - name: core_metadata_collections
-    backref: experiment_metadata_files
-    label: data_from
-    target_type: core_metadata_collection
-    multiplicity: many_to_one
-    required: false
+    - exclusive: true
+      required: false
+      subgroup:
+        - name: read_groups
+          backref: experiment_metadata_files
+          label: derived_from
+          target_type: read_group
+          multiplicity: many_to_one
+          required: false
+        - name: files
+          backref: experiment_metadata_files
+          label: derived_from
+          target_type: file
+          multiplicity: one_to_many
+          required: false
+    - name: core_metadata_collections
+      backref: experiment_metadata_files
+      label: data_from
+      target_type: core_metadata_collection
+      multiplicity: many_to_one
+      required: false
 
 
 required:

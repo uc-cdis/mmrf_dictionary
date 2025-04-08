@@ -35,24 +35,11 @@ links:
 required:
   - submitter_id
   - type
-  - age_at_diagnosis
-  - morphology
-  - primary_diagnosis
-  - diagnosis_is_primary_disease
-  - site_of_resection_or_biopsy
-  - tissue_or_organ_of_origin
+  - cases
 
 uniqueKeys:
   - [id]
   - [project_id, submitter_id]
-
-deprecated:
-  - metastasis_at_diagnosis_site
-  - micropapillary_features
-  - mitotic_count
-  - papillary_renal_cell_type
-  - pregnant_at_diagnosis
-  - primary_disease
 
 properties:
 
@@ -75,11 +62,9 @@ properties:
 
   age_at_diagnosis:
     $ref: "_terms.yaml#/age_at_diagnosis/common"
-    oneOf:
-      - type: integer
-        maximum: 32872
-        minimum: 0
-      - type: "null"
+    type: integer
+    maximum: 32872
+    minimum: 0
 
   ajcc_clinical_m:
     $ref: "_terms.yaml#/ajcc_clinical_m/common"
@@ -1298,33 +1283,25 @@ properties:
 
   days_to_last_follow_up:
     $ref: "_terms.yaml#/days_to_last_follow_up/common"
-    oneOf:
-      - type: number
-        maximum: 32872
-        minimum: -32872
-      - type: "null"
+    type: number
+    maximum: 32872
+    minimum: -32872
 
   days_to_last_known_disease_status:
     $ref: "_terms.yaml#/days_to_last_known_disease_status/common"
-    oneOf:
-      - type: number
-        maximum: 32872
-        minimum: -32872
-      - type: "null"
+    type: number
+    maximum: 32872
+    minimum: -32872
 
   days_to_recurrence:
     $ref: "_terms.yaml#/days_to_recurrence/common"
-    oneOf:
-      - type: number
-        maximum: 32872
-        minimum: -32872
-      - type: "null"
+    type: number
+    maximum: 32872
+    minimum: -32872
 
   diagnosis_is_primary_disease:
     $ref: "_terms.yaml#/diagnosis_is_primary_disease/common"
-    oneOf:
-      - type: boolean
-      - type: "null"
+    type: boolean
 
   double_expressor_lymphoma:
     $ref: "_terms.yaml#/double_expressor_lymphoma/common"
@@ -15568,11 +15545,10 @@ properties:
 
   year_of_diagnosis:
     $ref: "_terms.yaml#/year_of_diagnosis/common"
-    oneOf:
-      - type: integer
-        maximum: 2050
-        minimum: 1900
-      - type: "null"
+    type: integer
+    maximum: 2050
+    minimum: 1900
+
 
   cases:
     $ref: "_definitions.yaml#/to_one"

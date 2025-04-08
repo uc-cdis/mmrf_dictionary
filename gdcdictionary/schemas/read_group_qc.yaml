@@ -23,9 +23,12 @@ systemProperties:
   - state
 
 links:
-  - exclusive: true
+  - exclusive: false
     required: true
     subgroup:
+    - exclusive: true
+      required: false
+      subgroup:
       - name: submitted_aligned_reads_files
         backref: read_group_qcs
         label: data_from
@@ -38,17 +41,16 @@ links:
         target_type: submitted_unaligned_reads
         multiplicity: one_to_many
         required: false
-  - name: read_groups
-    backref: read_group_qcs
-    label: generated_from
-    target_type: read_group
-    multiplicity: many_to_one
-    required: true
+    - name: read_groups
+      backref: read_group_qcs
+      label: generated_from
+      target_type: read_group
+      multiplicity: many_to_one
+      required: false
 
 required:
   - submitter_id
   - type
-  - workflow_link
 
 uniqueKeys:
   - [id]
