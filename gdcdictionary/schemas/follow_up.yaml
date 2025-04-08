@@ -45,7 +45,6 @@ links:
 required:
   - submitter_id
   - type
-  - days_to_follow_up
   - cases
 
 uniqueKeys:

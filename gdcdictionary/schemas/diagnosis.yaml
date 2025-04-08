@@ -35,10 +35,8 @@ links:
 required:
   - submitter_id
   - type
-  - age_at_diagnosis
   - morphology
   - primary_diagnosis
-  - diagnosis_is_primary_disease
   - site_of_resection_or_biopsy
   - tissue_or_organ_of_origin
 

@@ -40,8 +40,6 @@ required:
   - library_selection
   - library_strategy
   - library_name
-  - is_paired_end
-  - read_length
   - read_group_name
   - target_capture_kit
 
