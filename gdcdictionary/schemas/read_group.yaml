@@ -182,9 +182,7 @@ properties:
 
   is_paired_end:
     $ref: "_terms.yaml#/is_paired_end/common"
-    oneOf:
-      - type: boolean
-      - type: "null"
+    type: boolean
 
   lane_number:
     $ref: "_terms.yaml#/lane_number/common"
@@ -293,10 +291,8 @@ properties:
 
   read_length:
     $ref: "_terms.yaml#/read_length/common"
-    oneOf:
-      - type: integer
-        minimum: 0
-      - type: "null"
+    type: integer
+    minimum: 0
 
   rin:
     $ref: "_terms.yaml#/rin/common"

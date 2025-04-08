@@ -30,7 +30,7 @@ links:
     label: derived_from
     target_type: case
     multiplicity: many_to_many
-    required: true
+    required: false
   - name: archives
     backref: biospecimen_supplements
     label: member_of

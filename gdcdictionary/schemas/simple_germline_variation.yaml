@@ -30,7 +30,7 @@ links:
     label: data_from
     target_type: germline_mutation_calling_workflow
     multiplicity: many_to_one
-    required: true
+    required: false
   - name: core_metadata_collections
     backref: simple_germline_variations
     label: data_from

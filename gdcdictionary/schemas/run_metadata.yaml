@@ -26,7 +26,7 @@ systemProperties:
 
 links:
   - exclusive: true
-    required: true
+    required: false
     subgroup:
       - name: read_groups
         backref: run_metadata_files

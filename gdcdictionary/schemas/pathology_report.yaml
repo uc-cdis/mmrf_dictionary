@@ -30,7 +30,7 @@ links:
     label: derived_from
     target_type: sample
     multiplicity: one_to_one
-    required: true
+    required: false
   - name: core_metadata_collections
     backref: pathology_reports
     label: data_from

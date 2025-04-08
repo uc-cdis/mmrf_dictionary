@@ -32,7 +32,7 @@ links:
     multiplicity: many_to_one
     required: false
   - exclusive: true
-    required: true
+    required: false
     subgroup:
       - name: methylation_array_harmonization_workflows
         backref: methylation_beta_values

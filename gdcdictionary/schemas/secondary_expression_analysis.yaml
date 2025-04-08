@@ -30,7 +30,7 @@ links:
     label: data_from
     target_type: expression_analysis_workflow
     multiplicity: many_to_one
-    required: true
+    required: false
   - name: core_metadata_collections
     backref: secondary_expression_analyses
     label: data_from

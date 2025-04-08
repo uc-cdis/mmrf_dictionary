@@ -30,7 +30,7 @@ links:
     label: data_from
     target_type: mirna_expression_workflow
     multiplicity: many_to_one
-    required: true
+    required: false
   - name: core_metadata_collections
     backref: mirna_expressions
     label: data_from

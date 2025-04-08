@@ -27,7 +27,7 @@ systemProperties:
 
 links:
   - exclusive: true
-    required: true
+    required: false
     subgroup:
       - name: somatic_mutation_calling_workflows
         backref: simple_somatic_mutations

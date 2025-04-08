@@ -30,7 +30,7 @@ links:
     label: data_from
     target_type: slide
     multiplicity: many_to_many
-    required: true
+    required: false
   - name: core_metadata_collections
     backref: slide_images
     label: data_from

@@ -27,7 +27,7 @@ systemProperties:
 
 links:
   - exclusive: true
-    required: true
+    required: false
     subgroup:
       - name: copy_number_variation_workflows
         backref: copy_number_estimates

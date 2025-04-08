@@ -26,7 +26,7 @@ systemProperties:
 
 links:
   - exclusive: true
-    required: true
+    required: false
     subgroup:
       - name: portions
         backref: protein_expressions

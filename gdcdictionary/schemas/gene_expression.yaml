@@ -30,7 +30,7 @@ links:
     label: data_from
     target_type: rna_expression_workflow
     multiplicity: many_to_one
-    required: true
+    required: false
   - name: core_metadata_collections
     backref: gene_expressionsw
     label: data_from

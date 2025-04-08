@@ -26,7 +26,7 @@ systemProperties:
 
 links:
   - exclusive: true
-    required: true
+    required: false
     subgroup:
       - name: somatic_annotation_workflows
         backref: annotated_somatic_mutations

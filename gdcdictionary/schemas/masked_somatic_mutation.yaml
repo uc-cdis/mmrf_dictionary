@@ -39,7 +39,7 @@ links:
     multiplicity: many_to_one
     required: false
   - exclusive: true
-    required: true
+    required: false
     subgroup:
       - name: genomic_profile_harmonization_workflows
         backref: masked_somatic_mutations

@@ -31,7 +31,7 @@ links:
     label: data_from
     target_type: methylation_array_harmonization_workflow
     multiplicity: many_to_one
-    required: true
+    required: false
   - name: core_metadata_collections
     backref: masked_methylation_arrays
     label: data_from

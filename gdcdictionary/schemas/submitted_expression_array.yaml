@@ -30,7 +30,7 @@ links:
     label: derived_from
     target_type: aliquot
     multiplicity: many_to_one
-    required: true
+    required: false
   - name: core_metadata_collections
     backref: submitted_expression_arrays
     label: data_from

@@ -37,7 +37,7 @@ links:
     label: data_from
     target_type: somatic_aggregation_workflow
     multiplicity: one_to_one
-    required: true
+    required: false
   - name: core_metadata_collections
     backref: aggregated_somatic_mutations
     label: data_from
@@ -55,7 +55,6 @@ required:
   - data_format
   - data_type
   - experimental_strategy
-  - somatic_aggregation_workflows
 
 uniqueKeys:
   - [id]

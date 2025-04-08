@@ -30,7 +30,7 @@ links:
     label: derived_from
     target_type: simple_germline_variation
     multiplicity: one_to_one
-    required: true
+    required: false
   - name: core_metadata_collections
     backref: germline_mutation_indexes
     label: data_from
