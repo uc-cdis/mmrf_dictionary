@@ -10,7 +10,7 @@ program: '*'
 description: >-
   Data file containing copy number information that has been lifted over and filtered.
 additionalProperties: false
-submittable: false
+submittable: true
 downloadable: true
 previous_version_downloadable: true
 validators: null

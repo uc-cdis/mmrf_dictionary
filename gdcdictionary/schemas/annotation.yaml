@@ -12,9 +12,9 @@ description: >-
   motif, link), that has been associated with data or other types of information.
   (NCIt C44272)
 additionalProperties: false
-submittable: false
-downloadable: false
-previous_version_downloadable: false
+submittable: true
+downloadable: true
+previous_version_downloadable: true
 validators: null
 
 systemProperties:

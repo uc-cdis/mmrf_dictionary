@@ -11,9 +11,9 @@ description: >-
   Any specifically defined piece of work that is undertaken or attempted to meet a
   single requirement. (NCIt C47885)
 additionalProperties: false
-submittable: false
-downloadable: false
-previous_version_downloadable: false
+submittable: true
+downloadable: true
+previous_version_downloadable: true
 validators: null
 
 systemProperties:

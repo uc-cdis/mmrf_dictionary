@@ -11,9 +11,9 @@ description: >-
   Metadata for the Copy Number Variation pipeline used to estimate copy number changes
   from different molecular data sources.
 additionalProperties: false
-submittable: false
-downloadable: false
-previous_version_downloadable: false
+submittable: true
+downloadable: true
+previous_version_downloadable: true
 validators: null
 
 systemProperties:

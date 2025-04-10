@@ -10,9 +10,9 @@ program: '*'
 description: >-
   A set of related records (either written or electronic) kept together. (NCIt C42883)
 additionalProperties: false
-submittable: false
+submittable: true
 downloadable: true
-previous_version_downloadable: false
+previous_version_downloadable: true
 validators: null
 
 systemProperties:

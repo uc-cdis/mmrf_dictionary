@@ -11,9 +11,9 @@ description: >-
   Metadata for the expression analysis workflow used to generate additional analysis
   on top of the gene expression data.
 additionalProperties: false
-submittable: false
-downloadable: false
-previous_version_downloadable: false
+submittable: true
+downloadable: true
+previous_version_downloadable: true
 validators: null
 
 systemProperties:

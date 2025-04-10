@@ -11,7 +11,7 @@ description: >-
   MAF/TSV files that contain a filtered subset of somatic mutations, which may be
   open access.
 additionalProperties: false
-submittable: false
+submittable: true
 downloadable: true
 previous_version_downloadable: true
 validators: null

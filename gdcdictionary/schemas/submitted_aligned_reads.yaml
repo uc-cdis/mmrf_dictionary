@@ -11,8 +11,8 @@ description: >-
   Data file containing aligned reads that are used as input to GDC workflows.
 additionalProperties: false
 submittable: true
-downloadable: false
-previous_version_downloadable: false
+downloadable: true
+previous_version_downloadable: true
 validators: null
 
 systemProperties:

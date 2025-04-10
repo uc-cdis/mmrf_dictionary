@@ -11,9 +11,9 @@ description: >-
   Metadata for the germline mutation calling pipeline used to call variants in the
   GDC DNA-Seq pipelines.
 additionalProperties: false
-submittable: false
-downloadable: false
-previous_version_downloadable: false
+submittable: true
+downloadable: true
+previous_version_downloadable: true
 validators: null
 
 systemProperties:
