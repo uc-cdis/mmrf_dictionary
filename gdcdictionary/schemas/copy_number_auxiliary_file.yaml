@@ -10,7 +10,7 @@ program: '*'
 description: >-
   Data file related to the copy number pipeline that contains any outputs not strictly defined in other nodes
 additionalProperties: false
-submittable: false
+submittable: true
 downloadable: true
 previous_version_downloadable: true
 validators: null

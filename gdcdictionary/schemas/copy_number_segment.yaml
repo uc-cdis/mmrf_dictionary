@@ -11,7 +11,7 @@ description: >-
   Data file containing the copy number data from a copy number liftover workflow.
   Contains all copy numbers detected.
 additionalProperties: false
-submittable: false
+submittable: true
 downloadable: true
 previous_version_downloadable: true
 validators: null

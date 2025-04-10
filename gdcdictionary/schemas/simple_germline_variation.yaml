@@ -10,7 +10,7 @@ program: '*'
 description: >-
   Data file containing simple germline variations called from aligned reads.
 additionalProperties: false
-submittable: false
+submittable: true
 downloadable: true
 previous_version_downloadable: true
 validators: null

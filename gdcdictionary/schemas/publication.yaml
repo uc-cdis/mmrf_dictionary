@@ -10,7 +10,7 @@ program: '*'
 description: >-
   Publication for a legacy file (deprecated).
 additionalProperties: false
-submittable: false
+submittable: true
 downloadable: true
 previous_version_downloadable: true
 validators: null

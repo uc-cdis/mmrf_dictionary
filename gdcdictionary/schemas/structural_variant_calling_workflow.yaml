@@ -11,9 +11,9 @@ description: >-
   Metadata for the structural variant calling pipeline used to call structural variants
   in the GDC DNA-Seq or RNA-Seq pipelines.
 additionalProperties: false
-submittable: false
-downloadable: false
-previous_version_downloadable: false
+submittable: true
+downloadable: true
+previous_version_downloadable: true
 validators: null
 
 systemProperties:

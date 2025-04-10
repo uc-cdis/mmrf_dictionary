@@ -13,8 +13,8 @@ description: >-
   determination of any kind; the concise results of such an investigation.
 additionalProperties: false
 submittable: true
-downloadable: false
-previous_version_downloadable: false
+downloadable: true
+previous_version_downloadable: true
 validators: null
 
 systemProperties:

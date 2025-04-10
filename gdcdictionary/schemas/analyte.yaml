@@ -12,8 +12,8 @@ description: >-
   or analyte, intended for further analysis.
 additionalProperties: false
 submittable: true
-downloadable: false
-previous_version_downloadable: false
+downloadable: true
+previous_version_downloadable: true
 validators: null
 
 systemProperties:

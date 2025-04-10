@@ -10,7 +10,7 @@ program: '*'
 description: >-
   MAF or VCF files that contain the annotated somatic mutations calls.
 additionalProperties: false
-submittable: false
+submittable: true
 downloadable: true
 previous_version_downloadable: true
 validators: null

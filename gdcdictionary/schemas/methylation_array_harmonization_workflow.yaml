@@ -10,9 +10,9 @@ program: '*'
 description: >-
   Metadata for workflow used to harmonized methylation arrays.
 additionalProperties: false
-submittable: false
-downloadable: false
-previous_version_downloadable: false
+submittable: true
+downloadable: true
+previous_version_downloadable: true
 validators: null
 
 systemProperties:

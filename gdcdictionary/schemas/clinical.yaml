@@ -10,9 +10,9 @@ program: '*'
 description: >-
   Data obtained through patient examination or treatment. (GDC synonym for NCIt C15783)
 additionalProperties: false
-submittable: false
-downloadable: false
-previous_version_downloadable: false
+submittable: true
+downloadable: true
+previous_version_downloadable: true
 validators: null
 
 systemProperties:

@@ -11,9 +11,9 @@ description: >-
   Metadata for the somatic mutation annotation pipeline used to annotate the mutations
   called in the GDC DNA-Seq pipelines.
 additionalProperties: false
-submittable: false
-downloadable: false
-previous_version_downloadable: false
+submittable: true
+downloadable: true
+previous_version_downloadable: true
 validators: null
 
 systemProperties:

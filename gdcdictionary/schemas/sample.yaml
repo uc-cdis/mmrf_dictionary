@@ -15,8 +15,8 @@ description: >-
   cells, tissues, organs, body fluids, embryos, and body excretory products.
 additionalProperties: false
 submittable: true
-downloadable: false
-previous_version_downloadable: false
+downloadable: true
+previous_version_downloadable: true
 validators: null
 
 systemProperties:
