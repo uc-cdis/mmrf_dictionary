@@ -142,12 +142,6 @@ links:
         target_type: family_history
         multiplicity: many_to_many
         required: false
-      - name: files
-        backref: annotations
-        label: annotates
-        target_type: file
-        multiplicity: many_to_many
-        required: false
       - name: filtered_copy_number_segments
         backref: annotations
         label: annotates
@@ -505,9 +499,6 @@ properties:
     $ref: "_definitions.yaml#/to_many"
 
   family_histories:
-    $ref: "_definitions.yaml#/to_many"
-
-  files:
     $ref: "_definitions.yaml#/to_many"
 
   filtered_copy_number_segments:

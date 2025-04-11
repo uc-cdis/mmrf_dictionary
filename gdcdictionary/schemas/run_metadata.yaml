@@ -28,21 +28,12 @@ links:
   - exclusive: false
     required: true
     subgroup:
-    - exclusive: true
+    - name: read_groups
+      backref: run_metadata_files
+      label: derived_from
+      target_type: read_group
+      multiplicity: many_to_one
       required: false
-      subgroup:
-        - name: read_groups
-          backref: run_metadata_files
-          label: derived_from
-          target_type: read_group
-          multiplicity: many_to_one
-          required: false
-        - name: files
-          backref: run_metadata_files
-          label: derived_from
-          target_type: file
-          multiplicity: one_to_many
-          required: false
     - name: core_metadata_collections
       backref: run_metadata_files
       label: data_from
@@ -87,9 +78,6 @@ properties:
 
   read_groups:
     $ref: "_definitions.yaml#/to_one"
-
-  files:
-    $ref: "_definitions.yaml#/to_many"
 
   core_metadata_collections:
     description: The submitter_id or id of the core_metadata_collection to which the data_file belongs, i.e., a link to a record in the parent node.
