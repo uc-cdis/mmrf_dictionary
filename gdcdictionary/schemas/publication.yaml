@@ -4,7 +4,7 @@ id: "publication"
 title: Publication
 type: object
 namespace: https://gdc.cancer.gov
-category: TBD
+category: administrative
 project: '*'
 program: '*'
 description: >-
@@ -22,17 +22,17 @@ systemProperties:
   - updated_datetime
 
 links:
-  - name: files
+  - name: projects
     backref: publications
     label: refers_to
-    target_type: file
-    multiplicity: many_to_many
+    target_type: project
+    multiplicity: many_to_one
     required: true
 
 required:
   - submitter_id
   - type
-  - files
+  - projects
 
 uniqueKeys:
   - [id]
@@ -49,5 +49,6 @@ properties:
     description: "A DOI, or Digital Object Identifier, is a unique alphanumeric string assigned to a document that provides a permanent link to its location on the internet."
     type: string
 
-  files:
-    $ref: "_definitions.yaml#/to_many"
+  projects:
+    $ref: "_definitions.yaml#/to_one_project"
+
