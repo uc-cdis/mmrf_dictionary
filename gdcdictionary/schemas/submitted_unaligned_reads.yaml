@@ -8,7 +8,7 @@ category: data_file
 project: '*'
 program: '*'
 description: >-
-  Data file containing unaligned reads that have not been GDC Harmonized.
+  Data file containing unaligned reads that have not been harmonized.
 additionalProperties: false
 submittable: true
 downloadable: true
@@ -38,6 +38,12 @@ links:
       backref: submitted_unaligned_reads_files
       label: data_from
       target_type: core_metadata_collection
+      multiplicity: many_to_one
+      required: false
+    - name: aliquot
+      backref: submitted_unaligned_reads_files
+      label: data_from
+      target_type: aliquot
       multiplicity: many_to_one
       required: false
 
