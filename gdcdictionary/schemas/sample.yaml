@@ -405,6 +405,48 @@ properties:
     $ref: "_terms.yaml#/catalog_reference/common"
     type: string
 
+  collection_event:
+    $ref: "_terms.yaml#/collection_event/common"
+    enum:
+      - Year 1
+      - Year 2
+      - Year 3
+      - Year 4
+      - Year 5
+      - Year 6 
+      - Year 7
+      - Month 3
+      - Month 6
+      - Month 9
+      - Month 15
+      - Month 18
+      - Month 21
+      - Month 27
+      - Month 30
+      - Month 33
+      - Month 39
+      - Month 42
+      - Month 45
+      - Month 51
+      - Month 54
+      - Month 66
+      - Month 78
+      - Month 90
+      - Unknown
+      - Baseline
+      - 100 Post ASCT
+      - Other
+      - Other: Confirmation
+      - Other: Disease Assessment
+      - Other: Follow up
+      - Other: Pre-Transplant
+      - Other: Prior to stem cell transplant
+      - Post-transplant
+      - Relapse/Progression
+      - Remission/Response
+      - Restaging
+      - Screening
+  
   composition:
     $ref: "_terms.yaml#/composition/common"
     enum:
@@ -822,6 +864,15 @@ properties:
     type: number
     minimum: 0
 
+  site:
+    $ref: "_terms.yaml#/site/common"
+    enum:
+      - BIDMC
+      - EMORY
+      - MAYO
+      - MSSM
+      - WUSTL
+  
   specimen_type:
     $ref: "_terms.yaml#/specimen_type/common"
     enum:
@@ -831,6 +882,7 @@ properties:
       - 3D Neurosphere
       - 3D Organoid
       - Adherent Cell Line
+      - Bone Marrow
       - Bone Marrow Components NOS
       - Bone Marrow NOS
       - Buccal Cells
@@ -848,6 +900,7 @@ properties:
       - Lymphoid
       - Mixed Adherent Suspension
       - Mononuclear Cells from Bone Marrow
+      - Peripheral Blood
       - Peripheral Blood Components NOS
       - Peripheral Blood NOS
       - Peripheral Whole Blood
@@ -872,6 +925,16 @@ properties:
     type: number
     minimum: 0
 
+  tissue:
+    $ref: "_terms.yaml#/tissue/common"
+    enum:
+      - CD138_neg MNC
+      - CD138_pos MNC
+      - CD3_pos MNC
+      - Whole
+      - WBC
+      - Plasma
+  
   tissue_collection_type:
     $ref: "_terms.yaml#/tissue_collection_type/common"
     enum:
