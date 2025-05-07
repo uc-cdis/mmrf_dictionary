@@ -1217,6 +1217,17 @@ cog_rhabdomyosarcoma_risk_group:
       cde_version: 1.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=6133604%20and%20ver_nr=1.0"
 
+collection_event:
+  common:
+    description: >-
+      The event triggering collection of the sample
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 columnar_mucosa_present:
   common:
     description: >-
@@ -5594,6 +5605,17 @@ size_extraocular_nodule:
       term_id: C185261
       term_version: 24.07e
 
+site:
+  common:
+    description: >-
+      The site of sample analysis
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 size_selection_range:
   common:
     description: >-
@@ -5967,6 +5989,17 @@ timepoint_category:
       cde_id: C68568
       cde_version: 22.11d
       term_url: "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C68568"
+
+tissue:
+  common:
+    description: >-
+      Cellular description of the tissue in the sample
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
 
 tissue_collection_type:
   common:
