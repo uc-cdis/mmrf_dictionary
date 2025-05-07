@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
 id: "submitted_unaligned_reads"
-title: Submitted Unaligned Reads
+title: Unaligned Reads
 type: object
 namespace: https://gdc.cancer.gov
 category: data_file
 project: '*'
 program: '*'
 description: >-
-  Data file containing unaligned reads that have not been GDC Harmonized.
+  Data file containing unaligned reads that have not been harmonized.
 additionalProperties: false
 submittable: true
 downloadable: true
@@ -38,6 +38,12 @@ links:
       backref: submitted_unaligned_reads_files
       label: data_from
       target_type: core_metadata_collection
+      multiplicity: many_to_one
+      required: false
+    - name: aliquot
+      backref: submitted_unaligned_reads_files
+      label: data_from
+      target_type: aliquot
       multiplicity: many_to_one
       required: false
 
@@ -77,7 +83,7 @@ properties:
       - FASTQ
 
   experimental_strategy:
-    $ref: "_terms.yaml#/experimental_strategy/common"
+    $ref: "_terms.yaml#/experimental_strategy/common" 
     enum:
       - ATAC-Seq
       - Bisulfite-Seq
@@ -87,7 +93,9 @@ properties:
       - miRNA-Seq
       - RNA-Seq
       - scATAC-Seq
+      - scBCR-seq
       - scRNA-Seq
+      - scTCR-seq
       - Targeted Sequencing
       - WGS
       - WXS
