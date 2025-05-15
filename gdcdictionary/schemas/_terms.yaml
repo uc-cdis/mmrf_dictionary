@@ -1474,6 +1474,17 @@ data_type:
       cde_version:
       term_url:
 
+dataset:
+  common:
+    description: >-
+      the dataset identifier for aliquots (correlates experimental strategy identified in aliquot)
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 datetime:
   common:
     description: >-
@@ -5554,6 +5565,17 @@ single_cell_library:
       cde_version:
       term_url:
 
+site_code:
+  common:
+    description: >-
+      The site of aliquot analysis, encoded
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 site_of_resection_or_biopsy:
   common:
     description: >-
@@ -5604,17 +5626,6 @@ size_extraocular_nodule:
       term_url: "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185261"
       term_id: C185261
       term_version: 24.07e
-
-site:
-  common:
-    description: >-
-      The site of sample analysis
-    termDef:
-      term:
-      source:
-      cde_id:
-      cde_version:
-      term_url:
 
 size_selection_range:
   common:
