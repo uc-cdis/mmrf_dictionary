@@ -446,7 +446,7 @@ properties:
       - Remission/Response
       - Restaging
       - Screening
-  
+
   composition:
     $ref: "_terms.yaml#/composition/common"
     enum:
@@ -767,6 +767,9 @@ properties:
       - Blood Derived Normal
       - Bone Marrow Normal
       - Buccal Cell Normal
+      - CD138neg
+      - CD138pos
+      - CD3pos
       - Cell Line Derived Xenograft Tissue
       - Cell Lines
       - Control Analyte
@@ -787,6 +790,7 @@ properties:
       - Neoplasms of Uncertain and Unknown Behavior
       - Next Generation Cancer Model
       - Next Generation Cancer Model Expanded Under Non-conforming Conditions
+      - Plasma
       - Pleural Effusion
       - Post neo-adjuvant therapy
       - Primary Blood Derived Cancer - Bone Marrow
@@ -805,6 +809,8 @@ properties:
       - Total RNA
       - Tumor
       - Tumor Adjacent Normal - Post Neo-adjuvant Therapy
+      - WBC
+      - Whole Blood
       - Xenograft Tissue
       - Unknown
       - Not Reported
@@ -872,7 +878,7 @@ properties:
       - MAYO
       - MSSM
       - WUSTL
-  
+
   specimen_type:
     $ref: "_terms.yaml#/specimen_type/common"
     enum:
@@ -925,16 +931,6 @@ properties:
     type: number
     minimum: 0
 
-  tissue:
-    $ref: "_terms.yaml#/tissue/common"
-    enum:
-      - CD138_neg MNC
-      - CD138_pos MNC
-      - CD3_pos MNC
-      - Whole
-      - WBC
-      - Plasma
-  
   tissue_collection_type:
     $ref: "_terms.yaml#/tissue_collection_type/common"
     enum:
@@ -948,6 +944,7 @@ properties:
       - Normal
       - Peritumoral
       - Tumor
+      - Tumor Microenvironment
       - Unknown
       - Not Reported
       - Not Allowed To Collect
@@ -1031,15 +1028,19 @@ properties:
     enum:
       - Metastatic
       - New Primary
+      - Newly-diagnosed Multiple Myeloma (NDMM)
       - NOS
       - Premalignant
       - Primary
       - Recurrence
+      - Relapse/Refractory Multiple Myeloma (RRMM)
+      - Remission
       - Xenograft
       - Unknown
       - Not Reported
       - Not Applicable
       - Not Allowed To Collect
+
 ##    deprecated_enum:
 ##      - Not Allowed To Collect
 ##    enumDef:
