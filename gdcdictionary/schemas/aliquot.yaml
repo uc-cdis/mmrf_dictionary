@@ -137,10 +137,10 @@ properties:
     $ref: "_terms.yaml#/site_code/common"
     enum:
       - Unknown
-      - 1
-      - 2
-      - 3
-      - 4
+      - Site 1
+      - Site 2
+      - Site 3
+      - Site 4
 
   source_center:
     $ref: "_terms.yaml#/source_center/common"
