@@ -39,6 +39,12 @@ links:
         target_type: submitted_unaligned_reads
         multiplicity: many_to_many
         required: false
+      - name: aliquot
+        backref: alignment_workflow
+        label: data_from
+        target_type: alignment_workflow
+        multiplicity: one_to_one
+        required: false
 
 required:
   - submitter_id
@@ -77,3 +83,7 @@ properties:
 
   submitted_unaligned_reads_files:
     $ref: "_definitions.yaml#/to_many"
+
+  aliquot:
+    description: The submitter_id or id of the aliquot that links to the alignment workflow record, i.e., a link to a record in the aliquot node.
+    $ref: "_definitions.yaml#/to_one"
