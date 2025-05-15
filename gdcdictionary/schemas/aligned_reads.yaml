@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
 id: "aligned_reads"
-title: Aligned Reads
+title: Sequencing Reads
 type: object
 namespace: https://gdc.cancer.gov
 category: data_file
 project: '*'
 program: '*'
 description: >-
-  Data file containing aligned reads 
+  Data file containing aligned and unaligned reads
 additionalProperties: false
 submittable: true
 downloadable: true
@@ -124,10 +124,13 @@ properties:
     $ref: "_terms.yaml#/data_type/common"
     enum:
       - Aligned Reads
+      - Unaligned Reads
 
   experimental_strategy:
     $ref: "_terms.yaml#/experimental_strategy/common"
     enum:
+      - 3' scRNA-seq
+      - 5' scRNA-seq
       - ATAC-Seq
       - Bisulfite-Seq
       - ChIP-Seq
@@ -136,7 +139,9 @@ properties:
       - miRNA-Seq
       - RNA-Seq
       - scATAC-Seq
+      - scBCR-seq
       - scRNA-Seq
+      - scTCR-seq
       - Targeted Sequencing
       - Validation
       - WGS
