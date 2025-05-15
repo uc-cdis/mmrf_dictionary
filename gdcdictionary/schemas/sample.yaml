@@ -870,15 +870,6 @@ properties:
     type: number
     minimum: 0
 
-  site:
-    $ref: "_terms.yaml#/site/common"
-    enum:
-      - BIDMC
-      - EMORY
-      - MAYO
-      - MSSM
-      - WUSTL
-
   specimen_type:
     $ref: "_terms.yaml#/specimen_type/common"
     enum:
