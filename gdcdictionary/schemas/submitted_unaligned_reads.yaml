@@ -40,12 +40,6 @@ links:
       target_type: core_metadata_collection
       multiplicity: many_to_one
       required: false
-    - name: aliquot
-      backref: submitted_unaligned_reads_files
-      label: data_from
-      target_type: aliquot
-      multiplicity: many_to_one
-      required: false
 
 
 required:
@@ -83,7 +77,7 @@ properties:
       - FASTQ
 
   experimental_strategy:
-    $ref: "_terms.yaml#/experimental_strategy/common" 
+    $ref: "_terms.yaml#/experimental_strategy/common"
     enum:
       - ATAC-Seq
       - Bisulfite-Seq
