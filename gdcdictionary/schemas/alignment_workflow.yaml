@@ -76,6 +76,7 @@ properties:
       - STAR 2-Pass Chimeric
       - STAR 2-Pass Genome
       - STAR 2-Pass Transcriptome
+      - Unaligned
       - zUMIs - Smart-Seq2
 
   submitted_aligned_reads_files:
