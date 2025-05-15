@@ -81,6 +81,18 @@ properties:
     type: number
     minimum: 0
 
+  dataset:
+    $ref: "_terms.yaml#/dataset/common"
+    enum:
+      - CID-001
+      - CID-005
+
+  experimental_strategy:
+    $ref: "_terms.yaml#/experimental_strategy/common"
+    enum:
+      - 3' scRNA-seq
+      - 5' scRNA-seq
+
   no_matched_normal_low_pass_wgs:
     $ref: "_terms.yaml#/no_matched_normal_low_pass_wgs/common"
     type: boolean
@@ -101,10 +113,6 @@ properties:
     type: boolean
     default: false
 
-  source_center:
-    $ref: "_terms.yaml#/source_center/common"
-    type: string
-
   selected_normal_wxs:
     $ref: "_terms.yaml#/selected_normal_wxs/common"
     type: boolean
@@ -124,6 +132,20 @@ properties:
     $ref: "_terms.yaml#/selected_normal_low_pass_wgs/common"
     type: boolean
     default: false
+
+  site_code:
+    $ref: "_terms.yaml#/site_code/common"
+    enum:
+      - Unknown
+      - 1
+      - 2
+      - 3
+      - 4
+
+  source_center:
+    $ref: "_terms.yaml#/source_center/common"
+    type: string
+
 
   analytes:
     $ref: "_definitions.yaml#/to_one"
