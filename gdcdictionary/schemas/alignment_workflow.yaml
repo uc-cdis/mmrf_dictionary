@@ -42,7 +42,7 @@ links:
       - name: aliquot
         backref: alignment_workflow
         label: data_from
-        target_type: alignment_workflow
+        target_type: aliquot
         multiplicity: one_to_one
         required: false
 
