@@ -11,21 +11,38 @@ description: >-
   A clinical site that collects and provides patient samples and clinical metadata
   for research use. (NCIt C103264)
 additionalProperties: false
-submittable: false
-downloadable: false
+submittable: true
+downloadable: true
 previous_version_downloadable: false
 validators: null
 
 systemProperties:
   - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
 
-links: []
+links:
+  - name: cases
+    backref: tissue_source_sites
+    label: describes
+    target_type: case
+    multiplicity: one_to_one
+    required: true
+
+required:
+  - submitter_id
+  - type
+  - cases
 
 uniqueKeys:
   - [id]
-  - [code]
+  - [project_id, submitter_id]
 
 properties:
+
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   type:
     type: string
@@ -54,3 +71,6 @@ properties:
     description: >-
       TCGA-provided BCR id.
     type: string
+
+  cases:
+    $ref: "_definitions.yaml#/to_one"
