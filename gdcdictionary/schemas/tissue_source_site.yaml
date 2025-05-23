@@ -18,6 +18,10 @@ validators: null
 
 systemProperties:
   - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
 
 links:
   - name: cases
