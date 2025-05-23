@@ -42,6 +42,8 @@ uniqueKeys:
 
 properties:
 
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
   type:
     type: string
 
