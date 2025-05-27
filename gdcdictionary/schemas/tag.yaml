@@ -24,7 +24,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: tissue_source_sites
+    backref: tags
     label: describes
     target_type: case
     multiplicity: one_to_one
