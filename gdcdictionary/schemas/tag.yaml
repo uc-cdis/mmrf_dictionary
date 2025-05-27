@@ -32,6 +32,9 @@ links:
 
 required:
   - name
+  - submitter_id
+  - type
+  - cases
 
 uniqueKeys:
   - [id]
