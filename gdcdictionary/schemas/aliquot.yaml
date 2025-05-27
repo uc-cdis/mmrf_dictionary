@@ -141,6 +141,7 @@ properties:
       - Site 2
       - Site 3
       - Site 4
+      - Site 5
 
   source_center:
     $ref: "_terms.yaml#/source_center/common"
