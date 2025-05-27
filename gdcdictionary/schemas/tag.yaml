@@ -10,24 +10,40 @@ program: '*'
 description: >-
   Any comment or other information about an entity (deprecated).
 additionalProperties: false
-submittable: false
-downloadable: false
+submittable: true
+downloadable: true
 previous_version_downloadable: false
 validators: null
 
 systemProperties:
   - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
 
-links: []
+links:
+  - name: cases
+    backref: tags
+    label: describes
+    target_type: case
+    multiplicity: one_to_one
+    required: true
 
 required:
   - name
+  - submitter_id
+  - type
+  - cases
 
 uniqueKeys:
   - [id]
   - [name]
+  - [project_id, submitter_id]
 
 properties:
+
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   type:
     type: string
@@ -115,6 +131,9 @@ properties:
       - Unpaired_LogR
       - v1
       - v2
+
+  cases:
+    $ref: "_definitions.yaml#/to_one"
 ##    enumDef:
 ##      exon:
 ##        $ref: "_terms_enum.yaml#/exon/tag/name"
