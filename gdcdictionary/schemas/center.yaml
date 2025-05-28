@@ -39,6 +39,8 @@ required:
   - short_name
   - center_type
   - aliquots
+  - submitter_id
+  - type
 
 uniqueKeys:
   - [id]
