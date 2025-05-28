@@ -34,42 +34,42 @@ links:
         target_type: core_metadata_collection
         multiplicity: many_to_one
         required: false
-      - name: aliquots
-        backref: files
-        label: data_from
-        target_type: aliquot
-        multiplicity: many_to_many
-        required: false
-      - name: analytes
-        backref: files
-        label: data_from
-        target_type: analyte
-        multiplicity: many_to_many
-        required: false
-      - name: cases
-        backref: files
-        label: data_from
-        target_type: case
-        multiplicity: many_to_many
-        required: false
-      - name: portions
-        backref: files
-        label: data_from
-        target_type: portion
-        multiplicity: many_to_many
-        required: false
-      - name: samples
-        backref: files
-        label: data_from
-        target_type: sample
-        multiplicity: many_to_many
-        required: false
-      - name: slides
-        backref: files
-        label: data_from
-        target_type: slide
-        multiplicity: many_to_many
-        required: false
+      # - name: aliquots
+      #   backref: files
+      #   label: data_from
+      #   target_type: aliquot
+      #   multiplicity: many_to_many
+      #   required: false
+      # - name: analytes
+      #   backref: files
+      #   label: data_from
+      #   target_type: analyte
+      #   multiplicity: many_to_many
+      #   required: false
+      # - name: cases
+      #   backref: files
+      #   label: data_from
+      #   target_type: case
+      #   multiplicity: many_to_many
+      #   required: false
+      # - name: portions
+      #   backref: files
+      #   label: data_from
+      #   target_type: portion
+      #   multiplicity: many_to_many
+      #   required: false
+      # - name: samples
+      #   backref: files
+      #   label: data_from
+      #   target_type: sample
+      #   multiplicity: many_to_many
+      #   required: false
+      # - name: slides
+      #   backref: files
+      #   label: data_from
+      #   target_type: slide
+      #   multiplicity: many_to_many
+      #   required: false
       - name: archives
         backref: files
         label: member_of
@@ -107,50 +107,50 @@ properties:
     $ref: "_terms.yaml#/data_format/common"
     type: string
 
-  aliquots:
-    $ref: "_definitions.yaml#/to_many"
+  # aliquots:
+  #   $ref: "_definitions.yaml#/to_many"
 
-  analytes:
-    $ref: "_definitions.yaml#/to_many"
+  # analytes:
+  #   $ref: "_definitions.yaml#/to_many"
 
-  cases:
-    $ref: "_definitions.yaml#/to_many"
+  # cases:
+  #   $ref: "_definitions.yaml#/to_many"
 
   # derived_files:
   #   $ref: "_definitions.yaml#/to_many"
 
-  portions:
-    $ref: "_definitions.yaml#/to_many"
+  # portions:
+  #   $ref: "_definitions.yaml#/to_many"
 
-  samples:
-    $ref: "_definitions.yaml#/to_many"
+  # samples:
+  #   $ref: "_definitions.yaml#/to_many"
 
-  slides:
-    $ref: "_definitions.yaml#/to_many"
+  # slides:
+  #   $ref: "_definitions.yaml#/to_many"
 
   # related_files:
   #   $ref: "_definitions.yaml#/to_many"
 
-  # tags:
-  #   $ref: "_definitions.yaml#/to_many"
+  tags:
+    $ref: "_definitions.yaml#/to_many"
 
   archives:
     $ref: "_definitions.yaml#/to_one"
 
-  # data_subtypes:
-  #   $ref: "_definitions.yaml#/to_one"
+  data_subtypes:
+    $ref: "_definitions.yaml#/to_one"
 
-  # data_formats:
-  #   $ref: "_definitions.yaml#/to_one"
+  data_formats:
+    $ref: "_definitions.yaml#/to_one"
 
-  # experimental_strategies:
-  #   $ref: "_definitions.yaml#/to_one"
+  experimental_strategies:
+    $ref: "_definitions.yaml#/to_one"
 
-  # centers:
-  #   $ref: "_definitions.yaml#/to_one"
+  centers:
+    $ref: "_definitions.yaml#/to_one"
 
-  # platforms:
-  #   $ref: "_definitions.yaml#/to_one"
+  platforms:
+    $ref: "_definitions.yaml#/to_one"
 
   # described_cases:
   #   $ref: "_definitions.yaml#/to_one"

@@ -23,10 +23,10 @@ systemProperties:
   - state
 
 links:
-  - name: cases
+  - name: files
     backref: tags
     label: describes
-    target_type: case
+    target_type: file
     multiplicity: one_to_one
     required: true
 
@@ -34,7 +34,7 @@ required:
   - name
   - submitter_id
   - type
-  - cases
+  - files
 
 uniqueKeys:
   - [id]
@@ -132,7 +132,7 @@ properties:
       - v1
       - v2
 
-  cases:
+  files:
     $ref: "_definitions.yaml#/to_one"
 ##    enumDef:
 ##      exon:
