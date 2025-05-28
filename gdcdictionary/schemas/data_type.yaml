@@ -10,23 +10,40 @@ program: '*'
 description: >-
   Data type of a legacy file (deprecated).
 additionalProperties: false
-submittable: false
-downloadable: false
+submittable: true
+downloadable: true
 previous_version_downloadable: false
 validators: null
 
 systemProperties:
   - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
 
-links: []
+links:
+  - name: files
+    backref: data_types
+    label: describes
+    target_type: file
+    multiplicity: one_to_one
+    required: true
 
 required:
   - name
+  - files
+  - submitter_id
+  - type
 
 uniqueKeys:
   - [id]
+  - [name]
+  - [project_id, submitter_id]
 
 properties:
+
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   type:
     type: string
@@ -38,3 +55,6 @@ properties:
     description: >-
       name of this data type
     type: string
+
+  files:
+    $ref: "_definitions.yaml#/to_one"
