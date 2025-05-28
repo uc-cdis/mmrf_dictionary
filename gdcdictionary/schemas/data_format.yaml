@@ -23,8 +23,8 @@ systemProperties:
   - state
 
 links:
-- name: files
-    backref: data_format
+  - name: files
+    backref: data_formats
     label: describes
     target_type: file
     multiplicity: one_to_one
