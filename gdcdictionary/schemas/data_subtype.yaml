@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "experimental_strategy"
-title: Experimental Strategy
+id: "data_subtype"
+title: Data Subtype
 type: object
 namespace: https://gdc.cancer.gov
 category: TBD
 project: '*'
 program: '*'
 description: >-
-  Experimental strategy of a legacy file (deprecated).
+  Data subtype of a legacy file (deprecated).
 additionalProperties: false
 submittable: true
 downloadable: true
@@ -23,16 +23,16 @@ systemProperties:
   - state
 
 links:
-- name: files
-    backref: tags
-    label: describes
-    target_type: file
-    multiplicity: one_to_one
+  - name: data_types
+    backref: data_subtypes
+    label: member_of
+    target_type: data_type
+    multiplicity: many_to_one
     required: true
 
 required:
   - name
-  - files
+  - data_types
   - submitter_id
   - type
 
@@ -53,8 +53,8 @@ properties:
 
   name:
     description: >-
-      name of this record
+      name of this data subtype
     type: string
 
-  files:
+  data_types:
     $ref: "_definitions.yaml#/to_one"

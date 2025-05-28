@@ -1,40 +1,49 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "data_subtype"
-title: Data Subtype
+id: "data_format"
+title: Data Format
 type: object
 namespace: https://gdc.cancer.gov
 category: TBD
 project: '*'
 program: '*'
 description: >-
-  Data subtype of a legacy file (deprecated).
+  Data format of a legacy file (deprecated).
 additionalProperties: false
-submittable: false
-downloadable: false
+submittable: true
+downloadable: true
 previous_version_downloadable: false
 validators: null
 
 systemProperties:
   - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
 
 links:
-  - name: data_types
-    backref: data_subtypes
-    label: member_of
-    target_type: data_type
-    multiplicity: many_to_one
+- name: files
+    backref: tags
+    label: describes
+    target_type: file
+    multiplicity: one_to_one
     required: true
 
 required:
   - name
-  - data_types
+  - files
+  - submitter_id
+  - type
 
 uniqueKeys:
   - [id]
   - [name]
+  - [project_id, submitter_id]
 
 properties:
+
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   type:
     type: string
@@ -44,8 +53,8 @@ properties:
 
   name:
     description: >-
-      name of this data subtype
+      name of this data format
     type: string
 
-  data_types:
+  files:
     $ref: "_definitions.yaml#/to_one"
