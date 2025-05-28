@@ -12,15 +12,25 @@ description: >-
   GDC that are valid with respect to GDC prescribed or defined data formats. (GDC
   subclass of NCIt C19711)
 additionalProperties: false
-submittable: false
-downloadable: false
+submittable: true
+downloadable: true
 previous_version_downloadable: false
 validators: null
 
 systemProperties:
   - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
 
-links: []
+links:
+- name: aliquots
+  backref: centers
+  label: describes
+  target_type: aliquot
+  multiplicity: one_to_one
+  required: true
 
 required:
   - code
@@ -28,12 +38,18 @@ required:
   - name
   - short_name
   - center_type
+  - aliquots
+  - submitter_id
+  - type
 
 uniqueKeys:
   - [id]
   - [code]
+  - [project_id, submitter_id]
 
 properties:
+
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   type:
     type: string
@@ -67,3 +83,6 @@ properties:
     description: >-
       Type classification of the center (e.g. CGCC).
     type: string
+
+  aliquots:
+    $ref: "_definitions.yaml#/to_one"

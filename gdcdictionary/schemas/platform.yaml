@@ -11,24 +11,40 @@ description: >-
   Any distinct technology (laboratory or computational) from which data may be obtained
   as files. (GDC) (deprecated).
 additionalProperties: false
-submittable: false
-downloadable: false
+submittable: true
+downloadable: true
 previous_version_downloadable: false
 validators: null
 
 systemProperties:
   - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
 
-links: []
+links:
+- name: files
+  backref: platforms
+  label: describes
+  target_type: file
+  multiplicity: one_to_one
+  required: true
 
 required:
   - name
+  - submitter_id
+  - type
+  - files
 
 uniqueKeys:
   - [id]
   - [name]
+  - [project_id, submitter_id]
 
 properties:
+
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   type:
     type: string
@@ -40,3 +56,6 @@ properties:
     description: >-
       name of this platform
     type: string
+
+  files:
+    $ref: "_definitions.yaml#/to_one"
