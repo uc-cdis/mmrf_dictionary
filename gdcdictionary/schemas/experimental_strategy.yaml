@@ -24,11 +24,11 @@ systemProperties:
 
 links:
 - name: files
-    backref: experimental_strategies
-    label: describes
-    target_type: file
-    multiplicity: one_to_one
-    required: true
+  backref: experimental_strategies
+  label: describes
+  target_type: file
+  multiplicity: one_to_one
+  required: true
 
 required:
   - name
