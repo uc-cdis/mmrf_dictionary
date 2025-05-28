@@ -24,7 +24,7 @@ systemProperties:
 
 links:
 - name: files
-    backref: data_formats
+    backref: data_format
     label: describes
     target_type: file
     multiplicity: one_to_one
