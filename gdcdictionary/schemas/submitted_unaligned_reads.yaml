@@ -39,6 +39,7 @@ links:
       label: derived_from
       target_type: aliquot
       multiplicity: many_to_one
+      required: false
     - name: core_metadata_collections
       backref: submitted_unaligned_reads_files
       label: data_from

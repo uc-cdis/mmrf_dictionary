@@ -1,7 +1,7 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
 id: "cytof"
-title: CyTOF
+title: Raw Flow Cytometry
 type: object
 namespace: https://gdc.cancer.gov
 category: data_file
