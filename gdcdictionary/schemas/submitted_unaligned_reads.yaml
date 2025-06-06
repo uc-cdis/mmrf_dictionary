@@ -34,6 +34,11 @@ links:
       target_type: read_group
       multiplicity: many_to_one
       required: false
+    - name: aliquots
+      backref: submitted_unaligned_reads_files
+      label: derived_from
+      target_type: aliquot
+      multiplicity: many_to_one
     - name: core_metadata_collections
       backref: submitted_unaligned_reads_files
       label: data_from
@@ -87,9 +92,9 @@ properties:
       - miRNA-Seq
       - RNA-Seq
       - scATAC-Seq
-      - scBCR-seq
+      - scBCR-Seq
       - scRNA-Seq
-      - scTCR-seq
+      - scTCR-Seq
       - Targeted Sequencing
       - WGS
       - WXS
@@ -117,4 +122,7 @@ properties:
 
   core_metadata_collections:
     description: The submitter_id or id of the core_metadata_collection to which the data_file belongs, i.e., a link to a record in the parent node.
+    $ref: "_definitions.yaml#/to_one"
+
+  aliquots:
     $ref: "_definitions.yaml#/to_one"

@@ -97,6 +97,13 @@ properties:
       - WGS
       - WXS
 
+  gene_model:
+    $ref: "_terms.yaml#/gene_model/common"
+    enum:
+      - GENCODE v36
+      - GENCODE v32
+      - Other
+
   platform:
     $ref: "read_group.yaml#/properties/platform"
 

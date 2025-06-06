@@ -72,6 +72,7 @@ properties:
     $ref: "_terms.yaml#/data_type/common"
     enum:
       - Aligned Reads
+      - Unaligned Reads
 
   data_format:
     $ref: "_terms.yaml#/data_format/common"
@@ -89,10 +90,13 @@ properties:
       - miRNA-Seq
       - RNA-Seq
       - scATAC-Seq
+      - scBCR-Seq
       - scRNA-Seq
+      - scTCR-Seq
       - Targeted Sequencing
       - WGS
       - WXS
+
 ##    deprecated_enum:
 ##      - scRNA-Seq
 ##    enumDef:

@@ -2561,6 +2561,18 @@ gender:
       cde_version: 3.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=2200604%20and%20ver_nr=3.0"
 
+gene_model:
+  common:
+    description: >-
+      Describes the gene model used in analysis.
+    termDef:
+      term: >-
+        Gene model used for analysis
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 gene_symbol:
   common:
     description: >-
