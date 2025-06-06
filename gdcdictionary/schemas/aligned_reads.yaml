@@ -129,8 +129,8 @@ properties:
   experimental_strategy:
     $ref: "_terms.yaml#/experimental_strategy/common"
     enum:
-      - 3' scRNA-seq
-      - 5' scRNA-seq
+      - 3' scRNA-Seq
+      - 5' scRNA-Seq
       - ATAC-Seq
       - Bisulfite-Seq
       - ChIP-Seq
@@ -139,9 +139,9 @@ properties:
       - miRNA-Seq
       - RNA-Seq
       - scATAC-Seq
-      - scBCR-seq
+      - scBCR-Seq
       - scRNA-Seq
-      - scTCR-seq
+      - scTCR-Seq
       - Targeted Sequencing
       - Validation
       - WGS
@@ -153,6 +153,13 @@ properties:
     #     $ref: "_terms_enum.yaml#/wgs/common"
     #   WXS:
     #     $ref: "_terms_enum.yaml#/wxs/common"
+
+  gene_model:
+    $ref: "_terms.yaml#/gene_model/common"
+    enum:
+      - GENCODE v36
+      - GENCODE v32
+      - Other
 
   mean_coverage:
     $ref: "_terms.yaml#/mean_coverage/common"

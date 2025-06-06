@@ -107,6 +107,13 @@ properties:
       - WGS
       - WXS
 
+  gene_model:
+    $ref: "_terms.yaml#/gene_model/common"
+    enum:
+      - GENCODE v36
+      - GENCODE v32
+      - Other
+
   genome_doubling:
     $ref: "_terms.yaml#/genome_doubling/common"
     type: integer

@@ -1,15 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "masked_somatic_mutation"
-title: Masked Somatic Mutation
+id: "cytof"
+title: Raw Flow Cytometry
 type: object
 namespace: https://gdc.cancer.gov
 category: data_file
 project: '*'
 program: '*'
 description: >-
-  MAF/TSV files that contain a filtered subset of somatic mutations, which may be
-  open access.
+  Data files from Cytometry by Time-Of-Flight (CyTOF) analysis.
 additionalProperties: false
 submittable: true
 downloadable: true
@@ -23,39 +22,23 @@ systemProperties:
   - updated_datetime
   - file_state
   - state
-  - error_type
 
 links:
   - exclusive: false
     required: true
     subgroup:
     - name: core_metadata_collections
-      backref: masked_somatic_mutations
+      backref: cytof_files
       label: data_from
       target_type: core_metadata_collection
       multiplicity: many_to_one
       required: false
-    - name: projects
-      backref: masked_somatic_mutations
+    - name: aliquots
+      backref: cytof_files
       label: derived_from
-      target_type: project
+      target_type: aliquot
       multiplicity: many_to_one
       required: false
-    - exclusive: true
-      required: false
-      subgroup:
-        - name: genomic_profile_harmonization_workflows
-          backref: masked_somatic_mutations
-          label: data_from
-          target_type: genomic_profile_harmonization_workflow
-          multiplicity: many_to_many
-          required: false
-        - name: somatic_aggregation_workflows
-          backref: masked_somatic_mutations
-          label: data_from
-          target_type: somatic_aggregation_workflow
-          multiplicity: one_to_one
-          required: false
 
 required:
   - submitter_id
@@ -78,48 +61,40 @@ properties:
   data_category:
     $ref: "_terms.yaml#/data_category/common"
     enum:
-      - Simple Nucleotide Variation
+      - Flow Cytometry
 
   data_format:
     $ref: "_terms.yaml#/data_format/common"
     enum:
-      - MAF
-      - TSV
+      - FCS
 
   data_type:
     $ref: "_terms.yaml#/data_type/common"
     enum:
-      - Masked Somatic Mutation
+      - Raw Flow Cytometry Data
 
   experimental_strategy:
     $ref: "_terms.yaml#/experimental_strategy/common"
     enum:
-      - ATAC-Seq
-      - Bisulfite-Seq
-      - ChIP-Seq
-      - miRNA-Seq
-      - RNA-Seq
-      - Targeted Sequencing
-      - WGS
-      - WXS
+      - CyTOF
 
-  gene_model:
-    $ref: "_terms.yaml#/gene_model/common"
+  experiment_name:
+    $ref: "_terms.yaml#/experiment_name/common"
+    type: string
+
+  instrument_model:
+    $ref: "_terms.yaml#/instrument_model/common"
     enum:
-      - GENCODE v36
-      - GENCODE v32
       - Other
+      - Unknown
+      - Not Reported
 
   platform:
-    $ref: "read_group.yaml#/properties/platform"
+    $ref: "_terms.yaml#/platform/common"
+    enum:
+      - Other
 
-  projects:
-    $ref: "_definitions.yaml#/to_one_project"
-
-  genomic_profile_harmonization_workflows:
-    $ref: "_definitions.yaml#/to_many"
-
-  somatic_aggregation_workflows:
+  aliquots:
     $ref: "_definitions.yaml#/to_one"
 
   core_metadata_collections:
