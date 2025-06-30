@@ -97,6 +97,7 @@ properties:
   gene_model:
     $ref: "_terms.yaml#/gene_model/common"
     enum:
+      - GENCODE v37
       - GENCODE v36
       - GENCODE v32
       - Other
