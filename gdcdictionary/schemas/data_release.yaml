@@ -3,41 +3,43 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "data_release"
 title: Data Release
 type: object
-namespace: https://gdc.cancer.gov
-category: data
+namespace: https://gen3.org
+category: administrative
 project: '*'
 program: '*'
 description: >-
   Internal node to store different data releases.
 additionalProperties: false
-submittable: false
-downloadable: false
-previous_version_downloadable: false
+submittable: true
 validators: null
 
 systemProperties:
   - id
+  - project_id
+  - state
   - created_datetime
   - updated_datetime
 
 links:
-  - name: roots
+  - name: projects
     backref: data_releases
-    label: describes
-    target_type: root
+    label: data_from
+    target_type: project
     multiplicity: many_to_one
     required: true
 
 required:
-  - name
-  - major_version
-  - minor_version
+  - submitter_id
   - type
+  - projects
 
 uniqueKeys:
   - [id]
+  - [project_id, submitter_id]
 
 properties:
+
+  $ref: "_definitions.yaml#/ubiquitous_properties"
 
   type:
     enum:
@@ -48,12 +50,10 @@ properties:
       - "_definitions.yaml#/uuid"
 
   created_datetime:
-    $ref:
-      - "_definitions.yaml#/datetime"
+    $ref: "_definitions.yaml#/datetime"
 
   updated_datetime:
-    $ref:
-      - "_definitions.yaml#/datetime"
+    $ref: "_definitions.yaml#/datetime"
 
   name:
     description: >-
@@ -71,8 +71,7 @@ properties:
     type: integer
 
   release_date:
-    $ref:
-      - "_definitions.yaml#/datetime"
+    $ref: "_definitions.yaml#/datetime"
 
   released:
     description: >-
@@ -80,5 +79,6 @@ properties:
     type: boolean
     default: false
 
-  roots:
-    $ref: "_definitions.yaml#/to_one"
+  projects:
+    description: The project code for the record in the project node that this core_metadata_collection belongs to, i.e., a link to the parent node.
+    $ref: "_definitions.yaml#/to_one_project"
