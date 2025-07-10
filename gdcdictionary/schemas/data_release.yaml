@@ -50,12 +50,10 @@ properties:
       - "_definitions.yaml#/uuid"
 
   created_datetime:
-    $ref:
-      - "_definitions.yaml#/datetime"
+    $ref: "_definitions.yaml#/datetime"
 
   updated_datetime:
-    $ref:
-      - "_definitions.yaml#/datetime"
+    $ref: "_definitions.yaml#/datetime"
 
   name:
     description: >-
@@ -73,8 +71,7 @@ properties:
     type: integer
 
   release_date:
-    $ref:
-      - "_definitions.yaml#/datetime"
+    $ref: "_definitions.yaml#/datetime"
 
   released:
     description: >-
