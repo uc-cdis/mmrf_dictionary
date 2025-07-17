@@ -65,6 +65,7 @@ properties:
       - SomaticSniper Variant Aggregation and Masking
       - Tumor-Only Somatic Variant Merging and Masking
       - VarScan2 Variant Aggregation and Masking
+      - vcf2maf
 
   annotated_somatic_mutations:
     $ref: "_definitions.yaml#/to_many"

@@ -1,7 +1,7 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
 id: "copy_number_segment"
-title: Copy Number Segment
+title: Somatic Copy Number Segment
 type: object
 namespace: https://gdc.cancer.gov
 category: data_file
@@ -86,6 +86,7 @@ properties:
     $ref: "_terms.yaml#/data_category/common"
     enum:
       - Copy Number Variation
+      - Somatic Copy Number Variation
 
   data_format:
     $ref: "_terms.yaml#/data_format/common"
@@ -98,6 +99,7 @@ properties:
       - Allele-specific Copy Number Segment
       - Copy Number Segment
       - Masked Copy Number Segment
+      - Somatic Copy Number Segment
 
   experimental_strategy:
     $ref: "_terms.yaml#/experimental_strategy/common"
@@ -125,6 +127,12 @@ properties:
     enum:
       - Affymetrix SNP 6.0
       - Illumina
+
+  somatic:
+    $ref: "_terms.yaml#/somatic/common"
+    enum:
+      - Somatic
+      - Germline
 
   subclonal_genome_fraction:
     $ref: "_terms.yaml#/subclonal_genome_fraction/common"

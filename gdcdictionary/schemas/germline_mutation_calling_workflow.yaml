@@ -56,6 +56,7 @@ properties:
     $ref: "_terms.yaml#/workflow_type/common"
     enum:
       - Birdseed
+      - DeepVariant
       - HaplotypeCaller
       - Strelka2 Germline
 

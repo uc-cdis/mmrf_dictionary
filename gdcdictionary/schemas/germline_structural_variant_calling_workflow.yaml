@@ -1,15 +1,15 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "structural_variant_calling_workflow"
-title: Somatic Structural Variant Calling Workflow
+id: "germline_structural_variant_calling_workflow"
+title: Germline Structural Variant Calling Workflow
 type: object
 namespace: https://gdc.cancer.gov
 category: analysis
 project: '*'
 program: '*'
 description: >-
-  Metadata for the structural variant calling pipeline used to call structural variants
-  in the GDC DNA-Seq or RNA-Seq pipelines.
+  Metadata for the germline structural variant calling pipeline used to call germline structural variants
+  in the DNA-Seq or RNA-Seq pipelines.
 additionalProperties: false
 submittable: true
 downloadable: true
@@ -25,7 +25,7 @@ systemProperties:
 
 links:
   - name: aligned_reads_files
-    backref: structural_variant_calling_workflows
+    backref: germline_structural_variant_calling_workflows
     label: performed_on
     target_type: aligned_reads
     multiplicity: many_to_many

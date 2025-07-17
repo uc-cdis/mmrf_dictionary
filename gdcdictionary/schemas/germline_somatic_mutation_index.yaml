@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "somatic_mutation_index"
-title: Somatic Mutation Index
+id: "germline_mutation_index"
+title: Germline Mutation Index
 type: object
 namespace: https://gdc.cancer.gov
 category: index_file
 project: '*'
 program: '*'
 description: >-
-  Data file containing the index for somatic mutation calls.
+  Data file containing the index for germline mutation calls.
 additionalProperties: false
 submittable: true
 downloadable: true
@@ -31,26 +31,20 @@ links:
     - exclusive: true
       required: false
       subgroup:
-      - name: simple_somatic_mutations
-        backref: somatic_mutation_indexes
+      - name: simple_germline_variations
+        backref: germline_mutation_indexes
         label: derived_from
-        target_type: simple_somatic_mutation
+        target_type: simple_germline_variation
         multiplicity: one_to_one
         required: false
-      - name: annotated_somatic_mutations
-        backref: somatic_mutation_indexes
+      - name: germline_structural_variations
+        backref: germline_mutation_indexes
         label: derived_from
-        target_type: annotated_somatic_mutation
-        multiplicity: one_to_one
-        required: false
-      - name: structural_variations
-        backref: somatic_mutation_indexes
-        label: derived_from
-        target_type: structural_variation
+        target_type: germline_structural_variation
         multiplicity: one_to_one
         required: false
     - name: core_metadata_collections
-      backref: somatic_mutation_indexes
+      backref: germline_mutation_indexes
       label: data_from
       target_type: core_metadata_collection
       multiplicity: many_to_one
@@ -79,7 +73,7 @@ properties:
     $ref: "_terms.yaml#/data_category/common"
     enum:
       - Simple Nucleotide Variation
-      - Somatic Structural Variation
+      - Germline Structural Variation
 
   data_format:
     $ref: "_terms.yaml#/data_format/common"
@@ -90,7 +84,7 @@ properties:
   data_type:
     $ref: "_terms.yaml#/data_type/common"
     enum:
-      - Somatic Mutation Index
+      - Germline Mutation Index
 
   somatic:
     $ref: "_terms.yaml#/somatic/common"

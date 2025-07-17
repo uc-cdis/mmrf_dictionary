@@ -81,6 +81,12 @@ properties:
       - Affymetrix SNP 6.0
       - Illumina
 
+  somatic:
+    $ref: "_terms.yaml#/somatic/common"
+    enum:
+      - Somatic
+      - Germline
+
   simple_germline_variations:
     $ref: "_definitions.yaml#/to_one"
 

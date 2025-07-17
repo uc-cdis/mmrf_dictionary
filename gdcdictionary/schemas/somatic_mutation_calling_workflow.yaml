@@ -48,16 +48,20 @@ properties:
     $ref: "_terms.yaml#/workflow_type/common"
     enum:
       - CaVEMan
+      - Ensemble
       - GATK4 MuTect2
       - GATK4 MuTect2 Tumor-Only
+      - Lancet
       - Manta Indel
       - MuSE
       - MuTect2
+      - Octopus
       - Pindel
       - SomaticSniper
       - Strelka2
       - Strelka2 RNA
       - SvABA Indel
+      - VarDict
       - VarScan2
 
   aligned_reads_files:
