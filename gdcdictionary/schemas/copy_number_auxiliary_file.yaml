@@ -1,7 +1,7 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
 id: "copy_number_auxiliary_file"
-title: Copy Number Auxiliary File
+title: Somatic Copy Number Auxiliary File
 type: object
 namespace: https://gdc.cancer.gov
 category: data_file
@@ -78,12 +78,14 @@ properties:
     enum:
       - PDF
       - TAR
+      - TSV
 
   data_type:
     $ref: "_terms.yaml#/data_type/common"
     enum:
       - CNV Model
       - Intermediate Analysis Archive
+      - Intermediate Analysis File
 
   experimental_strategy:
     $ref: "_terms.yaml#/experimental_strategy/common"
@@ -95,10 +97,15 @@ properties:
     enum:
       - Illumina
 
+  somatic:
+    $ref: "_terms.yaml#/somatic/common"
+    enum:
+      - Somatic
+      - Germline
+
   somatic_copy_number_workflows:
     $ref: "_definitions.yaml#/to_one"
 
   core_metadata_collections:
     description: The submitter_id or id of the core_metadata_collection to which the data_file belongs, i.e., a link to a record in the parent node.
     $ref: "_definitions.yaml#/to_one"
-

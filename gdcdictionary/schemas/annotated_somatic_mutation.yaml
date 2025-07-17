@@ -108,6 +108,12 @@ properties:
   platform:
     $ref: "read_group.yaml#/properties/platform"
 
+  somatic:
+    $ref: "_terms.yaml#/somatic/common"
+    enum:
+      - Somatic
+      - Germline
+
   somatic_annotation_workflows:
     $ref: "_definitions.yaml#/to_one"
 

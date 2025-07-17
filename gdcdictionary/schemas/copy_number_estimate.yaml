@@ -117,6 +117,12 @@ properties:
       - Illumina
       - Ion Torrent
 
+  somatic:
+    $ref: "_terms.yaml#/somatic/common"
+    enum:
+      - Somatic
+      - Germline
+
   copy_number_variation_workflows:
     $ref: "_definitions.yaml#/to_one"
 

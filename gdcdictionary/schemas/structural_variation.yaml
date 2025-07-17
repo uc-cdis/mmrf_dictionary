@@ -1,7 +1,7 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
 id: "structural_variation"
-title: Structural Variation
+title: Somatic Structural Variation
 type: object
 namespace: https://gdc.cancer.gov
 category: data_file
@@ -116,6 +116,12 @@ properties:
       - Affymetrix SNP 6.0
       - Illumina
       - Other
+
+  somatic:
+    $ref: "_terms.yaml#/somatic/common"
+    enum:
+      - Somatic
+      - Germline
 
   genomic_profile_harmonization_workflows:
     $ref: "_definitions.yaml#/to_one"

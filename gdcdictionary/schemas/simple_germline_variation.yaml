@@ -90,11 +90,25 @@ properties:
       - WGS
       - WXS
 
+  gene_model:
+    $ref: "_terms.yaml#/gene_model/common"
+    enum:
+      - GENCODE v37
+      - GENCODE v36
+      - GENCODE v32
+      - Other
+
   platform:
     $ref: "_terms.yaml#/platform/common"
     enum:
       - Affymetrix SNP 6.0
       - Illumina
+
+  somatic:
+    $ref: "_terms.yaml#/somatic/common"
+    enum:
+      - Somatic
+      - Germline
 
   germline_mutation_calling_workflows:
     $ref: "_definitions.yaml#/to_one"

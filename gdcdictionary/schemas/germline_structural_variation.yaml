@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "somatic_mutation_index"
-title: Somatic Mutation Index
+id: "germline_structural_variation"
+title: Germline Structural Variation
 type: object
 namespace: https://gdc.cancer.gov
-category: index_file
+category: data_file
 project: '*'
 program: '*'
 description: >-
-  Data file containing the index for somatic mutation calls.
+  Data file containing the germline structural variation data.
 additionalProperties: false
 submittable: true
 downloadable: true
@@ -31,26 +31,20 @@ links:
     - exclusive: true
       required: false
       subgroup:
-      - name: simple_somatic_mutations
-        backref: somatic_mutation_indexes
-        label: derived_from
-        target_type: simple_somatic_mutation
+      - name: genomic_profile_harmonization_workflows
+        backref: germline_structural_variations
+        label: data_from
+        target_type: genomic_profile_harmonization_workflow
         multiplicity: one_to_one
         required: false
-      - name: annotated_somatic_mutations
-        backref: somatic_mutation_indexes
-        label: derived_from
-        target_type: annotated_somatic_mutation
-        multiplicity: one_to_one
-        required: false
-      - name: structural_variations
-        backref: somatic_mutation_indexes
-        label: derived_from
-        target_type: structural_variation
-        multiplicity: one_to_one
+      - name: germline_structural_variant_calling_workflows
+        backref: germline_structural_variations
+        label: data_from
+        target_type: germline_structural_variant_calling_workflow
+        multiplicity: many_to_one
         required: false
     - name: core_metadata_collections
-      backref: somatic_mutation_indexes
+      backref: germline_structural_variations
       label: data_from
       target_type: core_metadata_collection
       multiplicity: many_to_one
@@ -78,19 +72,50 @@ properties:
   data_category:
     $ref: "_terms.yaml#/data_category/common"
     enum:
-      - Simple Nucleotide Variation
-      - Somatic Structural Variation
+      - Germline Structural Variation
+      - Structural Variation
 
   data_format:
     $ref: "_terms.yaml#/data_format/common"
     enum:
-      - TBI
-      - CSI
+      - BEDPE
+      - CSV
+      - FASTA
+      - GVF
+      - JSON
+      - TSV
+      - TXT
+      - VCF
 
   data_type:
     $ref: "_terms.yaml#/data_type/common"
     enum:
-      - Somatic Mutation Index
+      - Structural Alteration
+      - Structural Rearrangement
+      - Transcript Fusion
+
+  experimental_strategy:
+    $ref: "_terms.yaml#/experimental_strategy/common"
+    enum:
+      - RNA-Seq
+      - Targeted Sequencing
+      - WGS
+      - WXS
+
+  gene_model:
+    $ref: "_terms.yaml#/gene_model/common"
+    enum:
+      - GENCODE v37
+      - GENCODE v36
+      - GENCODE v32
+      - Other
+
+  platform:
+    $ref: "_terms.yaml#/platform/common"
+    enum:
+      - Affymetrix SNP 6.0
+      - Illumina
+      - Other
 
   somatic:
     $ref: "_terms.yaml#/somatic/common"
@@ -98,13 +123,10 @@ properties:
       - Somatic
       - Germline
 
-  simple_somatic_mutations:
+  genomic_profile_harmonization_workflows:
     $ref: "_definitions.yaml#/to_one"
 
-  annotated_somatic_mutations:
-    $ref: "_definitions.yaml#/to_one"
-
-  structural_variations:
+  germline_structural_variant_calling_workflows:
     $ref: "_definitions.yaml#/to_one"
 
   core_metadata_collections:

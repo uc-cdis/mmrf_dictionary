@@ -5673,6 +5673,17 @@ smoking_frequency:
       cde_version:
       term_url:
 
+somatic:
+  common:
+    description: >-
+      Indicates whether the record is somatic or germline data.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 source_center:
   common:
     description: >-

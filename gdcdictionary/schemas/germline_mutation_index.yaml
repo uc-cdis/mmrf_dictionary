@@ -8,7 +8,7 @@ category: index_file
 project: '*'
 program: '*'
 description: >-
-  Data file containing the index for germline variation calls.
+  Data file containing the index for germline mutation calls.
 additionalProperties: false
 submittable: true
 downloadable: true
@@ -28,12 +28,21 @@ links:
   - exclusive: false
     required: true
     subgroup:
-    - name: simple_germline_variations
-      backref: germline_mutation_indexes
-      label: derived_from
-      target_type: simple_germline_variation
-      multiplicity: one_to_one
+    - exclusive: true
       required: false
+      subgroup:
+      - name: simple_germline_variations
+        backref: germline_mutation_indexes
+        label: derived_from
+        target_type: simple_germline_variation
+        multiplicity: one_to_one
+        required: false
+      - name: germline_structural_variations
+        backref: germline_mutation_indexes
+        label: derived_from
+        target_type: germline_structural_variation
+        multiplicity: one_to_one
+        required: false
     - name: core_metadata_collections
       backref: germline_mutation_indexes
       label: data_from
@@ -64,24 +73,32 @@ properties:
     $ref: "_terms.yaml#/data_category/common"
     enum:
       - Simple Nucleotide Variation
+      - Germline Structural Variation
 
   data_format:
     $ref: "_terms.yaml#/data_format/common"
     enum:
       - TBI
+      - CSI
 
   data_type:
     $ref: "_terms.yaml#/data_type/common"
     enum:
       - Germline Mutation Index
 
-  platform:
-    $ref: "_terms.yaml#/platform/common"
+  somatic:
+    $ref: "_terms.yaml#/somatic/common"
     enum:
-      - Affymetrix SNP 6.0
-      - Illumina
+      - Somatic
+      - Germline
 
-  simple_germline_variations:
+  simple_somatic_mutations:
+    $ref: "_definitions.yaml#/to_one"
+
+  annotated_somatic_mutations:
+    $ref: "_definitions.yaml#/to_one"
+
+  structural_variations:
     $ref: "_definitions.yaml#/to_one"
 
   core_metadata_collections:
