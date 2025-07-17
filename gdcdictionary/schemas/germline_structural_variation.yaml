@@ -32,7 +32,7 @@ links:
       required: false
       subgroup:
       - name: genomic_profile_harmonization_workflows
-        backref: structural_variations
+        backref: germline_structural_variations
         label: data_from
         target_type: genomic_profile_harmonization_workflow
         multiplicity: one_to_one
@@ -126,7 +126,7 @@ properties:
   genomic_profile_harmonization_workflows:
     $ref: "_definitions.yaml#/to_one"
 
-  structural_variant_calling_workflows:
+  germline_structural_variant_calling_workflows:
     $ref: "_definitions.yaml#/to_one"
 
   core_metadata_collections:
