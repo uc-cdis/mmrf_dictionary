@@ -415,6 +415,7 @@ properties:
       - Year 5
       - Year 6
       - Year 7
+      - Year 8
       - Month 3
       - Month 6
       - Month 9
@@ -429,6 +430,7 @@ properties:
       - Month 45
       - Month 51
       - Month 54
+      - Month 57
       - Month 66
       - Month 78
       - Month 90
