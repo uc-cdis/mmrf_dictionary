@@ -84,6 +84,7 @@ properties:
     $ref: "_terms.yaml#/data_format/common"
     enum:
       - BAI
+      - CRAI
 
   submitted_aligned_reads_files:
     $ref: "_definitions.yaml#/to_one"
