@@ -70,7 +70,10 @@ properties:
     enum:
       - CSV
       - HDF5
+      - JUNCTIONS
       - MEX
+      - SF
+      - TAB
       - TSV
       - TXT
 
