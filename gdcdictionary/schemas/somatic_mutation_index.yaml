@@ -35,19 +35,19 @@ links:
         backref: somatic_mutation_indexes
         label: derived_from
         target_type: simple_somatic_mutation
-        multiplicity: one_to_one
+        multiplicity: many_to_many
         required: false
       - name: annotated_somatic_mutations
         backref: somatic_mutation_indexes
         label: derived_from
         target_type: annotated_somatic_mutation
-        multiplicity: one_to_one
+        multiplicity: many_to_many
         required: false
       - name: structural_variations
         backref: somatic_mutation_indexes
         label: derived_from
         target_type: structural_variation
-        multiplicity: one_to_one
+        multiplicity: many_to_many
         required: false
     - name: core_metadata_collections
       backref: somatic_mutation_indexes
@@ -99,13 +99,13 @@ properties:
       - Germline
 
   simple_somatic_mutations:
-    $ref: "_definitions.yaml#/to_one"
+    $ref: "_definitions.yaml#/to_many"
 
   annotated_somatic_mutations:
-    $ref: "_definitions.yaml#/to_one"
+    $ref: "_definitions.yaml#/to_many"
 
   structural_variations:
-    $ref: "_definitions.yaml#/to_one"
+    $ref: "_definitions.yaml#/to_many"
 
   core_metadata_collections:
     description: The submitter_id or id of the core_metadata_collection to which the data_file belongs, i.e., a link to a record in the parent node.

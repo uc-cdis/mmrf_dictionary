@@ -92,7 +92,7 @@ properties:
       - Somatic
       - Germline
 
-  simple_somatic_mutations:
+  simple_germline_variations:
     $ref: "_definitions.yaml#/to_one"
 
   annotated_somatic_mutations:
