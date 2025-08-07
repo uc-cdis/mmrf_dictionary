@@ -47,7 +47,7 @@ links:
           backref: aligned_reads_indexes
           label: derived_from
           target_type: aligned_reads
-          multiplicity: one_to_one
+          multiplicity: many_to_many
           required: false
 
 required:
@@ -90,7 +90,7 @@ properties:
     $ref: "_definitions.yaml#/to_one"
 
   aligned_reads_files:
-    $ref: "_definitions.yaml#/to_one"
+    $ref: "_definitions.yaml#/to_many"
 
   core_metadata_collections:
     description: The submitter_id or id of the core_metadata_collection to which the data_file belongs, i.e., a link to a record in the parent node.
