@@ -51,6 +51,7 @@ properties:
       - GISTIC - Arm Level Copy Number
       - GISTIC - Focal Deletion
       - GISTIC - Focal Amplification
+      - GISTIC
 
   copy_number_segments:
     $ref: "_definitions.yaml#/to_many"
