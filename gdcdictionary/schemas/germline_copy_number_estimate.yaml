@@ -39,7 +39,7 @@ links:
           multiplicity: one_to_one
           required: false
         - name: genomic_profile_harmonization_workflows
-          backref: copy_number_estimates
+          backref: germline_copy_number_estimates
           label: derived_from
           target_type: genomic_profile_harmonization_workflow
           multiplicity: one_to_one
