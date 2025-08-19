@@ -57,6 +57,7 @@ properties:
     enum:
       - Birdseed
       - DeepVariant
+      - ExpansionHunter
       - HaplotypeCaller
       - Strelka2 Germline
 
