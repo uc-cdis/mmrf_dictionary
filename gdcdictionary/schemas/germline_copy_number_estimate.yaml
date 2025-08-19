@@ -1,15 +1,15 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "copy_number_segment"
-title: Somatic Copy Number Segment
+id: "germline_copy_number_estimate"
+title: Germline Copy Number Estimate
 type: object
 namespace: https://gdc.cancer.gov
 category: data_file
 project: '*'
 program: '*'
 description: >-
-  Data file containing the somatic copy number data from a copy number liftover workflow.
-  Contains all copy numbers detected.
+  Data file containing germline copy number variation information generated internally by the
+  GDC.
 additionalProperties: false
 submittable: true
 downloadable: true
@@ -32,26 +32,26 @@ links:
     - exclusive: true
       required: false
       subgroup:
-        - name: copy_number_liftover_workflows
-          backref: copy_number_segments
+        - name: germline_copy_number_variation_workflows
+          backref: germline_copy_number_estimates
           label: derived_from
-          target_type: copy_number_liftover_workflow
+          target_type: germline_copy_number_variation_workflow
           multiplicity: one_to_one
           required: false
         - name: genomic_profile_harmonization_workflows
-          backref: copy_number_segments
+          backref: germline_copy_number_estimates
           label: derived_from
           target_type: genomic_profile_harmonization_workflow
           multiplicity: one_to_one
           required: false
-        - name: somatic_copy_number_workflows
-          backref: copy_number_segments
+        - name: germline_copy_number_workflows
+          backref: germline_copy_number_estimates
           label: derived_from
-          target_type: somatic_copy_number_workflow
+          target_type: germline_copy_number_workflow
           multiplicity: one_to_one
           required: false
     - name: core_metadata_collections
-      backref: copy_number_segments
+      backref: germline_copy_number_estimates
       label: data_from
       target_type: core_metadata_collection
       multiplicity: many_to_one
@@ -76,30 +76,23 @@ properties:
 
   $ref: "_definitions.yaml#/data_file_properties"
 
-  cancer_dna_fraction:
-    $ref: "_terms.yaml#/cancer_dna_fraction/common"
-    type: number
-    maximum: 1
-    minimum: 0
-
   data_category:
     $ref: "_terms.yaml#/data_category/common"
     enum:
-      - Copy Number Variation
-      - Somatic Copy Number Variation
-
-  data_format:
-    $ref: "_terms.yaml#/data_format/common"
-    enum:
-      - TXT
+      - Germline Copy Number Variation
 
   data_type:
     $ref: "_terms.yaml#/data_type/common"
     enum:
-      - Allele-specific Copy Number Segment
-      - Copy Number Segment
-      - Masked Copy Number Segment
-      - Somatic Copy Number Segment
+      - Gene Level Copy Number
+      - Gene Level Copy Number Scores
+      - Cohort Level Copy Number Scores
+
+  data_format:
+    $ref: "_terms.yaml#/data_format/common"
+    enum:
+      - TSV
+      - TXT
 
   experimental_strategy:
     $ref: "_terms.yaml#/experimental_strategy/common"
@@ -117,16 +110,12 @@ properties:
       - GENCODE v32
       - Other
 
-  genome_doubling:
-    $ref: "_terms.yaml#/genome_doubling/common"
-    type: integer
-    minimum: 0
-
   platform:
     $ref: "_terms.yaml#/platform/common"
     enum:
       - Affymetrix SNP 6.0
       - Illumina
+      - Ion Torrent
 
   somatic:
     $ref: "_terms.yaml#/somatic/common"
@@ -134,30 +123,13 @@ properties:
       - Somatic
       - Germline
 
-  subclonal_genome_fraction:
-    $ref: "_terms.yaml#/subclonal_genome_fraction/common"
-    type: number
-    maximum: 1
-    minimum: 0
-
-  tumor_ploidy:
-    $ref: "_terms.yaml#/tumor_ploidy/common"
-    type: number
-    minimum: 0
-
-  tumor_purity:
-    $ref: "_terms.yaml#/tumor_purity/common"
-    type: number
-    maximum: 1
-    minimum: 0
-
-  copy_number_liftover_workflows:
+  germline_copy_number_variation_workflows:
     $ref: "_definitions.yaml#/to_one"
 
   genomic_profile_harmonization_workflows:
     $ref: "_definitions.yaml#/to_one"
 
-  somatic_copy_number_workflows:
+  germline_copy_number_workflows:
     $ref: "_definitions.yaml#/to_one"
 
   core_metadata_collections:
