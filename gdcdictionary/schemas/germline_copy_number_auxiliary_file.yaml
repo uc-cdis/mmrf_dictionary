@@ -1,15 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "copy_number_estimate"
-title: Somatic Copy Number Estimate
+id: "germline_copy_number_auxiliary_file"
+title: Germline Copy Number Auxiliary File
 type: object
 namespace: https://gdc.cancer.gov
 category: data_file
 project: '*'
 program: '*'
 description: >-
-  Data file containing somatic copy number variation information generated internally by the
-  GDC.
+  Data file related to the copy number pipeline that contains any outputs not strictly defined in other nodes
 additionalProperties: false
 submittable: true
 downloadable: true
@@ -29,29 +28,14 @@ links:
   - exclusive: false
     required: true
     subgroup:
-    - exclusive: true
+    - name: germline_copy_number_workflows
+      backref: germline_copy_number_auxiliary_files
+      label: derived_from
+      target_type: germline_copy_number_workflow
+      multiplicity: one_to_one
       required: false
-      subgroup:
-        - name: copy_number_variation_workflows
-          backref: copy_number_estimates
-          label: derived_from
-          target_type: copy_number_variation_workflow
-          multiplicity: one_to_one
-          required: false
-        - name: genomic_profile_harmonization_workflows
-          backref: copy_number_estimates
-          label: derived_from
-          target_type: genomic_profile_harmonization_workflow
-          multiplicity: one_to_one
-          required: false
-        - name: somatic_copy_number_workflows
-          backref: copy_number_estimates
-          label: derived_from
-          target_type: somatic_copy_number_workflow
-          multiplicity: one_to_one
-          required: false
     - name: core_metadata_collections
-      backref: copy_number_estimates
+      backref: germline_copy_number_auxiliary_files
       label: data_from
       target_type: core_metadata_collection
       multiplicity: many_to_one
@@ -72,50 +56,46 @@ uniqueKeys:
   - [id]
   - [project_id, submitter_id]
 
+deprecated:
+  - curated_model_index
+
 properties:
 
   $ref: "_definitions.yaml#/data_file_properties"
+
+  curated_model_index:
+    $ref: "_terms.yaml#/curated_model_index/common"
+    type: integer
+    minimum: 1
 
   data_category:
     $ref: "_terms.yaml#/data_category/common"
     enum:
       - Copy Number Variation
 
-  data_type:
-    $ref: "_terms.yaml#/data_type/common"
-    enum:
-      - Gene Level Copy Number
-      - Gene Level Copy Number Scores
-      - Cohort Level Copy Number Scores
-
   data_format:
     $ref: "_terms.yaml#/data_format/common"
     enum:
+      - PDF
+      - TAR
       - TSV
-      - TXT
+
+  data_type:
+    $ref: "_terms.yaml#/data_type/common"
+    enum:
+      - CNV Model
+      - Intermediate Analysis Archive
+      - Intermediate Analysis File
 
   experimental_strategy:
     $ref: "_terms.yaml#/experimental_strategy/common"
     enum:
-      - Genotyping Array
-      - Targeted Sequencing
       - WGS
-      - WXS
-
-  gene_model:
-    $ref: "_terms.yaml#/gene_model/common"
-    enum:
-      - GENCODE v37
-      - GENCODE v36
-      - GENCODE v32
-      - Other
 
   platform:
     $ref: "_terms.yaml#/platform/common"
     enum:
-      - Affymetrix SNP 6.0
       - Illumina
-      - Ion Torrent
 
   somatic:
     $ref: "_terms.yaml#/somatic/common"
@@ -123,13 +103,7 @@ properties:
       - Somatic
       - Germline
 
-  copy_number_variation_workflows:
-    $ref: "_definitions.yaml#/to_one"
-
-  genomic_profile_harmonization_workflows:
-    $ref: "_definitions.yaml#/to_one"
-
-  somatic_copy_number_workflows:
+  germline_copy_number_workflows:
     $ref: "_definitions.yaml#/to_one"
 
   core_metadata_collections:

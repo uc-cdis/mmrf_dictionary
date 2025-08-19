@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "copy_number_variation_workflow"
-title: Somatic Copy Number Variation Workflow
+id: "germline_copy_number_variation_workflow"
+title: Germline Copy Number Variation Workflow
 type: object
 namespace: https://gdc.cancer.gov
 category: analysis
 project: '*'
 program: '*'
 description: >-
-  Metadata for the Somatic Copy Number Variation pipeline used to estimate copy number changes
+  Metadata for the Germline Copy Number Variation pipeline used to estimate copy number changes
   from different molecular data sources.
 additionalProperties: false
 submittable: true
@@ -24,17 +24,17 @@ systemProperties:
   - state
 
 links:
-  - name: copy_number_segments
-    backref: copy_number_variation_workflows
+  - name: germline_copy_number_segments
+    backref: germline_copy_number_variation_workflows
     label: performed_on
-    target_type: copy_number_segment
+    target_type: germline_copy_number_segment
     multiplicity: many_to_many
     required: true
 
 required:
   - submitter_id
   - type
-  - copy_number_segments
+  - germline_copy_number_segments
 
 uniqueKeys:
   - [id]
@@ -52,5 +52,5 @@ properties:
       - GISTIC - Focal Deletion
       - GISTIC - Focal Amplification
 
-  copy_number_segments:
+  germline_copy_number_segments:
     $ref: "_definitions.yaml#/to_many"

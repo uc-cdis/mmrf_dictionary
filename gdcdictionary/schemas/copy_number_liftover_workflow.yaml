@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
 id: "copy_number_liftover_workflow"
-title: Copy Number Liftover Workflow
+title: Somatic Copy Number Liftover Workflow
 type: object
 namespace: https://gdc.cancer.gov
 category: analysis
 project: '*'
 program: '*'
 description: >-
-  Metadata for the copy number liftover workflow used to harmonize TCGA copy number
+  Metadata for the somatic copy number liftover workflow used to harmonize TCGA copy number
   data.
 additionalProperties: false
 submittable: true
