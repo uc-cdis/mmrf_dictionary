@@ -95,10 +95,7 @@ properties:
   simple_germline_variations:
     $ref: "_definitions.yaml#/to_one"
 
-  annotated_somatic_mutations:
-    $ref: "_definitions.yaml#/to_one"
-
-  structural_variations:
+  germline_structural_variations:
     $ref: "_definitions.yaml#/to_one"
 
   core_metadata_collections:
