@@ -42,7 +42,7 @@ links:
           backref: germline_copy_number_segment
           label: derived_from
           target_type: germline_copy_number_workflow
-          multiplicity: one_to_one
+          multiplicity: many_to_many
           required: false
     - name: core_metadata_collections
       backref: germline_copy_number_segment
@@ -150,7 +150,7 @@ properties:
     $ref: "_definitions.yaml#/to_one"
 
   germline_copy_number_workflows:
-    $ref: "_definitions.yaml#/to_one"
+    $ref: "_definitions.yaml#/to_many"
 
   core_metadata_collections:
     description: The submitter_id or id of the core_metadata_collection to which the data_file belongs, i.e., a link to a record in the parent node.
