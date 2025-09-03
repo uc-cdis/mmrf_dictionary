@@ -33,13 +33,13 @@ systemProperties:
   - state
 
 required:
-  - projects
-  - code
+  - submitter_id
   - type
+  - projects
 
 uniqueKeys:
   - [id]
-  - [project_id, code]
+  - [project_id, submitter_id]
 
 properties:
 
@@ -47,11 +47,6 @@ properties:
 
   type:
     type: string
-
-  id:
-    $ref: "_definitions.yaml#/UUID"
-    description: >-
-      UUID for the center.
 
   code:
     description: >-
