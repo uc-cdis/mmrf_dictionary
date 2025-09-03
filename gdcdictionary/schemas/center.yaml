@@ -29,22 +29,16 @@ links:
   backref: center
   label: describes
   target_type: project
-  multiplicity: many_to_many
+  multiplicity: many_to_one
   required: true
 
 required:
-  - code
-  - namespace
-  - name
-  - short_name
-  - center_type
-  - aliquots
+  - projects
   - submitter_id
   - type
 
 uniqueKeys:
   - [id]
-  - [code]
   - [project_id, submitter_id]
 
 properties:
@@ -85,4 +79,4 @@ properties:
     type: string
 
   projects:
-    $ref: "_definitions.yaml#/to_many"
+    $ref: "_definitions.yaml#/to_one"
