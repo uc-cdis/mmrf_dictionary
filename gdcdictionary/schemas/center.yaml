@@ -17,13 +17,6 @@ downloadable: true
 previous_version_downloadable: false
 validators: null
 
-systemProperties:
-  - id
-  - project_id
-  - created_datetime
-  - updated_datetime
-  - state
-
 links:
 - name: projects
   backref: center
@@ -31,6 +24,13 @@ links:
   target_type: project
   multiplicity: many_to_one
   required: true
+
+systemProperties:
+  - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
 
 required:
   - projects
