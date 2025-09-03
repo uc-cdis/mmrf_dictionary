@@ -47,13 +47,11 @@ properties:
   workflow_type:
     $ref: "_terms.yaml#/workflow_type/common"
     enum:
-      - GISTIC
-      - GISTIC - Arm Level Copy Number
       - GISTIC - Copy Number Score
-      - GISTIC - Extreme Copy Number Score
+      - GISTIC - Arm Level Copy Number
       - GISTIC - Focal Deletion
       - GISTIC - Focal Amplification
-      - GISTIC - Mean Copy Number Score
+      - GISTIC
 
   copy_number_segments:
     $ref: "_definitions.yaml#/to_many"
