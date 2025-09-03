@@ -17,20 +17,20 @@ downloadable: true
 previous_version_downloadable: false
 validators: null
 
-links:
-- name: projects
-  backref: center
-  label: describes
-  target_type: project
-  multiplicity: many_to_one
-  required: true
-
 systemProperties:
   - id
   - project_id
   - created_datetime
   - updated_datetime
   - state
+
+links:
+- name: projects
+  backref: centers
+  label: describes
+  target_type: project
+  multiplicity: many_to_one
+  required: true
 
 required:
   - submitter_id
@@ -74,4 +74,4 @@ properties:
     type: string
 
   projects:
-    $ref: "_definitions.yaml#/to_one"
+    $ref: "_definitions.yaml#/to_one_project"
