@@ -25,11 +25,11 @@ systemProperties:
   - state
 
 links:
-- name: aliquots
-  backref: centers
+- name: projects
+  backref: center
   label: describes
-  target_type: aliquot
-  multiplicity: one_to_one
+  target_type: project
+  multiplicity: many_to_many
   required: true
 
 required:
@@ -84,5 +84,5 @@ properties:
       Type classification of the center (e.g. CGCC).
     type: string
 
-  aliquots:
-    $ref: "_definitions.yaml#/to_one"
+  projects:
+    $ref: "_definitions.yaml#/to_many"
