@@ -39,6 +39,12 @@ links:
         target_type: sample
         multiplicity: many_to_many
         required: false
+  - name: center
+    backref: aliquot
+    label: shipped_to
+    target_type: center
+    multiplicity: one_to_one
+    required: true
 
 required:
   - submitter_id
@@ -147,10 +153,12 @@ properties:
     $ref: "_terms.yaml#/source_center/common"
     type: string
 
-
   analytes:
     $ref: "_definitions.yaml#/to_one"
 
+  center:
+    $ref: "_definitions.yaml#/to_one"
+  
   samples:
     $ref: "_definitions.yaml#/to_many"
 
