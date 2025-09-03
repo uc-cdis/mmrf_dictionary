@@ -34,12 +34,12 @@ systemProperties:
 
 required:
   - projects
-  - submitter_id
+  - code
   - type
 
 uniqueKeys:
   - [id]
-  - [project_id, submitter_id]
+  - [project_id, code]
 
 properties:
 
