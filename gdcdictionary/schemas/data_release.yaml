@@ -47,7 +47,7 @@ properties:
 
   id:
     $ref:
-      - "_definitions.yaml#/uuid"
+      - "_definitions.yaml#/UUID"
 
   created_datetime:
     $ref: "_definitions.yaml#/datetime"
