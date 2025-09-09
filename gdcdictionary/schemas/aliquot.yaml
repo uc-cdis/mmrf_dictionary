@@ -44,7 +44,7 @@ links:
     label: shipped_to
     target_type: center
     multiplicity: one_to_one
-    required: true
+    required: false
 
 required:
   - submitter_id
