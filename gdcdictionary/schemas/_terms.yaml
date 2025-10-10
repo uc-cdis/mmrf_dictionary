@@ -130,7 +130,7 @@ adverse_event_grade:
 age_at_diagnosis:
   common:
     description: >-
-      Age at the time of diagnosis expressed in number of days since birth.
+      Age at the time of study entry/diagnosis expressed in number of days since birth.
     termDef:
       term: >-
         Patient Diagnosis Age Day Value
@@ -142,8 +142,7 @@ age_at_diagnosis:
 age_at_index:
   common:
     description: >-
-      The patient's age (in years) on the reference or anchor date used during date
-      obfuscation.
+      Subject's age at the time of first therapy for multiple myeloma diagnosis.
     termDef:
       term: >-
         Patient Age at Index
@@ -519,6 +518,17 @@ anaplasia_present_type:
       cde_version: 1.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=4925534%20and%20ver_nr=1.0"
 
+anemia:
+  common:
+    description: >-
+      The subject has evidence of a sign or symptom related to myeloma, specifically, anemia.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 aneuploidy:
   common:
     description: >-
@@ -702,7 +712,7 @@ base_caller_version:
 best_overall_response:
   common:
     description: >-
-      The best improvement achieved throughout the entire course of protocol treatment.
+      The best improvement achieved throughout the entire course of study period.
     termDef:
       term: >-
         Best Response Assessment Type
@@ -789,11 +799,11 @@ blood_test_normal_range_upper:
 bmi:
   common:
     description: >-
-      A calculated numerical quantity that represents an individual's weight to height
-      ratio.
+      Subject's body mass index (BMI) calculated from height and weight recorded prior to first therapy for active 
+      multiple myeloma diagnosis. algorithm: (weight/(height*height))
     termDef:
       term: >-
-        Body Mass Index Value
+        Body Mass Index Value at Diagnosis
       source: caDSR
       cde_id: 2006410
       cde_version: 3.0
@@ -811,6 +821,17 @@ body_surface_area:
       cde_id: 653
       cde_version: 6.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=653%20and%20ver_nr=6.0"
+
+bone_lesion:
+  common:
+    description: >-
+      The subject has evidence of a sign or symptom related to myeloma, specifically, bone lesions with osteoporosis with compression fractures.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
 
 bone_marrow_malignant_cells:
   common:
@@ -858,6 +879,18 @@ cancer_detection_method:
     termDef:
       term: >-
         Cancer Detection Type
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+cancer_diagnosis:
+  common:
+    description: >-
+      The cancer diagnosis code related to the therapeutic regimen.
+    termDef:
+      term: >-
+        Cancer Diagnosis Code
       source:
       cde_id:
       cde_version:
@@ -948,6 +981,28 @@ cell_count:
       cde_id: 6142528
       cde_version: 1.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=6142528%20and%20ver_nr=1.0"
+
+censor_os:
+  common:
+    description: >-
+      A numeric (0/1) flag indicating whether the death has occurred (1=TRUE) or the subject was censored (0=FALSE)
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+censor_pfs:
+  common:
+    description: >-
+      A numeric (0/1) flag indicating whether the progressive disease has occurred (1=TRUE) or the subject was censored (0=FALSE)
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
 
 channel:
   common:
@@ -1430,6 +1485,61 @@ cytoband:
       cde_version: 1.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=6142405%20and%20ver_nr=1.0"
 
+d_im_flowcyt_pct_pc_in_bm_high:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+d_im_flowcyt_pct_pc_in_bm_low:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+d_im_flowcyt_pct_pc_in_pb_low:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+d_im_morphology_percent_pc_in_bm:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+d_im_morphology_percent_pc_in_pb:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 data_category:
   common:
     description: >-
@@ -1512,8 +1622,8 @@ days_to_adverse_event:
 days_to_best_overall_response:
   common:
     description: >-
-      Number of days between the date used for index and the date of the patient was
-      thought to have the best overall response to their disease.
+      Number of days between the subject's date of first best response to therapy for  multiple myeloma and the 
+      index date. In a de-identified dataset, this variable will help with sequencing events. 
     termDef:
       term: >-
         Index Date To Overall Best Response Day Count
@@ -1958,7 +2068,8 @@ dysplasia_type:
 ecog_performance_status:
   common:
     description: >-
-      The ECOG functional performance status of the patient/participant.
+      The subject's performance status (PS) score reported in its numeric format  at the time of the visit. 
+      The ECOG PS is a determination of how well a subject is able to perform ordinary tasks and carry out daily activities.
     termDef:
       term: >-
         Performance Status Assessment Eastern Cooperative Oncology Group Scale
@@ -2105,10 +2216,7 @@ esophageal_columnar_metaplasia_present:
 ethnicity:
   common:
     description: >-
-      An individual's self-described social and cultural grouping, specifically whether
-      an individual describes themselves as Hispanic or Latino. The provided values
-      are based on the categories defined by the U.S. Office of Management and Business
-      and used by the U.S. Census Bureau.
+      Subject's ethnicity that was collected at baseline, study enrollment, for the US cohort only.
     termDef:
       term: >-
         Ethnic Group Category Text
@@ -2441,6 +2549,17 @@ first_event:
       cde_version:
       term_url:
 
+first_line:
+  common:
+    description: >-
+      The first regimen received by the patient for the treatment of this cancer.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 first_symptom_prior_to_diagnosis:
   common:
     description: >-
@@ -2549,10 +2668,7 @@ gastric_esophageal_junction_involvement:
 gender:
   common:
     description: >-
-      Text designations that identify gender. Gender is described as the assemblage
-      of properties that distinguish people on the basis of their societal roles.
-      [Explanatory Comment 1: Identification of gender is based upon self-report and
-      may come from a form, questionnaire, interview, etc.]
+      Subject's sex that was collected at baseline, study enrollment.
     termDef:
       term: >-
         Person Gender Text Type
@@ -3223,7 +3339,8 @@ ishak_fibrosis_score:
 iss_stage:
   common:
     description: >-
-      The multiple myeloma disease stage at diagnosis.
+      The multiple myeloma disease International Staging System (ISS) stage at diagnosis that prognostically categorizes 
+      the severity of multiple myeloma based on routinely obtained lab values.
     termDef:
       term: >-
         Multiple Myeloma Disease Stage Diagnosis Status
@@ -3244,6 +3361,28 @@ karnofsky_performance_status:
       cde_id: 2003853
       cde_version: 4.2
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=2003853%20and%20ver_nr=4.2"
+
+keatsnfkb_index:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+keatsprolif_index:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
 
 laboratory_test:
   common:
@@ -3400,6 +3539,17 @@ library_strategy:
   common:
     description: >-
       Library strategy.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+line:
+  common:
+    description: >-
+      The line of therapy. It is important to note that multiple regimens may create one line.
     termDef:
       term:
       source:
@@ -3567,6 +3717,28 @@ lymphatic_invasion_present:
       cde_id: 64171
       cde_version: 3.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=64171%20and%20ver_nr=3.0"
+
+lytic_bone_lesion:
+  common:
+    description: >-
+      The subject has evidence of a sign or symptom related to myeloma, specifically, lytic bone lesion(s).
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+lytic_bone_lesion_present:
+  common:
+    description: >-
+      Indication and number of lytic bone lesions found on scan if imaging_result="positive." If imaging_result was not "positive", then "not_applicable" is recorded.
+    termDef:
+      term: 
+      source:
+      cde_id:
+      cde_version:
+      term_url:
 
 margin_distance:
   common:
@@ -3826,6 +3998,72 @@ mitotic_total_area:
       cde_version:
       term_url:
 
+mm_bone_lesion_femur:
+  common:
+    description: >-
+      Indication that the exam found evidence of myeloma-related bone lesion(s) on femur.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+mm_bone_lesion_humerus:
+  common:
+    description: >-
+      Indication that the exam found evidence of myeloma-related bone lesion(s) on humerus.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+mm_bone_lesion_pelvis:
+  common:
+    description: >-
+      Indication that the exam found evidence of myeloma-related bone lesion(s) on pelvis.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+mm_bone_lesion_ribs:
+  common:
+    description: >-
+      Indication that the exam found evidence of myeloma-related bone lesion(s) on ribs.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+mm_bone_lesion_skull:
+  common:
+    description: >-
+      Indication that the exam found evidence of myeloma-related bone lesion(s) on skull.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+mm_bone_lesion_spine:
+  common:
+    description: >-
+      Indication that the exam found evidence of myeloma-related bone lesion(s) on spine.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 molecular_analysis_method:
   common:
     description: >-
@@ -4071,6 +4309,17 @@ number_of_fractions:
       cde_version:
       term_url:
 
+number_of_lytic_lesions:
+  common:
+    description: >-
+      Number of lytic bone lesions found in exam.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 number_proliferating_cells:
   common:
     description: >-
@@ -4121,6 +4370,17 @@ oct_embedded:
       cde_id: 5432538
       cde_version: 1.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=5432538%20and%20ver_nr=1.0"
+
+osteopenia_osteoporosis:
+  common:
+    description: >-
+      Indication that the exam found evidence of osteopenia or osteoporosis.
+    termDef:
+      term: 
+      source: 
+      cde_id: 
+      cde_version:
+      term_url: 
 
 ovarian_specimen_status:
   common:
@@ -4518,6 +4778,39 @@ peritoneal_washing_results:
       cde_version: 22.11d
       term_url: "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C159340"
 
+pi_pbl_call:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+pi_pbl_index:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+plasmacytoma_number:
+  common:
+    description: >-
+      By mri/ct the number of plasmacytoma noted.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 plate_name:
   common:
     description: >-
@@ -4773,11 +5066,9 @@ procedures_performed:
 progression_or_recurrence:
   common:
     description: >-
-      Indicates whether a patient has a progression or recurrence after initial treatment.
-      This can include local, regional, or metastatic disease.
+      Indicator that the subject has progressive disease after initial treatment.
     termDef:
-      term: >-
-        New Neoplasm Event Post Initial Therapy Indicator
+      term: 
       source: caDSR
       cde_id: 3121376
       cde_version: 1.0
@@ -4963,12 +5254,7 @@ qc_metric_state:
 race:
   common:
     description: >-
-      An arbitrary classification of a taxonomic group that is a division of a species.
-      It usually arises as a consequence of geographical isolation within a species
-      and is characterized by shared heredity, physical attributes and behavior, and
-      in the case of humans, by common history, nationality, or geographic distribution.
-      The provided values are based on the categories defined by the U.S. Office of
-      Management and Business and used by the U.S. Census Bureau.
+      Subject's race that was collected at baseline, study enrollment, for the US cohort only.
     termDef:
       term: >-
         Race Category Text
@@ -5024,6 +5310,17 @@ read_pair_number:
       cde_version:
       term_url:
 
+reason_for_discontinuation:
+  common:
+    description: >-
+      Harmonized reason that the regimen was discontinued.
+    termDef:
+      term: 
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 reason_treatment_ended:
   common:
     description: >-
@@ -5074,6 +5371,50 @@ reflux_treatment_type:
       cde_id: 3440206
       cde_version: 1.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=3440206%20and%20ver_nr=1.0"
+
+regimen_duration:
+  common:
+    description: >-
+      The length of time of the regimen/regimen component.
+    termDef:
+      term:
+      source: 
+      cde_id: 
+      cde_version:
+      term_url:
+
+regimen_name:
+  common:
+    description: >-
+      The concatenated names of the drugs in the regimen; these are ordered alphabetically, though the steroids are last in the list. The drug names and regimen names are consistent with NCIt.
+    termDef:
+      term: 
+      source: 
+      cde_id: 
+      cde_version:
+      term_url: 
+
+regimen_short_name:
+  common:
+    description: >-
+      Abbreviated drug names.
+    termDef:
+      term: 
+      source: 
+      cde_id: 
+      cde_version:
+      term_url: 
+
+regimen_type:
+  common:
+    description: >-
+      Category of regimen as applied by the institutions.
+    termDef:
+      term: 
+      source: 
+      cde_id: 
+      cde_version:
+      term_url: 
 
 regimen_or_line_of_therapy:
   common:
@@ -5154,7 +5495,7 @@ relative_with_cancer_history:
 relatives_with_cancer_history_count:
   common:
     description: >-
-      The number of relatives the patient has with a known history of cancer.
+      Count of relatives with malignant cancer diagnosis derived from family history table
     termDef:
       term:
       source:
@@ -5684,6 +6025,39 @@ somatic:
       cde_version:
       term_url:
 
+soft_tissue_plasmacytoma_found_ct_mri:
+  common:
+    description: >-
+      Indication that a soft tissue plasmacytomas was found by CT or MRI since the prior study visit.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+soft_tissue_plasmacytoma_multi:
+  common:
+    description: >-
+      The subject has evidence of a sign or symptom related to myeloma, specifically, multiple soft tissue plasmacytomas.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+soft_tissue_plasmacytoma_single:
+  common:
+    description: >-
+      The subject has evidence of a sign or symptom related to myeloma, specifically, a single soft tissue plasmacytoma.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 source_center:
   common:
     description: >-
@@ -5792,6 +6166,28 @@ supratentorial_localization:
       cde_id: 3133891
       cde_version: 1.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=3133891%20and%20ver_nr=1.0"
+
+survival_time_pfs:
+  common:
+    description: >-
+      For Progression Free Survival (PFS) analyses, the time from the index date to the patient's death or censoring.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+surivival_time_os:
+  common:
+    description: >-
+      For Overall Survival (OS) analyses, the time from the index date to the patient's death or censoring.
+    termDef:
+      term: 
+      source: 
+      cde_id:
+      cde_version:
+      term_url:
 
 synchronous_malignancy:
   common:
@@ -6572,6 +6968,28 @@ type_of_tobacco_used:
       cde_version:
       term_url:
 
+uams70_call:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+uams70_index:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 uicc_clinical_m:
   common:
     description: >-
@@ -7008,7 +7426,7 @@ year_of_birth:
 year_of_death:
   common:
     description: >-
-      Numeric value to represent the year of the death of an individual.
+      The year component of the subject's date of death, if applicable. In a de-identified dataset, this variable will help with sequencing events.
     termDef:
       term: >-
         Year Death Number

@@ -33,13 +33,13 @@ links:
     backref: follow_ups
     label: describes
     target_type: case
-    multiplicity: many_to_one
+    multiplicity: many_to_many
     required: true
   - name: diagnoses
     backref: follow_ups
     label: describes
     target_type: diagnosis
-    multiplicity: many_to_one
+    multiplicity: many_to_many
     required: false
 
 required:
@@ -1525,20 +1525,16 @@ properties:
 
   ecog_performance_status:
     $ref: "_terms.yaml#/ecog_performance_status/common"
-    enum:
-      - "0"
-      - "1"
-      - "2"
-      - "3"
-      - "4"
-      - "5"
-      - Unknown
-      - Not Reported
-##    enumDef:
-##      Unknown:
-##        $ref: "_terms_enum.yaml#/unknown/common"
-##      Not Reported:
-##        $ref: "_terms_enum.yaml#/not_reported/common"
+    type: string
+    # enum:
+      # - "0"
+      # - "1"
+      # - "2"
+      # - "3"
+      # - "4"
+      # - "5"
+      # - Unknown
+      # - Not Reported
 
   evidence_of_progression_type:
     $ref: "_terms.yaml#/evidence_of_progression_type/common"
@@ -2974,7 +2970,7 @@ properties:
     minimum: 1900
 
   cases:
-    $ref: "_definitions.yaml#/to_one"
+    $ref: "_definitions.yaml#/to_many"
 
   diagnoses:
-    $ref: "_definitions.yaml#/to_one"
+    $ref: "_definitions.yaml#/to_many"

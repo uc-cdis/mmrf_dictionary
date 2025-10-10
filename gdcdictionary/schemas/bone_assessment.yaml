@@ -1,0 +1,128 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "bone_assessment"
+title: Bone Assessment
+type: object
+namespace: https://gdc.cancer.gov
+category: clinical
+project: '*'
+program: '*'
+description: >-
+  TK
+additionalProperties: false
+submittable: true
+downloadable: true
+previous_version_downloadable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
+
+links:
+  - name: cases
+    backref: bone_assessment
+    label: describes
+    target_type: case
+    multiplicity: many_to_many
+    required: true
+
+required:
+  - submitter_id
+  - type
+  - cases
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+properties:
+
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  lytic_bone_lesion_present:
+    $ref: "_terms.yaml#/lytic_bone_lesion_present/common"
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
+
+  mm_bone_lesion_femur:
+    $ref: "_terms.yaml#/mm_bone_lesion_femur/common"
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
+
+  mm_bone_lesion_humerus:
+    $ref: "_terms.yaml#/mm_bone_lesion_humerus/common"
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
+
+  mm_bone_lesion_pelvis:
+    $ref: "_terms.yaml#/mm_bone_lesion_pelvis/common"
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
+
+  mm_bone_lesion_ribs:
+    $ref: "_terms.yaml#/mm_bone_lesion_ribs/common"
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
+
+  mm_bone_lesion_skull:
+    $ref: "_terms.yaml#/mm_bone_lesion_skull/common"
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
+
+  mm_bone_lesion_spine:
+    $ref: "_terms.yaml#/mm_bone_lesion_spine/common"
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
+
+  number_of_lytic_lesions:
+    $ref: "_terms.yaml#/number_of_lytic_lesions/common"
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
+
+  osteopenia_osteoporosis:
+    $ref: "_terms.yaml#/osteopenia_osteoporosis/common"
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
+
+  cases:
+    $ref: "_definitions.yaml#/to_many"

@@ -1,0 +1,76 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "outcomes"
+title: Outcomes
+type: object
+namespace: https://gdc.cancer.gov
+category: clinical
+project: '*'
+program: '*'
+description: >-
+  TK
+additionalProperties: false
+submittable: true
+downloadable: true
+previous_version_downloadable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
+
+links:
+  - name: cases
+    backref: outcomes
+    label: describes
+    target_type: case
+    multiplicity: many_to_many
+    required: true
+
+required:
+  - submitter_id
+  - type
+  - cases
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+properties:
+
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  censor_os:
+    $ref: "_terms.yaml#/censor_os/common"
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
+
+  censor_pfs:
+    $ref: "_terms.yaml#/censor_pfs/common"
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
+
+  surivival_time_os:
+    $ref: "_terms.yaml#/surivival_time_os/common"
+    type: integer
+    minimum: 0
+
+  survival_time_pfs:
+    $ref: "_terms.yaml#/survival_time_pfs/common"
+    type: integer
+    minimum: 0
+
+
+  cases:
+    $ref: "_definitions.yaml#/to_many"

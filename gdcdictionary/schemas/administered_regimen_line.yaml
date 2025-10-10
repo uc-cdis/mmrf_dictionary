@@ -1,0 +1,107 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "administered_regimen_line"
+title: Administered Regimen Line
+type: object
+namespace: https://gdc.cancer.gov
+category: clinical
+project: '*'
+program: '*'
+description: >-
+  TK
+additionalProperties: false
+submittable: true
+downloadable: true
+previous_version_downloadable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
+
+links:
+  - name: cases
+    backref: administered_regimen_line
+    label: describes
+    target_type: case
+    multiplicity: many_to_many
+    required: true
+
+required:
+  - submitter_id
+  - type
+  - cases
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+properties:
+
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  cancer_diagnosis:
+    $ref: "_terms.yaml#/cancer_diagnosis/common"
+    type: integer
+    minimum: 0
+
+  first_line:
+    $ref: "_terms.yaml#/first_line/common"
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
+
+  line:
+    $ref: "_terms.yaml#/line/common"
+    type: integer
+    minimum: 0
+
+  reason_for_discontinuation:
+    $ref: "_terms.yaml#/reason_for_discontinuation/common"
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
+
+  regimen_duration:
+    $ref: "_terms.yaml#/regimen_duration/common"
+    type: integer
+    minimum: 0
+
+  regimen_name:
+    $ref: "_terms.yaml#/regimen_name/common"
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
+
+  regimen_short_name:
+    $ref: "_terms.yaml#/regimen_short_name/common"
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
+
+  regimen_type:
+    $ref: "_terms.yaml#/regimen_type/common"
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
+
+  cases:
+    $ref: "_definitions.yaml#/to_many"
