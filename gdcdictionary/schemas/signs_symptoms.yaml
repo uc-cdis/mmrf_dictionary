@@ -1,0 +1,83 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "signs_symptoms"
+title: Signs and Symptoms
+type: object
+namespace: https://gdc.cancer.gov
+category: clinical
+project: '*'
+program: '*'
+description: >-
+  TK
+additionalProperties: false
+submittable: true
+downloadable: true
+previous_version_downloadable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
+
+links:
+  - name: cases
+    backref: signs_symptoms
+    label: describes
+    target_type: case
+    multiplicity: many_to_many
+    required: true
+
+required:
+  - submitter_id
+  - type
+  - cases
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+properties:
+
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  anemia:
+    $ref: "_terms.yaml#/anemia/common"
+    string:
+      - example
+
+  bone_lesion:
+    $ref: "_terms.yaml#/bone_lesion/common"
+    string:
+      - example
+
+  lytic_bone_lesion:
+    $ref: "_terms.yaml#/lytic_bone_lesion/common"
+    string:
+      - example
+
+  plasmacytoma_number:
+    $ref: "_terms.yaml#/plasmacytoma_number/common"
+    string:
+      - example
+
+  soft_tissue_plasmacytoma_found_ct_mri:
+    $ref: "_terms.yaml#/soft_tissue_plasmacytoma_found_ct_mri/common"
+    string:
+      - example
+
+  soft_tissue_plasmacytoma_multi:
+    $ref: "_terms.yaml#/soft_tissue_plasmacytoma_multi/common"
+    string:
+      - example
+
+  soft_tissue_plasmacytoma_single:
+    $ref: "_terms.yaml#/soft_tissue_plasmacytoma_single/common"
+    string:
+      - example
+
+
+  cases:
+    $ref: "_definitions.yaml#/to_many"
