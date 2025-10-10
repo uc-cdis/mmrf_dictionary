@@ -50,8 +50,12 @@ properties:
 
   first_line:
     $ref: "_terms.yaml#/first_line/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   line:
     $ref: "_terms.yaml#/line/common"
@@ -60,8 +64,12 @@ properties:
 
   reason_for_discontinuation:
     $ref: "_terms.yaml#/reason_for_discontinuation/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   regimen_duration:
     $ref: "_terms.yaml#/regimen_duration/common"
@@ -70,18 +78,30 @@ properties:
 
   regimen_name:
     $ref: "_terms.yaml#/regimen_name/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   regimen_short_name:
     $ref: "_terms.yaml#/regimen_short_name/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   regimen_type:
     $ref: "_terms.yaml#/regimen_type/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   cases:
     $ref: "_definitions.yaml#/to_many"

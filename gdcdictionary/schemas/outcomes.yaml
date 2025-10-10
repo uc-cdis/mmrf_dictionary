@@ -45,13 +45,21 @@ properties:
 
   censor_os:
     $ref: "_terms.yaml#/censor_os/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   censor_pfs:
     $ref: "_terms.yaml#/censor_pfs/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   surivival_time_os:
     $ref: "_terms.yaml#/surivival_time_os/common"

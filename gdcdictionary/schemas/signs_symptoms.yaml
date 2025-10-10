@@ -45,38 +45,66 @@ properties:
 
   anemia:
     $ref: "_terms.yaml#/anemia/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   bone_lesion:
     $ref: "_terms.yaml#/bone_lesion/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   lytic_bone_lesion:
     $ref: "_terms.yaml#/lytic_bone_lesion/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   plasmacytoma_number:
     $ref: "_terms.yaml#/plasmacytoma_number/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   soft_tissue_plasmacytoma_found_ct_mri:
     $ref: "_terms.yaml#/soft_tissue_plasmacytoma_found_ct_mri/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   soft_tissue_plasmacytoma_multi:
     $ref: "_terms.yaml#/soft_tissue_plasmacytoma_multi/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   soft_tissue_plasmacytoma_single:
     $ref: "_terms.yaml#/soft_tissue_plasmacytoma_single/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
 
   cases:

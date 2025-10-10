@@ -581,22 +581,24 @@ properties:
 
   ethnicity:
     $ref: "_terms.yaml#/ethnicity/common"
-    string:
-      - hispanic or latino
-      - not hispanic or latino
-      - Unknown
-      - unknown
-      - not reported
-      - not allowed to collect
+    type: string
+    # enum:
+      # - hispanic or latino
+      # - not hispanic or latino
+      # - Unknown
+      # - unknown
+      # - not reported
+      # - not allowed to collect
 
   gender:
     $ref: "_terms.yaml#/gender/common"
-    string:
-      - female
-      - male
-      - unspecified
-      - unknown
-      - not reported
+    type: string
+    # enum:
+      # - female
+      # - male
+      # - unspecified
+      # - unknown
+      # - not reported
 
   marital_status:
     $ref: "_terms.yaml#/marital_status/common"
@@ -631,17 +633,18 @@ properties:
 
   race:
     $ref: "_terms.yaml#/race/common"
-    string:
-      - american indian or alaska native
-      - asian
-      - black or african american
-      - native hawaiian or other pacific islander
-      - white
-      - other
-      - Unknown
-      - unknown
-      - not reported
-      - not allowed to collect
+    type: string
+    # enum:
+      # - american indian or alaska native
+      # - asian
+      # - black or african american
+      # - native hawaiian or other pacific islander
+      # - white
+      # - other
+      # - Unknown
+      # - unknown
+      # - not reported
+      # - not allowed to collect
 
   vital_status:
     $ref: "_terms.yaml#/vital_status/common"

@@ -160,43 +160,48 @@ properties:
 
   d_im_flowcyt_pct_pc_in_bm_high:
     $ref: "_terms.yaml#/d_im_flowcyt_pct_pc_in_bm_high/common"
-    string:
-      - "Yes"
-      - "No"
-      - Unknown
-      - Not Reported
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   d_im_flowcyt_pct_pc_in_bm_low:
     $ref: "_terms.yaml#/d_im_flowcyt_pct_pc_in_bm_low/common"
-    string:
-      - "Yes"
-      - "No"
-      - Unknown
-      - Not Reported
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   d_im_flowcyt_pct_pc_in_pb_low:
     $ref: "_terms.yaml#/d_im_flowcyt_pct_pc_in_pb_low/common"
-    string:
-      - "Yes"
-      - "No"
-      - Unknown
-      - Not Reported
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   d_im_morphology_percent_pc_in_bm:
     $ref: "_terms.yaml#/d_im_morphology_percent_pc_in_bm/common"
-    string:
-      - "Yes"
-      - "No"
-      - Unknown
-      - Not Reported
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   d_im_morphology_percent_pc_in_pb:
     $ref: "_terms.yaml#/d_im_morphology_percent_pc_in_pb/common"
-    string:
-      - "Yes"
-      - "No"
-      - Unknown
-      - Not Reported
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   days_to_pathology_detail:
     description: >-
@@ -330,19 +335,21 @@ properties:
 
   keatsnfkb_index:
     $ref: "_terms.yaml#/keatsnfkb_index/common"
-    string:
-      - "Yes"
-      - "No"
-      - Unknown
-      - Not Reported
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   keatsprolif_index:
     $ref: "_terms.yaml#/keatsprolif_index/common"
-    string:
-      - "Yes"
-      - "No"
-      - Unknown
-      - Not Reported
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   largest_extrapelvic_peritoneal_focus:
     $ref: "_terms.yaml#/largest_extrapelvic_peritoneal_focus/common"
@@ -567,19 +574,21 @@ properties:
 
   pi_pbl_call:
     $ref: "_terms.yaml#/pi_pbl_call/common"
-    string:
-      - "Yes"
-      - "No"
-      - Unknown
-      - Not Reported
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   pi_pbl_index:
     $ref: "_terms.yaml#/pi_pbl_index/common"
-    string:
-      - "Yes"
-      - "No"
-      - Unknown
-      - Not Reported
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   prcc_type:
     $ref: "_terms.yaml#/prcc_type/common"
@@ -805,19 +814,21 @@ properties:
 
   uams70_call:
     $ref: "_terms.yaml#/uams70_call/common"
-    string:
-      - "Yes"
-      - "No"
-      - Unknown
-      - Not Reported
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   uams70_index:
     $ref: "_terms.yaml#/uams70_index/common"
-    string:
-      - "Yes"
-      - "No"
-      - Unknown
-      - Not Reported
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   vascular_invasion_present:
     $ref: "_terms.yaml#/vascular_invasion_present/common"

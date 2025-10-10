@@ -45,48 +45,84 @@ properties:
 
   lytic_bone_lesion_present:
     $ref: "_terms.yaml#/lytic_bone_lesion_present/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   mm_bone_lesion_femur:
     $ref: "_terms.yaml#/mm_bone_lesion_femur/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   mm_bone_lesion_humerus:
     $ref: "_terms.yaml#/mm_bone_lesion_humerus/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   mm_bone_lesion_pelvis:
     $ref: "_terms.yaml#/mm_bone_lesion_pelvis/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   mm_bone_lesion_ribs:
     $ref: "_terms.yaml#/mm_bone_lesion_ribs/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   mm_bone_lesion_skull:
     $ref: "_terms.yaml#/mm_bone_lesion_skull/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   mm_bone_lesion_spine:
     $ref: "_terms.yaml#/mm_bone_lesion_spine/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   number_of_lytic_lesions:
     $ref: "_terms.yaml#/number_of_lytic_lesions/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   osteopenia_osteoporosis:
     $ref: "_terms.yaml#/osteopenia_osteoporosis/common"
-    string:
-      - example
+    type: string
+    # enum:
+    #   - "Yes"
+    #   - "No"
+    #   - Unknown
+    #   - Not Reported
 
   cases:
     $ref: "_definitions.yaml#/to_many"

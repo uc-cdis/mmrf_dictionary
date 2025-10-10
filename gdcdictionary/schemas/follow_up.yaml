@@ -1525,15 +1525,16 @@ properties:
 
   ecog_performance_status:
     $ref: "_terms.yaml#/ecog_performance_status/common"
-    string:
-      - "0"
-      - "1"
-      - "2"
-      - "3"
-      - "4"
-      - "5"
-      - Unknown
-      - Not Reported
+    type: string
+    # enum:
+      # - "0"
+      # - "1"
+      # - "2"
+      # - "3"
+      # - "4"
+      # - "5"
+      # - Unknown
+      # - Not Reported
 
   evidence_of_progression_type:
     $ref: "_terms.yaml#/evidence_of_progression_type/common"

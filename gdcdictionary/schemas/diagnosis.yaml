@@ -392,35 +392,36 @@ properties:
 
   best_overall_response:
     $ref: "_terms.yaml#/best_overall_response/common"
-    string:
-      - AJ-Adjuvant Therapy
-      - CPD-Clinical Progression
-      - CR-Complete Response
-      - CRU-Complete Response Unconfirmed
-      - DU-Disease Unchanged
-      - IMR-Immunoresponse
-      - IPD-Immunoprogression
-      - MR-Minimal/Marginal Response
-      - MX-Mixed Response
-      - Non-CR/Non-PD-Non-CR/Non-PD
-      - NPB-No Palliative Benefit
-      - NR-No Response
-      - PA-Palliative Therapy
-      - PB-Palliative Benefit
-      - PD-Progressive Disease
-      - PPD-Pseudoprogression
-      - PR-Partial Response
-      - PSR-Pseudoresponse
-      - RD-Responsive Disease
-      - RP-Response
-      - RPD-Radiographic Progressive Disease
-      - sCR-Stringent Complete Response
-      - SD-Stable Disease
-      - SPD-Surgical Progression
-      - TE-Too Early
-      - VGPR-Very Good Partial Response
-      - Unknown
-      - Not Reported
+    type: string
+    # enum:
+      # - AJ-Adjuvant Therapy
+      # - CPD-Clinical Progression
+      # - CR-Complete Response
+      # - CRU-Complete Response Unconfirmed
+      # - DU-Disease Unchanged
+      # - IMR-Immunoresponse
+      # - IPD-Immunoprogression
+      # - MR-Minimal/Marginal Response
+      # - MX-Mixed Response
+      # - Non-CR/Non-PD-Non-CR/Non-PD
+      # - NPB-No Palliative Benefit
+      # - NR-No Response
+      # - PA-Palliative Therapy
+      # - PB-Palliative Benefit
+      # - PD-Progressive Disease
+      # - PPD-Pseudoprogression
+      # - PR-Partial Response
+      # - PSR-Pseudoresponse
+      # - RD-Responsive Disease
+      # - RP-Response
+      # - RPD-Radiographic Progressive Disease
+      # - sCR-Stringent Complete Response
+      # - SD-Stable Disease
+      # - SPD-Surgical Progression
+      # - TE-Too Early
+      # - VGPR-Very Good Partial Response
+      # - Unknown
+      # - Not Reported
 
   burkitt_lymphoma_clinical_variant:
     $ref: "_terms.yaml#/burkitt_lymphoma_clinical_variant/common"
@@ -929,12 +930,13 @@ properties:
 
   iss_stage:
     $ref: "_terms.yaml#/iss_stage/common"
-    string:
-      - I
-      - II
-      - III
-      - Unknown
-      - Not Reported
+    type: string
+    # enum:
+      # - I
+      # - II
+      # - III
+      # - Unknown
+      # - Not Reported
 
   last_known_disease_status:
     $ref: "_terms.yaml#/last_known_disease_status/common"
@@ -5074,12 +5076,13 @@ properties:
 
   progression_or_recurrence:
     $ref: "_terms.yaml#/progression_or_recurrence/common"
-    string:
-      - "yes"
-      - "no"
-      - unknown
-      - not reported
-      - Not Allowed To Collect
+    type: string
+    # enum:
+      # - "yes"
+      # - "no"
+      # - unknown
+      # - not reported
+      # - Not Allowed To Collect
 
   residual_disease:
     $ref: "_terms.yaml#/residual_disease/common"
