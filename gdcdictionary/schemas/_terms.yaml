@@ -518,6 +518,17 @@ anaplasia_present_type:
       cde_version: 1.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=4925534%20and%20ver_nr=1.0"
 
+anemia:
+  common:
+    description: >-
+      The subject has evidence of a sign or symptom related to myeloma, specifically, anemia.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 aneuploidy:
   common:
     description: >-
@@ -811,6 +822,17 @@ body_surface_area:
       cde_version: 6.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=653%20and%20ver_nr=6.0"
 
+bone_lesion:
+  common:
+    description: >-
+      The subject has evidence of a sign or symptom related to myeloma, specifically, bone lesions with osteoporosis with compression fractures.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 bone_marrow_malignant_cells:
   common:
     description: >-
@@ -959,6 +981,28 @@ cell_count:
       cde_id: 6142528
       cde_version: 1.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=6142528%20and%20ver_nr=1.0"
+
+censor_os:
+  common:
+    description: >-
+      A numeric (0/1) flag indicating whether the death has occurred (1=TRUE) or the subject was censored (0=FALSE)
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+censor_pfs:
+  common:
+    description: >-
+      A numeric (0/1) flag indicating whether the progressive disease has occurred (1=TRUE) or the subject was censored (0=FALSE)
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
 
 channel:
   common:
@@ -1440,6 +1484,61 @@ cytoband:
       cde_id: 6142405
       cde_version: 1.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=6142405%20and%20ver_nr=1.0"
+
+d_im_flowcyt_pct_pc_in_bm_high:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+d_im_flowcyt_pct_pc_in_bm_low:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+d_im_flowcyt_pct_pc_in_pb_low:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+d_im_morphology_percent_pc_in_bm:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+d_im_morphology_percent_pc_in_pb:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
 
 data_category:
   common:
@@ -3263,6 +3362,28 @@ karnofsky_performance_status:
       cde_version: 4.2
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=2003853%20and%20ver_nr=4.2"
 
+keatsnfkb_index:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+keatsprolif_index:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 laboratory_test:
   common:
     description: >-
@@ -3596,6 +3717,17 @@ lymphatic_invasion_present:
       cde_id: 64171
       cde_version: 3.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=64171%20and%20ver_nr=3.0"
+
+lytic_bone_lesion:
+  common:
+    description: >-
+      The subject has evidence of a sign or symptom related to myeloma, specifically, lytic bone lesion(s).
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
 
 lytic_bone_lesion_present:
   common:
@@ -4645,6 +4777,39 @@ peritoneal_washing_results:
       cde_id: C159340
       cde_version: 22.11d
       term_url: "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C159340"
+
+pi_pbl_call:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+pi_pbl_index:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+plasmacytoma_number:
+  common:
+    description: >-
+      By mri/ct the number of plasmacytoma noted.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
 
 plate_name:
   common:
@@ -5860,6 +6025,39 @@ somatic:
       cde_version:
       term_url:
 
+soft_tissue_plasmacytoma_found_ct_mri:
+  common:
+    description: >-
+      Indication that a soft tissue plasmacytomas was found by CT or MRI since the prior study visit.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+soft_tissue_plasmacytoma_multi:
+  common:
+    description: >-
+      The subject has evidence of a sign or symptom related to myeloma, specifically, multiple soft tissue plasmacytomas.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+soft_tissue_plasmacytoma_single:
+  common:
+    description: >-
+      The subject has evidence of a sign or symptom related to myeloma, specifically, a single soft tissue plasmacytoma.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 source_center:
   common:
     description: >-
@@ -5968,6 +6166,17 @@ supratentorial_localization:
       cde_id: 3133891
       cde_version: 1.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=3133891%20and%20ver_nr=1.0"
+
+survival_time_pfs:
+  common:
+    description: >-
+      For Progression Free Survival (PFS) analyses, the time from the index date to the patient's death or censoring.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
 
 surivival_time_os:
   common:
@@ -6755,6 +6964,28 @@ type_of_tobacco_used:
       term: >-
         Person Tobacco Use Type
       source: caDSR
+      cde_id:
+      cde_version:
+      term_url:
+
+uams70_call:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+uams70_index:
+  common:
+    description: >-
+      TK
+    termDef:
+      term:
+      source:
       cde_id:
       cde_version:
       term_url:
