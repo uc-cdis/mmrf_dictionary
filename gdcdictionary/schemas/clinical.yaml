@@ -27,7 +27,7 @@ links:
     backref: clinicals
     label: describes
     target_type: case
-    multiplicity: one_to_one
+    multiplicity: many_to_many
     required: true
 
 required:
@@ -141,4 +141,4 @@ properties:
     type: number
 
   cases:
-    $ref: "_definitions.yaml#/to_one"
+    $ref: "_definitions.yaml#/to_many"

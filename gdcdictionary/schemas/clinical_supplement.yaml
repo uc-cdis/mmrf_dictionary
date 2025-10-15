@@ -38,7 +38,7 @@ links:
       backref: clinical_supplements
       label: data_from
       target_type: core_metadata_collection
-      multiplicity: many_to_one
+      multiplicity: many_to_many
       required: false
 
 
@@ -86,4 +86,4 @@ properties:
 
   core_metadata_collections:
     description: The submitter_id or id of the core_metadata_collection to which the data_file belongs, i.e., a link to a record in the parent node.
-    $ref: "_definitions.yaml#/to_one"
+    $ref: "_definitions.yaml#/to_many"
