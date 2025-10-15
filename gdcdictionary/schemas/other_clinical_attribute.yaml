@@ -31,19 +31,19 @@ links:
         backref: other_clinical_attributes
         label: describes
         target_type: case
-        multiplicity: many_to_one
+        multiplicity: many_to_many
         required: false
       - name: follow_ups
         backref: other_clinical_attributes
         label: describes
         target_type: follow_up
-        multiplicity: many_to_one
+        multiplicity: many_to_many
         required: false
 
 required:
   - submitter_id
   - type
-  
+
 uniqueKeys:
   - [id]
   - [project_id, submitter_id]
@@ -1371,7 +1371,7 @@ properties:
     minimum: 0
 
   cases:
-    $ref: "_definitions.yaml#/to_one"
+    $ref: "_definitions.yaml#/to_many"
 
   follow_ups:
-    $ref: "_definitions.yaml#/to_one"
+    $ref: "_definitions.yaml#/to_many"

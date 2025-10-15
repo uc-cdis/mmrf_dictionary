@@ -28,7 +28,7 @@ links:
     backref: tissue_source_sites
     label: describes
     target_type: case
-    multiplicity: one_to_one
+    multiplicity: many_to_many
     required: true
 
 required:
@@ -73,4 +73,4 @@ properties:
     type: string
 
   cases:
-    $ref: "_definitions.yaml#/to_one"
+    $ref: "_definitions.yaml#/to_many"

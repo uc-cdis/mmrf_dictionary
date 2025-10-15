@@ -28,7 +28,7 @@ links:
     backref: demographics
     label: describes
     target_type: case
-    multiplicity: one_to_one
+    multiplicity: many_to_many
     required: true
 
 required:
@@ -671,4 +671,4 @@ properties:
     minimum: 1900
 
   cases:
-    $ref: "_definitions.yaml#/to_one"
+    $ref: "_definitions.yaml#/to_many"

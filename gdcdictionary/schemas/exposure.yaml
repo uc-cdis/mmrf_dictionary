@@ -27,7 +27,7 @@ links:
     backref: exposures
     label: describes
     target_type: case
-    multiplicity: many_to_one
+    multiplicity: many_to_many
     required: true
 
 required:
@@ -805,4 +805,4 @@ properties:
     minimum: 0
 
   cases:
-    $ref: "_definitions.yaml#/to_one"
+    $ref: "_definitions.yaml#/to_many"

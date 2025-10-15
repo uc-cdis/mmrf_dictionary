@@ -31,13 +31,13 @@ links:
     backref: samples
     label: derived_from
     target_type: case
-    multiplicity: many_to_one
+    multiplicity: many_to_many
     required: true
   - name: diagnoses
     backref: samples
     label: related_to
     target_type: diagnosis
-    multiplicity: many_to_one
+    multiplicity: many_to_many
     required: false
 
 
@@ -1047,13 +1047,13 @@ properties:
 ##        $ref: "_terms_enum.yaml#/not_allowed_to_collect/common"
 
   cases:
-    $ref: "_definitions.yaml#/to_one"
+    $ref: "_definitions.yaml#/to_many"
 
   # tissue_source_sites:
   #   $ref: "_definitions.yaml#/to_one"
 
   diagnoses:
-    $ref: "_definitions.yaml#/to_one"
+    $ref: "_definitions.yaml#/to_many"
 
   # parent_samples:
   #   $ref: "_definitions.yaml#/to_one"
