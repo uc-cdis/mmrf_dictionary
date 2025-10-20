@@ -423,6 +423,10 @@ properties:
       # - Unknown
       # - Not Reported
 
+  bmi_at_diagnosis:
+    $ref: "_terms.yaml#/bmi_at_diagnosis/common"
+    type: string
+    
   burkitt_lymphoma_clinical_variant:
     $ref: "_terms.yaml#/burkitt_lymphoma_clinical_variant/common"
     enum:
@@ -757,6 +761,10 @@ properties:
       - "1995"
       - "2009"
 
+  first_progressive_disease:
+    $ref: "_terms.yaml#/first_progressive_disease/common"
+      type: string
+  
   first_symptom_longest_duration:
     description: >-
       The length of time the first presenting symptom occurred that related to the
