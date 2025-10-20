@@ -37,6 +37,7 @@ required:
 
 uniqueKeys:
   - [id]
+  - [project_id, submitter_id]
 
 properties:
 
