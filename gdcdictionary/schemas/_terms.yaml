@@ -796,7 +796,7 @@ blood_test_normal_range_upper:
       cde_version: 1.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=6142535%20and%20ver_nr=1.0"
 
-bmi:
+bmi_at_diagnosis:
   common:
     description: >-
       Subject's body mass index (BMI) calculated from height and weight recorded prior to first therapy for active 
