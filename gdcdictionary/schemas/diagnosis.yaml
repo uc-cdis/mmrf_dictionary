@@ -763,7 +763,7 @@ properties:
 
   first_progressive_disease:
     $ref: "_terms.yaml#/first_progressive_disease/common"
-      type: string
+    type: string
   
   first_symptom_longest_duration:
     description: >-
