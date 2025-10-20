@@ -2560,6 +2560,17 @@ first_line:
       cde_version:
       term_url:
 
+first_progressive_disease:
+  common:
+    description: >-
+      Indicator that the subject has progressive disease after initial treatment.
+    termDef:
+      term:
+      source: caDSR
+      cde_id: 3121376
+      cde_version:
+      term_url:
+
 first_symptom_prior_to_diagnosis:
   common:
     description: >-
