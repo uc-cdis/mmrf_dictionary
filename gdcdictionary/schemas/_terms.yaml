@@ -809,6 +809,19 @@ bmi:
       cde_version: 3.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=2006410%20and%20ver_nr=3.0"
 
+bmi_at_diagnosis:
+  common:
+    description: >-
+      Subject's body mass index (BMI) calculated from height and weight recorded prior to first therapy for active 
+      multiple myeloma diagnosis. algorithm: (weight/(height*height))
+    termDef:
+      term: >-
+        Body Mass Index Value at Diagnosis
+      source: caDSR
+      cde_id: 2006410
+      cde_version: 3.0
+      term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=2006410%20and%20ver_nr=3.0"
+
 body_surface_area:
   common:
     description: >-
@@ -2557,6 +2570,17 @@ first_line:
       term:
       source:
       cde_id:
+      cde_version:
+      term_url:
+
+first_progressive_disease:
+  common:
+    description: >-
+      Indicator that the subject has progressive disease after initial treatment.
+    termDef:
+      term:
+      source: caDSR
+      cde_id: 3121376
       cde_version:
       term_url:
 
