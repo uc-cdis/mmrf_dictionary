@@ -8,9 +8,7 @@ category: data_file
 project: '*'
 program: '*'
 description: >-
-  A group of files containing program or project related data ingested by the GDC.
-  Archives may be submitted directly to GDC by a center, assembled by the GDC, or
-  obtained by another route. (GDC subclass of NCIt C114463)
+  A group of files containing data related to historical projects.
 additionalProperties: false
 submittable: true
 downloadable: true
@@ -49,9 +47,6 @@ required:
   - file_name
   - file_size
   - md5sum
-  - data_category
-  - data_format
-  - data_type
 
 uniqueKeys:
   - [id]
