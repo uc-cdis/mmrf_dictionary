@@ -152,7 +152,7 @@ properties:
   platforms:
     $ref: "_definitions.yaml#/to_one"
 
-  described_cases:
+  cases:
     $ref: "_definitions.yaml#/to_many"
 
   core_metadata_collections:
