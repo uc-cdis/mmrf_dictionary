@@ -46,12 +46,12 @@ links:
       #   target_type: analyte
       #   multiplicity: many_to_many
       #   required: false
-      # - name: cases
-      #   backref: files
-      #   label: data_from
-      #   target_type: case
-      #   multiplicity: many_to_many
-      #   required: false
+      - name: cases
+        backref: files
+        label: data_from
+        target_type: case
+        multiplicity: many_to_many
+        required: false
       # - name: portions
       #   backref: files
       #   label: data_from
@@ -152,8 +152,8 @@ properties:
   platforms:
     $ref: "_definitions.yaml#/to_one"
 
-  # described_cases:
-  #   $ref: "_definitions.yaml#/to_one"
+  described_cases:
+    $ref: "_definitions.yaml#/to_many"
 
   core_metadata_collections:
     description: The submitter_id or id of the core_metadata_collection to which the data_file belongs, i.e., a link to a record in the parent node.
