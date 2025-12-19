@@ -1,6 +1,10 @@
 name: Build mmrf dictionary
 
-on: push
+on:
+  push:
+  # only use `pull_request_target` if you know what you're doing!
+  # We need it here to handle PRs from forks. The job below is protected with a label
+  pull_request_target:
 
 jobs:
   dictionary:
