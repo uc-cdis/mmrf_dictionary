@@ -51,16 +51,12 @@ properties:
   first_line:
     $ref: "_terms.yaml#/first_line/common"
     type: string
-    # enum:
-    #   - "Yes"
-    #   - "No"
-    #   - Unknown
-    #   - Not Reported
 
   line:
     $ref: "_terms.yaml#/line/common"
     type: integer
-    minimum: 0
+    minimum: 1
+    maximum: 16
 
   reason_for_discontinuation:
     $ref: "_terms.yaml#/reason_for_discontinuation/common"
