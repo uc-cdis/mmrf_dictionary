@@ -9,7 +9,7 @@ on:
 jobs:
   dictionary:
     name: Build and Deploy Dictionary
-    uses: uc-cdis/.github/.github/workflows/dictionary_push.yaml@master
+    uses: uc-cdis/.github/.github/workflows/dictionary_push.yaml@k-burt-uch-patch-1
     with:
       DIRECTORY: "mmrf_dictionary"
     secrets:
