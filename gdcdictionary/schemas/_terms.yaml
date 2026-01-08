@@ -1841,6 +1841,28 @@ days_to_recurrence:
       cde_version: 1.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=6154731%20and%20ver_nr=1.0"
 
+days_to_regimen_end:
+  common:
+    description: >-
+      The number of days from the index date to the end date of the regimen.
+    termDef:
+      term:
+      source: 
+      cde_id: 
+      cde_version: 
+      term_url: 
+
+days_to_regimen_start:
+  common:
+    description: >-
+      The number of days from the index date to the start date of the regimen.
+    termDef:
+      term:
+      source: 
+      cde_id: 
+      cde_version: 
+      term_url: 
+
 days_to_risk_factor:
   common:
     description: >-
@@ -2565,7 +2587,7 @@ first_event:
 first_line:
   common:
     description: >-
-      The first regimen received by the patient for the treatment of this cancer.
+      The first regimen received by the patient for the treatment of this cancer. The drug names are abbreviated, concatenated, and ordered alphabetically, though the steroids are last in the list. The abbreviated drug names and regimen names are consistent with NCIt.
     termDef:
       term:
       source:
@@ -5396,6 +5418,17 @@ reflux_treatment_type:
       cde_version: 1.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=3440206%20and%20ver_nr=1.0"
 
+regimen_categories:
+  common:
+    description: >-
+      The concatenated list of the type of agents within the regimen, which may include the mechanism of action.
+    termDef:
+      term:
+      source: 
+      cde_id: 
+      cde_version:
+      term_url:
+
 regimen_duration:
   common:
     description: >-
@@ -5421,7 +5454,7 @@ regimen_name:
 regimen_short_name:
   common:
     description: >-
-      Abbreviated drug names.
+      The concatenated abbreviated drug names for the drugs in the regimen; these are ordered alphabetically, though the steroids are last in the list. The abbreviated drug names and regimen names are consistent with NCIt.
     termDef:
       term: 
       source: 
@@ -7476,6 +7509,28 @@ year_of_follow_up:
   common:
     description: >-
       The year of the patient's last follow-up appointment or contact.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+year_of_regimen_end_date:
+  common:
+    description: >-
+      Year component of the date that the regimen was last administered in this line. In a de-identified dataset, this variable will help with sequencing events.  
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+year_of_regimen_start_date:
+  common:
+    description: >-
+      Year component of the date that the regimen was first administered in this line. In a de-identified dataset, this variable will help with sequencing events. 
     termDef:
       term:
       source:
