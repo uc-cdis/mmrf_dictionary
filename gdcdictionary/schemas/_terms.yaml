@@ -1901,6 +1901,19 @@ days_to_sequencing:
       cde_version:
       term_url:
 
+days_to_signs_symptoms:
+  common:
+    description: >-
+      Number of days between the date of of the reported sign/symptom and the index date. 
+      In a de-identified dataset, this variable will help with sequencing events. 
+    termDef:
+      term: >-
+        Days to Sign/Symptom
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 days_to_test:
   common:
     description: >-
@@ -6189,6 +6202,17 @@ spike_ins_fasta:
       cde_version:
       term_url:
 
+spinal_cord_compression:
+  common:
+    description: >-
+      The subject has evidence of a sign or symptom related to myeloma, specifically, spinal cord compression.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 stain_type:
   common:
     description: >-
@@ -6205,6 +6229,17 @@ state:
   common:
     description: >-
       The current state of the object.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+subject_had_signs_symptoms:
+  common:
+    description: >-
+      Indicator that the subject reported one or more signs and/or symptoms at the study visit.
     termDef:
       term:
       source:
@@ -7531,6 +7566,18 @@ year_of_regimen_start_date:
   common:
     description: >-
       Year component of the date that the regimen was first administered in this line. In a de-identified dataset, this variable will help with sequencing events. 
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+year_of_signs_symptoms:
+  common:
+    description: >-
+      Year component the date of of the reported sign/symptom. In a de-identified dataset, 
+      this variable will help with sequencing events. 4 digit integer year.
     termDef:
       term:
       source:

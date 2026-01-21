@@ -60,6 +60,10 @@ properties:
     #   - "No"
     #   - Unknown
     #   - Not Reported
+  
+  days_to_signs_symptoms:
+    $ref: "_terms.yaml#/days_to_signs_symptoms/common"
+    type: integer
 
   lytic_bone_lesion:
     $ref: "_terms.yaml#/lytic_bone_lesion/common"
@@ -106,6 +110,21 @@ properties:
     #   - Unknown
     #   - Not Reported
 
+  spinal_cord_compression:
+    $ref: "_terms.yaml#/spinal_cord_compression/common"
+    enum:
+      - "Yes"
+      - "No"
+      - "Not Reported"
+
+  subject_had_signs_symptoms:
+    $ref: "_terms.yaml#/subject_had_signs_symptoms/common"
+    type: boolean
+  
+  year_of_signs_symptoms:
+    $ref: "_terms.yaml#/year_of_signs_symptoms/common"
+    type: integer
+    minimum: 1900
 
   cases:
     $ref: "_definitions.yaml#/to_many"
