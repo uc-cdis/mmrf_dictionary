@@ -24,21 +24,12 @@ systemProperties:
   - state
 
 links:
-    - exclusive: false
-      required: true
-      subgroup:
-      - name: diagnoses
-        backref: pathology_details
-        label: describes
-        target_type: diagnosis
-        multiplicity: many_to_many
-        required: false
-      - name: cases
-        backref: pathology_details
-        label: describes
-        target_type: case
-        multiplicity: many_to_one
-        required: false
+  - name: diagnoses
+    backref: pathology_details
+    label: describes
+    target_type: diagnosis
+    multiplicity: many_to_many
+    required: true
 
 required:
   - submitter_id
@@ -867,9 +858,6 @@ properties:
       - Transition zone
       - Unknown zone
       - Not Reported
-
-  cases:
-    $ref: "_definitions.yaml#/to_one"
   
   diagnoses:
     $ref: "_definitions.yaml#/to_many"
