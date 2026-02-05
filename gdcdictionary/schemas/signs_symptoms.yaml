@@ -52,6 +52,10 @@ properties:
     #   - Unknown
     #   - Not Reported
 
+  amyloidosis:
+    $ref: "_terms.yaml#/amyloidosis/common"
+    type: boolean
+
   bone_lesion:
     $ref: "_terms.yaml#/bone_lesion/common"
     type: string
@@ -60,10 +64,32 @@ properties:
     #   - "No"
     #   - Unknown
     #   - Not Reported
-  
+
+  bone_pain:
+    $ref: "_terms.yaml#/bone_pain/common"
+    enum:
+      - "Yes"
+      - "No"
+      - Not Reported
+
+  days_to_assessment_by_ct_mri:
+    $ref: "_terms.yaml#/days_to_assessment_by_ct_mri/common"
+    type: integer
+
   days_to_signs_symptoms:
     $ref: "_terms.yaml#/days_to_signs_symptoms/common"
     type: integer
+
+  fatigue:
+    $ref: "_terms.yaml#/fatigue/common"
+    enum:
+      - "Yes"
+      - "No"
+      - Not Reported
+
+  hypercalcemia:
+    $ref: "_terms.yaml#/hypercalcemia/common"
+    type: boolean
 
   lytic_bone_lesion:
     $ref: "_terms.yaml#/lytic_bone_lesion/common"
@@ -74,6 +100,18 @@ properties:
     #   - Unknown
     #   - Not Reported
 
+  other_diagnosis:
+    $ref: "_terms.yaml#/other_diagnosis/common"
+    type: boolean
+
+  other_specify:
+    $ref: "_terms.yaml#/other_specify/common"
+    type: string
+
+  plasmacytoma_change:
+    $ref: "_terms.yaml#/plasmacytoma_change/common"
+    type: boolean
+
   plasmacytoma_number:
     $ref: "_terms.yaml#/plasmacytoma_number/common"
     type: string
@@ -82,6 +120,22 @@ properties:
     #   - "No"
     #   - Unknown
     #   - Not Reported
+
+  plasmacytoma_number_increase:
+    $ref: "_terms.yaml#/plasmacytoma_number_increase/common"
+    type: boolean
+
+  plasmacytoma_size_increase:
+    $ref: "_terms.yaml#/plasmacytoma_size_increase/common"
+    type: boolean
+
+  recurrent_bacteria_infection:
+    $ref: "_terms.yaml#/recurrent_bacteria_infection/common"
+    type: boolean
+
+  renal_insufficiency:
+    $ref: "_terms.yaml#/renal_insufficiency/common"
+    type: boolean
 
   soft_tissue_plasmacytoma_found_ct_mri:
     $ref: "_terms.yaml#/soft_tissue_plasmacytoma_found_ct_mri/common"
@@ -120,7 +174,16 @@ properties:
   subject_had_signs_symptoms:
     $ref: "_terms.yaml#/subject_had_signs_symptoms/common"
     type: boolean
+
+  symptomatic_hyperviscosity:
+    $ref: "_terms.yaml#/symptomatic_hyperviscosity/common"
+    type: boolean
   
+  year_of_assessment_by_ct_mri:
+    $ref: "_terms.yaml#/year_of_assessment_by_ct_mri/common"
+    type: integer
+    minimum: 1900
+
   year_of_signs_symptoms:
     $ref: "_terms.yaml#/year_of_signs_symptoms/common"
     type: integer

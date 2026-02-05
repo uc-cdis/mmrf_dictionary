@@ -617,6 +617,17 @@ antigen:
       cde_version: 1.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=6142523%20and%20ver_nr=1.0"
 
+amyloidosis:
+  common:
+    description: >-
+      The subject has evidence of a sign or symptom related to myeloma, specifically, amyloidosis.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 asbestos_exposure:
   common:
     description: >-
@@ -854,6 +865,17 @@ bone_marrow_malignant_cells:
     termDef:
       term: >-
         Malignant Bone Marrow Indicator
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+bone_pain:
+  common:
+    description: >-
+      The subject has evidence of a sign or symptom related to myeloma, specifically, bone pain.
+    termDef:
+      term:
       source:
       cde_id:
       cde_version:
@@ -1631,6 +1653,17 @@ days_to_adverse_event:
       cde_id: 6154728
       cde_version: 1.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=6154728%20and%20ver_nr=1.0"
+
+days_to_assessment_by_ct_mri:
+  common:
+    description: >-
+      Number of days between the date of imaging test and the index date. In a de-identified dataset, this variable will help with sequencing events.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
 
 days_to_best_overall_response:
   common:
@@ -2442,6 +2475,17 @@ eye_color:
       cde_version: 21.04d
       term_url: "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C157437"
 
+fatigue:
+  common:
+    description: >-
+      The subject has evidence of a sign or symptom related to myeloma, specifically, fatigue.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 fab_morphology_code:
   common:
     description: >-
@@ -3024,6 +3068,17 @@ hpv_strain:
   common:
     description: >-
       The specific hpv strain being tested.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+hypercalcemia:
+  common:
+    description: >-
+      The subject has evidence of a sign or symptom related to myeloma, specifically, hypercalcemia with a corrected calcium > 11.5 mg/dl.
     termDef:
       term:
       source:
@@ -4441,6 +4496,28 @@ osteopenia_osteoporosis:
       cde_version:
       term_url: 
 
+other_diagnosis:
+  common:
+    description: >-
+      The subject has evidence of a sign or symptom related to myeloma, another condition not mentioned.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+other_specify:
+  common:
+    description: >-
+      Additional information for other variables, if available, especially, ss_other.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 ovarian_specimen_status:
   common:
     description: >-
@@ -4859,10 +4936,43 @@ pi_pbl_index:
       cde_version:
       term_url:
 
+plasmacytoma_change:
+  common:
+    description: >-
+      By mri/ct the existing plasmacytoma a change was noted from prior assessment.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 plasmacytoma_number:
   common:
     description: >-
       By mri/ct the number of plasmacytoma noted.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+plasmacytoma_number_increase:
+  common:
+    description: >-
+      By mri/ct the existing plasmacytoma increased in size from prior assessment.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+plasmacytoma_size_increase:
+  common:
+    description: >-
+      By mri/ct the existing plasmacytoma increased in number from prior assessment.
     termDef:
       term:
       source:
@@ -5418,6 +5528,17 @@ recist_targeted_regions_sum:
       cde_version:
       term_url:
 
+recurrent_bacteria_infection:
+  common:
+    description: >-
+      The subject has evidence of a sign or symptom related to myeloma, specifically, recurrent bacteria infection at the time of the visit.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
 reflux_treatment_type:
   common:
     description: >-
@@ -5566,6 +5687,17 @@ relatives_with_cancer_history_count:
   common:
     description: >-
       Count of relatives with malignant cancer diagnosis derived from family history table
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
+
+renal_insufficiency:
+  common:
+    description: >-
+      The subject has evidence of a sign or symptom related to myeloma, specifically, renal insufficiency.
     termDef:
       term:
       source:
@@ -6294,6 +6426,17 @@ synchronous_malignancy:
       cde_id: 6142390
       cde_version: 1.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=6142390%20and%20ver_nr=1.0"
+
+symptomatic_hyperviscosity:
+  common:
+    description: >-
+      The subject has evidence of a sign or symptom related to myeloma, specifically, symptomatic hyperviscosity at the time of the visit.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
 
 target_capture_kit:
   common:
@@ -7502,6 +7645,17 @@ workflow_type:
       term_url: "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C181725"
       term_id: C181725
       term_version: 23.11d
+
+year_of_assessment_by_ct_mri:
+  common:
+    description: >-
+      Year component the date imaging scan during the course of the study. In a de-identified dataset, this variable will help with sequencing events.
+    termDef:
+      term:
+      source:
+      cde_id:
+      cde_version:
+      term_url:
 
 year_of_birth:
   common:
