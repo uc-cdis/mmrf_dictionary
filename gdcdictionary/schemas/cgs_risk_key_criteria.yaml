@@ -1,0 +1,160 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "cgs_risk_key_criteria"
+title: CGS Risk Key Criteria
+type: object
+namespace: https://gdc.cancer.gov
+category: clinical
+project: '*'
+program: '*'
+description: >-
+  Baseline patient-level Clinical Genomic Scoring (CGS) risk classification and
+  supporting key criteria for multiple myeloma.
+additionalProperties: false
+submittable: true
+downloadable: true
+previous_version_downloadable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
+
+links:
+  - name: cases
+    backref: cgs_risk_key_criteria
+    label: describes
+    target_type: case
+    multiplicity: many_to_many
+    required: true
+
+required:
+  - submitter_id
+  - type
+  - cases
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+properties:
+
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  CGS_risk:
+    $ref: "_terms.yaml#/CGS_risk/common"
+    enum:
+      - "High"
+      - "Standard"
+      - "NA"
+
+  criteria1:
+    $ref: "_terms.yaml#/criteria1/common"
+    enum:
+      - "TRUE"
+      - "FALSE"
+      - "NA"
+
+  criteria2:
+    $ref: "_terms.yaml#/criteria2/common"
+    enum:
+      - "TRUE"
+      - "FALSE"
+      - "NA"
+
+  criteria3:
+    $ref: "_terms.yaml#/criteria3/common"
+    enum:
+      - "TRUE"
+      - "FALSE"
+      - "NA"
+
+  criteria4:
+    $ref: "_terms.yaml#/criteria4/common"
+    enum:
+      - "TRUE"
+      - "FALSE"
+      - "NA"
+
+  has_del17p13:
+    $ref: "_terms.yaml#/has_del17p13/common"
+    enum:
+      - "TRUE"
+      - "FALSE"
+      - "NA"
+
+  has_TP53_mutation:
+    $ref: "_terms.yaml#/has_TP53_mutation/common"
+    enum:
+      - "TRUE"
+      - "FALSE"
+      - "NA"
+
+  has_t414:
+    $ref: "_terms.yaml#/has_t414/common"
+    enum:
+      - "TRUE"
+      - "FALSE"
+      - "NA"
+
+  has_t1416:
+    $ref: "_terms.yaml#/has_t1416/common"
+    enum:
+      - "TRUE"
+      - "FALSE"
+      - "NA"
+
+  has_t1420:
+    $ref: "_terms.yaml#/has_t1420/common"
+    enum:
+      - "TRUE"
+      - "FALSE"
+      - "NA"
+
+  has_1q:
+    $ref: "_terms.yaml#/has_1q/common"
+    enum:
+      - "TRUE"
+      - "FALSE"
+      - "NA"
+
+  has_mono_del1p32:
+    $ref: "_terms.yaml#/has_mono_del1p32/common"
+    enum:
+      - "TRUE"
+      - "FALSE"
+      - "NA"
+
+  has_bi_del1p32:
+    $ref: "_terms.yaml#/has_bi_del1p32/common"
+    enum:
+      - "TRUE"
+      - "FALSE"
+      - "NA"
+
+  has_del1p32:
+    $ref: "_terms.yaml#/has_del1p32/common"
+    enum:
+      - "TRUE"
+      - "FALSE"
+      - "NA"
+
+  has_high_B2M:
+    $ref: "_terms.yaml#/has_high_B2M/common"
+    enum:
+      - "TRUE"
+      - "FALSE"
+      - "NA"
+
+  has_normal_creatinine:
+    $ref: "_terms.yaml#/has_normal_creatinine/common"
+    enum:
+      - "TRUE"
+      - "FALSE"
+      - "NA"
+
+  cases:
+    $ref: "_definitions.yaml#/to_many"
