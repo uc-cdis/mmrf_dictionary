@@ -1017,10 +1017,10 @@ censor_pfs:
       cde_version:
       term_url:
 
-CGS_risk:
+cgs_risk_category:
   common:
     description: >-
-      Final CGS risk classification (High Risk/Standard Risk/NA)
+      Final CGS risk classification (High/Standard/NA)
     termDef:
       term: >-
         Clinical Genomic Scoring Risk Category
@@ -1482,10 +1482,11 @@ creation_datetime:
       cde_version: 1.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=5432592%20and%20ver_nr=1.0"
 
-criteria1:
+criteria_1:
   common:
     description: >-
-      Meets CGS Criterion 1: del(17p), with a cutoff of >20% clonal
+      Meets CGS Criterion 1: del(17p), with a cutoff of >20% clonal fraction,
+      and/or TP53 mutation
     termDef:
       term: >-
         Clinical Genomic Scoring Criterion 1 Indicator
@@ -1494,10 +1495,11 @@ criteria1:
       cde_version:
       term_url:
 
-criteria2:
+criteria_2:
   common:
     description: >-
-      Meets CGS Criterion 2: t(4;14), t(14;16), or t(14;20) plus
+      Meets CGS Criterion 2: t(4;14), t(14;16), or t(14;20) plus 1q+
+      or del(1p32)
     termDef:
       term: >-
         Clinical Genomic Scoring Criterion 2 Indicator
@@ -1506,10 +1508,11 @@ criteria2:
       cde_version:
       term_url:
 
-criteria3:
+criteria_3:
   common:
     description: >-
-      Meets CGS Criterion 3: monoallelic del(1p32) with 1q+
+      Meets CGS Criterion 3: monoallelic del(1p32) with 1q+ or biallelic
+      del(1p32)
     termDef:
       term: >-
         Clinical Genomic Scoring Criterion 3 Indicator
@@ -1518,10 +1521,11 @@ criteria3:
       cde_version:
       term_url:
 
-criteria4:
+criteria_4:
   common:
     description: >-
-      Meets CGS Criterion 4: B2M >= 5.5 mg/L with
+      Meets CGS Criterion 4: B2M >= 5.5 mg/L with normal creatinine
+      (< 1.2 mg/dL)
     termDef:
       term: >-
         Clinical Genomic Scoring Criterion 4 Indicator
@@ -2980,7 +2984,7 @@ has_del1p32:
       cde_version:
       term_url:
 
-has_high_B2M:
+has_high_b2m:
   common:
     description: >-
       Elevated β2-microglobulin (>5.5 mg/L)
@@ -3052,7 +3056,7 @@ has_t414:
       cde_version:
       term_url:
 
-has_TP53_mutation:
+has_tp53_mutation:
   common:
     description: >-
       TP53 mutation present

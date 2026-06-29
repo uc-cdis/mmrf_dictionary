@@ -34,6 +34,7 @@ links:
 required:
   - submitter_id
   - type
+  - cgs_risk_category
   - cases
 
 uniqueKeys:
@@ -44,36 +45,36 @@ properties:
 
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  CGS_risk:
-    $ref: "_terms.yaml#/CGS_risk/common"
+  cgs_risk_category:
+    $ref: "_terms.yaml#/cgs_risk_category/common"
     enum:
       - "High"
       - "Standard"
       - "NA"
 
-  criteria1:
-    $ref: "_terms.yaml#/criteria1/common"
+  criteria_1:
+    $ref: "_terms.yaml#/criteria_1/common"
     enum:
       - "TRUE"
       - "FALSE"
       - "NA"
 
-  criteria2:
-    $ref: "_terms.yaml#/criteria2/common"
+  criteria_2:
+    $ref: "_terms.yaml#/criteria_2/common"
     enum:
       - "TRUE"
       - "FALSE"
       - "NA"
 
-  criteria3:
-    $ref: "_terms.yaml#/criteria3/common"
+  criteria_3:
+    $ref: "_terms.yaml#/criteria_3/common"
     enum:
       - "TRUE"
       - "FALSE"
       - "NA"
 
-  criteria4:
-    $ref: "_terms.yaml#/criteria4/common"
+  criteria_4:
+    $ref: "_terms.yaml#/criteria_4/common"
     enum:
       - "TRUE"
       - "FALSE"
@@ -86,8 +87,8 @@ properties:
       - "FALSE"
       - "NA"
 
-  has_TP53_mutation:
-    $ref: "_terms.yaml#/has_TP53_mutation/common"
+  has_tp53_mutation:
+    $ref: "_terms.yaml#/has_tp53_mutation/common"
     enum:
       - "TRUE"
       - "FALSE"
@@ -142,8 +143,8 @@ properties:
       - "FALSE"
       - "NA"
 
-  has_high_B2M:
-    $ref: "_terms.yaml#/has_high_B2M/common"
+  has_high_b2m:
+    $ref: "_terms.yaml#/has_high_b2m/common"
     enum:
       - "TRUE"
       - "FALSE"
