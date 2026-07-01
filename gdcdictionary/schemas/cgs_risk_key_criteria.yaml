@@ -9,7 +9,7 @@ project: '*'
 program: '*'
 description: >-
   Baseline patient-level Clinical Genomic Scoring (CGS) risk classification and
-  supporting key criteria for multiple myeloma.
+  key criteria for multiple myeloma.
 additionalProperties: false
 submittable: true
 downloadable: true
