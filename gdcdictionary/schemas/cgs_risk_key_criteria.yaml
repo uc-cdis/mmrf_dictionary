@@ -28,7 +28,7 @@ links:
     backref: cgs_risk_key_criteria
     label: describes
     target_type: case
-    multiplicity: many_to_many
+    multiplicity: one_to_one
     required: true
 
 required:
