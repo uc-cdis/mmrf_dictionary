@@ -158,4 +158,4 @@ properties:
       - "NA"
 
   cases:
-    $ref: "_definitions.yaml#/to_many"
+    $ref: "_definitions.yaml#/to_one"
