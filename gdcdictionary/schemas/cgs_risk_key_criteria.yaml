@@ -52,110 +52,47 @@ properties:
       - "Standard"
       - "NA"
 
-  criteria_1:
-    $ref: "_terms.yaml#/criteria_1/common"
-    enum:
-      - "TRUE"
-      - "FALSE"
-      - "NA"
+  cgs_risk_criteria:
+    $ref: "_terms.yaml#/cgs_risk_criteria/common"
+    type: array
+    minItems: 1
+    uniqueItems: true
+    items:
+      enum:
+        - "CGS Criterion 1: del(17p) >20% and/or TP53 mutation"
+        - "CGS Criterion 2: high-risk translocation plus 1q gain/amplification or del(1p32)"
+        - "CGS Criterion 3: monoallelic del(1p32) with 1q gain/amplification or biallelic del(1p32)"
+        - "CGS Criterion 4: beta-2 microglobulin >=5.5 mg/L with creatinine <1.2 mg/dL"
 
-  criteria_2:
-    $ref: "_terms.yaml#/criteria_2/common"
-    enum:
-      - "TRUE"
-      - "FALSE"
-      - "NA"
-
-  criteria_3:
-    $ref: "_terms.yaml#/criteria_3/common"
-    enum:
-      - "TRUE"
-      - "FALSE"
-      - "NA"
-
-  criteria_4:
-    $ref: "_terms.yaml#/criteria_4/common"
-    enum:
-      - "TRUE"
-      - "FALSE"
-      - "NA"
-
-  has_del17p13:
-    $ref: "_terms.yaml#/has_del17p13/common"
-    enum:
-      - "TRUE"
-      - "FALSE"
-      - "NA"
-
-  has_tp53_mutation:
-    $ref: "_terms.yaml#/has_tp53_mutation/common"
-    enum:
-      - "TRUE"
-      - "FALSE"
-      - "NA"
-
-  has_t414:
-    $ref: "_terms.yaml#/has_t414/common"
-    enum:
-      - "TRUE"
-      - "FALSE"
-      - "NA"
-
-  has_t1416:
-    $ref: "_terms.yaml#/has_t1416/common"
-    enum:
-      - "TRUE"
-      - "FALSE"
-      - "NA"
-
-  has_t1420:
-    $ref: "_terms.yaml#/has_t1420/common"
-    enum:
-      - "TRUE"
-      - "FALSE"
-      - "NA"
-
-  has_1q:
-    $ref: "_terms.yaml#/has_1q/common"
-    enum:
-      - "TRUE"
-      - "FALSE"
-      - "NA"
-
-  has_mono_del1p32:
-    $ref: "_terms.yaml#/has_mono_del1p32/common"
-    enum:
-      - "TRUE"
-      - "FALSE"
-      - "NA"
-
-  has_bi_del1p32:
-    $ref: "_terms.yaml#/has_bi_del1p32/common"
-    enum:
-      - "TRUE"
-      - "FALSE"
-      - "NA"
-
-  has_del1p32:
-    $ref: "_terms.yaml#/has_del1p32/common"
-    enum:
-      - "TRUE"
-      - "FALSE"
-      - "NA"
-
-  has_high_b2m:
-    $ref: "_terms.yaml#/has_high_b2m/common"
-    enum:
-      - "TRUE"
-      - "FALSE"
-      - "NA"
-
-  has_normal_creatinine:
-    $ref: "_terms.yaml#/has_normal_creatinine/common"
-    enum:
-      - "TRUE"
-      - "FALSE"
-      - "NA"
+  other_criteria:
+    $ref: "_terms.yaml#/other_criteria/common"
+    type: array
+    minItems: 1
+    uniqueItems: true
+    items:
+      enum:
+        - "del(17p13) detected"
+        - "del(17p13) not detected"
+        - "TP53 mutation detected"
+        - "TP53 mutation not detected"
+        - "t(4;14) translocation detected"
+        - "t(4;14) translocation not detected"
+        - "t(14;16) translocation detected"
+        - "t(14;16) translocation not detected"
+        - "t(14;20) translocation detected"
+        - "t(14;20) translocation not detected"
+        - "1q gain/amplification detected"
+        - "1q gain/amplification not detected"
+        - "Monoallelic del(1p32) detected"
+        - "Monoallelic del(1p32) not detected"
+        - "Biallelic del(1p32) detected"
+        - "Biallelic del(1p32) not detected"
+        - "del(1p32) detected"
+        - "del(1p32) not detected"
+        - "Beta-2 microglobulin >5.5 mg/L"
+        - "Beta-2 microglobulin <=5.5 mg/L"
+        - "Creatinine <1.2 mg/dL"
+        - "Creatinine >=1.2 mg/dL"
 
   cases:
     $ref: "_definitions.yaml#/to_one"
