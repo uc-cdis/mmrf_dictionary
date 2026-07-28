@@ -89,8 +89,8 @@ properties:
         - "Biallelic del(1p32) not detected"
         - "del(1p32) detected"
         - "del(1p32) not detected"
-        - "Beta-2 microglobulin >5.5 mg/L"
-        - "Beta-2 microglobulin <=5.5 mg/L"
+        - "Beta-2 microglobulin >=5.5 mg/L"
+        - "Beta-2 microglobulin <5.5 mg/L"
         - "Creatinine <1.2 mg/dL"
         - "Creatinine >=1.2 mg/dL"
 
