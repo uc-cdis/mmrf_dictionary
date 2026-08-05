@@ -82,7 +82,7 @@ notified of a break in backwards-compatibility.
 
 Sometimes it may be best to introduce necessary breaking changes
 incrementally.  Given you have State A and State B, which are
-incomatible, if you can create a State AB that is compatible with
+incompatible, if you can create a State AB that is compatible with
 both, you can upgrade to State AB without breaking changes, update
 data to be compliant with State B, then upgrade to State B.
 
