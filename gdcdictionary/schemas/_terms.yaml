@@ -1029,6 +1029,20 @@ cgs_risk_category:
       cde_version:
       term_url:
 
+cgs_risk_criteria:
+  common:
+    description: >-
+      The Clinical Genomic Scoring (CGS) risk criteria met by the case. Only
+      criteria with a positive result are included; negative and unavailable
+      criterion results are omitted.
+    termDef:
+      term: >-
+        Clinical Genomic Scoring Risk Criteria
+      source: MMRF
+      cde_id:
+      cde_version:
+      term_url:
+
 channel:
   common:
     description: >-
@@ -1481,58 +1495,6 @@ creation_datetime:
       cde_id: 5432592
       cde_version: 1.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=5432592%20and%20ver_nr=1.0"
-
-criteria_1:
-  common:
-    description: >-
-      Meets CGS Criterion 1: del(17p), with a cutoff of >20% clonal fraction,
-      and/or TP53 mutation
-    termDef:
-      term: >-
-        Clinical Genomic Scoring Criterion 1 Indicator
-      source: MMRF
-      cde_id:
-      cde_version:
-      term_url:
-
-criteria_2:
-  common:
-    description: >-
-      Meets CGS Criterion 2: t(4;14), t(14;16), or t(14;20) plus 1q+
-      or del(1p32)
-    termDef:
-      term: >-
-        Clinical Genomic Scoring Criterion 2 Indicator
-      source: MMRF
-      cde_id:
-      cde_version:
-      term_url:
-
-criteria_3:
-  common:
-    description: >-
-      Meets CGS Criterion 3: monoallelic del(1p32) with 1q+ or biallelic
-      del(1p32)
-    termDef:
-      term: >-
-        Clinical Genomic Scoring Criterion 3 Indicator
-      source: MMRF
-      cde_id:
-      cde_version:
-      term_url:
-
-criteria_4:
-  common:
-    description: >-
-      Meets CGS Criterion 4: B2M >= 5.5 mg/L with normal creatinine
-      (< 1.2 mg/dL)
-    termDef:
-      term: >-
-        Clinical Genomic Scoring Criterion 4 Indicator
-      source: MMRF
-      cde_id:
-      cde_version:
-      term_url:
 
 current_weight:
   common:
@@ -2932,138 +2894,6 @@ haart_treatment_indicator:
       term: >-
         HAART Therapy Indicator
       source:
-      cde_id:
-      cde_version:
-      term_url:
-
-has_1q:
-  common:
-    description: >-
-      Gain/amplification of 1q
-    termDef:
-      term: >-
-        1q Gain or Amplification Present Indicator
-      source: MMRF
-      cde_id:
-      cde_version:
-      term_url:
-
-has_bi_del1p32:
-  common:
-    description: >-
-      Biallelic deletion of 1p32
-    termDef:
-      term: >-
-        Biallelic Deletion 1p32 Present Indicator
-      source: MMRF
-      cde_id:
-      cde_version:
-      term_url:
-
-has_del17p13:
-  common:
-    description: >-
-      Presence of del(17p13)
-    termDef:
-      term: >-
-        Deletion 17p13 Present Indicator
-      source: MMRF
-      cde_id:
-      cde_version:
-      term_url:
-
-has_del1p32:
-  common:
-    description: >-
-      Any deletion of 1p32
-    termDef:
-      term: >-
-        Deletion 1p32 Present Indicator
-      source: MMRF
-      cde_id:
-      cde_version:
-      term_url:
-
-has_high_b2m:
-  common:
-    description: >-
-      Elevated β2-microglobulin (>5.5 mg/L)
-    termDef:
-      term: >-
-        Elevated Beta-2 Microglobulin Indicator
-      source: MMRF
-      cde_id:
-      cde_version:
-      term_url:
-
-has_mono_del1p32:
-  common:
-    description: >-
-      Monoallelic deletion of 1p32
-    termDef:
-      term: >-
-        Monoallelic Deletion 1p32 Present Indicator
-      source: MMRF
-      cde_id:
-      cde_version:
-      term_url:
-
-has_normal_creatinine:
-  common:
-    description: >-
-      Creatinine <1.2 mg/dL
-    termDef:
-      term: >-
-        Normal Creatinine Indicator
-      source: MMRF
-      cde_id:
-      cde_version:
-      term_url:
-
-has_t1416:
-  common:
-    description: >-
-      t(14;16) translocation
-    termDef:
-      term: >-
-        t(14;16) Translocation Present Indicator
-      source: MMRF
-      cde_id:
-      cde_version:
-      term_url:
-
-has_t1420:
-  common:
-    description: >-
-      t(14;20) translocation
-    termDef:
-      term: >-
-        t(14;20) Translocation Present Indicator
-      source: MMRF
-      cde_id:
-      cde_version:
-      term_url:
-
-has_t414:
-  common:
-    description: >-
-      t(4;14) translocation
-    termDef:
-      term: >-
-        t(4;14) Translocation Present Indicator
-      source: MMRF
-      cde_id:
-      cde_version:
-      term_url:
-
-has_tp53_mutation:
-  common:
-    description: >-
-      TP53 mutation present
-    termDef:
-      term: >-
-        TP53 Mutation Present Indicator
-      source: MMRF
       cde_id:
       cde_version:
       term_url:
@@ -4612,6 +4442,20 @@ oct_embedded:
       cde_id: 5432538
       cde_version: 1.0
       term_url: "https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=5432538%20and%20ver_nr=1.0"
+
+other_criteria:
+  common:
+    description: >-
+      Known positive and negative results for genomic and laboratory criteria
+      used to derive Clinical Genomic Scoring (CGS) risk. Unavailable results
+      are omitted.
+    termDef:
+      term: >-
+        Other Clinical Genomic Scoring Criteria
+      source: MMRF
+      cde_id:
+      cde_version:
+      term_url:
 
 osteopenia_osteoporosis:
   common:
